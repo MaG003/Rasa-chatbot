@@ -1,498 +1,538 @@
-version: "3.1"
+version: '3.1'
+
 nlu:
-- intent: huy_hd
-  examples: |
-    - tôi muốn hủy đơn tôi vừa tạo
-    - làm thế nào để tôi hủy đơn mua hàng của tôi
-    - làm thế nào tôi có thể hủy đơn hàng cuối cùng tôi đã tạo
-    - tôi cố gắng hủy 1 đơn
-    - tôi muốn hướng dẫn để hủy đơn
-    - hủy đơn
+  - intent: huy_hd
+    examples: |
+      - Tôi muốn [hủy đơn]{"entity":"huyhoadon"} tôi vừa tạo
+      - làm thế nào để tôi [hủy đơn]{"entity":"huyhoadon"} mua hàng của tôi
+      - làm thế nào tôi có thể [hủy đơn]{"entity":"huyhoadon"} cuối cùng tôi đã tạo
+      - tôi cố gắng [hủy đơn]{"entity":"huyhoadon"}
+      - tôi muốn hướng dẫn để [hủy đơn]{"entity":"huyhoadon"}
+      - [hủy đơn]{"entity":"huyhoadon"}
 
-- intent: phi_giao_hang
-  examples: |
-    - vậy tôi thanh toán hết là được miễn ship đúng không
-    - phí giao hàng
+  - intent: phi_giao_hang
+    examples: |
+      - Có được miễn [phí giao hàng]{"entity":"phigiaohang"} không
+      - [phí giao hàng]{"entity":"phigiaohang"}
+      - [freeship]{"entity":"phigiaohang"}
+      - [free ship]{"entity":"phigiaohang"}
 
-- intent: san_pham_chuot
-  examples: |
-    - Chuột laptop
-    - Tôi muốn mua chuột Fulen G90
-    - tôi muốn mua chuột
-    - chuột
-    - chuột máy tính
+  - intent: san_pham_chuot
+    examples: | 
+      - [Chuột laptop]{"entity": "sanphamchuot"}
+      - Tôi muốn mua [chuột]{"entity": "sanphamchuot"}
+      - [tôi muốn mua chuột]{"entity": "sanphamchuot"}
+      - [chuột]{"entity": "sanphamchuot"}
+      - [chuột máy tính]{"entity": "sanphamchuot"}
 
-- intent: san_pham_laptop
-  examples: |
-    - Laptop Asus VivoBook A515EA-BQ491T
-    - Dell M4800
-    - Laptop Acer Aspire 5 A515
-    - Lenovo IdeaPad 3 14ALC6
-    - laptop MSI Modern 14 core i3 1115G4
-    - Asus UX581
-    - 'Laptop MSI Gaming Katana GF66 '
-    - Laptop
-    - tôi cần mua laptop
-    - laptop có những loại nào
+  - intent: san_pham_laptop
+    examples: | 
+      - Tôi muốn mua [Laptop]{"entity": "sanphamlaptop"} nhé !
+      - Tôi mua [laptop]{"entity": "sanphamlaptop"}
+      - [laptop]{"entity": "sanphamlaptop"} 
+      - [Máy tính sách tay]{"entity": "sanphamlaptop"}
+      - [Laptop gaming]{"entity": "sanphamlaptop"}
+      - [máy tính sách tay]{"entity": "sanphamlaptop"}
 
-- intent: san_pham_ram
-  examples: |
-    - Ram Desktop Adata XPG Spectrix D50 RGB
-    - ram
-    - tôi cần mua ram
-    - bạn tư vấn cho tôi vài con ram đi
-    - ram máy tính
+  - intent: san_pham_ram
+    examples: | 
+      - [Ram Desktop]{"entity": "sanphamram"}
+      - [ram]{"entity": "sanphamram"}
+      - tôi cần mua [ram]{"entity": "sanphamram"}
+      - bạn tư vấn cho tôi vài con [ram]{"entity": "sanphamram"} đi
+      - [ram máy tính]{"entity": "sanphamram"}
 
-- intent: san_pham_o_cung
-  examples: |
-    - Ổ cứng msata ssd
-    - Ổ cứng di động
-    - Mình muốn hỏi ổ cứng ngoài cho macbook
-    - Ổ cứng SSD 512
-    - ổ cứng
-    - Ổ cứng
-    - tôi cần mua ổ cứng
-    - tham khảo giá ổ cứng
-    - làm sao để mua ổ cứng
-    - ổ cứng giá rẻ
-    - bên mình bán những loại ổ cứng gì
+  - intent: san_pham_o_cung
+    examples: | 
+      - [Ổ cứng ssd]{"entity": "sanphamocung"}
+      - [Ổ cứng di động]{"entity": "sanphamocung"}
+      - Mình muốn hỏi [ổ cứng ngoài]{"entity": "sanphamocung"}
+      - [Ổ cứng SSD 512]{"entity": "sanphamocung"}
+      - [ổ cứng]{"entity": "sanphamocung"}
+      - [Ổ cứng]{"entity": "sanphamocung"}
+      - [ổ cứng giá rẻ]{"entity": "sanphamocung"}
+    
+  - intent: san_pham_man_hinh  
+    examples: | 
+      - [Màn hình]{"entity": "sanphammanhinh"}
+      - [màn hình]{"entity": "sanphammanhinh"}
+      - tôi cần mua [màn hình]{"entity": "sanphammanhinh"}
+      - tư vấn [màn hình]{"entity": "sanphammanhinh"}
+      - [màn hình led]{"entity": "sanphammanhinh"}
+      - [màn hình giá rẻ]{"entity": "sanphammanhinh"}
+      - [màn hình 4k]{"entity": "sanphammanhinh"}
+      - [màn hình vi tính]{"entity": "sanphammanhinh"}
 
-- intent: san_pham_man_hinh
-  examples: |
-    - Màn hình ViewSonic VA2430-H-W-6
-    - Màn hình LG UltraGear 27GL850-B
-    - MÀN HÌNH ASUS PRO ART PA248QV (24INCH/WUXGA/IPS/75HZ/5MS/300NITS/HDMI
-    - https://hacom.vn/man-hinh-lg-24qp750-b
-    - Màn hình
-    - màn hình
-    - tôi cần mua màn hình
-    - tư vấn màn hình
-    - màn hình led
-    - màn hình giá rẻ
-    - màn hình 4k
-    - màn hình vi tính
+  - intent: san_pham_camera  
+    examples: | 
+      - [camera]{"entity": "sanphamcamera"}
+      - tôi cần mua [camera]{"entity": "sanphamcamera"}
+      - tư vấn [camera]{"entity": "sanphamcamera"}
 
-- intent: san_pham_card
-  examples: |
-    - Card màn hình
-    - card
-    - tôi muốn mua card màn hình
-    - tôi muốn mua card
+  - intent: san_pham_card  
+    examples: | 
+      - [Card màn hình]{"entity": "sanphamcard"}
+      - [card]{"entity": "sanphamcard"}
+      - tôi muốn mua [card màn hình]{"entity": "sanphamcard"}
 
-- intent: san_pham_PC
-  examples: |
-    - Máy tinh mini đơn giản nhất
-    - Tôi cần máy mini chạy ít tốn điện nhất
-    - Máy tính INTEL NUC7CJYH Celeron J4005
-    - tôi cần mua PC
-    - máy tính
-    - tôi cần mua máy tính
-    - máy tính cây
-    - PC
+  - intent: san_pham_PC  
+    examples: | 
+      - [Máy tính] mini đơn giản{"entity": "sanphamPC"}
+      - Tôi cần [máy mini] chạy ít tốn điện nhất{"entity": "sanphamPC"}
+      - tôi cần mua [PC]{"entity": "sanphamPC"}
+      - [máy tính]{"entity": "sanphamPC"}
+      - [máy tính cây]{"entity": "sanphamPC"}
+      - [PC]{"entity": "sanphamPC"}
 
-- intent: san_pham_game
-  examples: |
-    - Tay cầm
-    - Xbox series x
-    - Vô lăng PXN V900
-    - Sản phẩm phục vụ chơi game
-    - phụ kiện chơi game
-    - game
+  - intent: san_pham_game  
+    examples: | 
+      - [Tay cầm]{"entity": "sanphamgame"}
+      - [Xbox series x]{"entity": "sanphamgame"}
+      - [Vô lăng PXN V900]{"entity": "sanphamgame"}
+      - [Sản phẩm phục vụ chơi game]{"entity": "sanphamgame"}
+      - [phụ kiện chơi game]{"entity": "sanphamgame"}
+      - [game]{"entity": "sanphamgame"}
 
-- intent: san_pham_tai_nghe
-  examples: |
-    - Tai nghe Kingston HyperX CLOUD STINGER CORE 7.1 Black - HHSS1C-AA-BK/G
-    - Tai nghe E-Dra EH410 Pro USB Led RGB
-    - tai nghe
-    - shop có bán tai nghe không
-    - tôi cần 1 cái tai nghe
-    - tai nghe giá rẻ
-    - mua tai nghe
-    - tư vấn bán tai nghe
-    - tai nghe không dây
-    - tai nghe có dây
+  - intent: san_pham_tai_nghe  
+    examples: | 
+      - [tai nghe]{"entity": "sanphamtainghe"}
+      - shop có bán [tai nghe] không{"entity": "sanphamtainghe"}
+      - [tai nghe giá rẻ]{"entity": "sanphamtainghe"}
+      - [tai nghe không dây]{"entity": "sanphamtainghe"}
+      - [tai nghe có dây]{"entity": "sanphamtainghe"}
 
-- intent: san_pham_case
-  examples: |
-    - Vỏ Case Vitra POSEIDON G5 (Mid Tower / Màu Đen)
-    - vỏ case
-    - case
-    - mua vỏ case
-    - build máy tính cần vở case
-    - build máy tính cần case
+  - intent: san_pham_case  
+    examples: | 
+      - [vỏ case]{"entity": "sanphamcase"}
+      - [case]{"entity": "sanphamcase"}
+      - mua [vỏ case]{"entity": "sanphamcase"}
+      - build máy tính cần [vỏ case]{"entity": "sanphamcase"}
+      - build máy tính cần [case]{"entity": "sanphamcase"}
 
-- intent: san_pham_webcam
-  examples: |
-    - Webcam
-    - tôi cần mua webcam
-    - webcam
-    - mua webcam
-    - webcam học sinh, sinh viên
-    - webcam học online
+  - intent: san_pham_webcam  
+    examples: | 
+      - [Webcam]{"entity": "sanphamwebcam"}
+      - tôi cần mua [webcam]{"entity": "sanphamwebcam"}
+      - [webcam]{"entity": "sanphamwebcam"}
+      - mua [webcam]{"entity": "sanphamwebcam"}
+      - [webcam] học sinh, sinh viên{"entity": "sanphamwebcam"}
+      - [webcam] học online{"entity": "sanphamwebcam"}
 
-- intent: san_pham_wifi
-  examples: |
-    - Moden nào vừa cắm trực tiếp vừa phát wifi
-    - Wifi mesh
-    - mua wifi
-    - wifi
+  - intent: san_pham_wifi 
+    examples: | 
+      - Moden nào vừa cắm trực tiếp vừa phát [wifi]{"entity": "sanphamwifi "}
+      - [Wifi mesh]{"entity": "sanphamwifi "}
+      - mua [wifi]{"entity": "sanphamwifi "}
+      - [wifi]{"entity": "sanphamwifi "}
 
-- intent: san_pham_linh_kien
-  examples: |
-    - PC - Laptop và linh kiện
-    - linh kiện
-    - Linh kiện
+  - intent: san_pham_linh_kien
+    examples: | 
+      - PC - Laptop và [linh kiện]{"entity": "sanphamlinhkien"}
+      - [linh kiện]{"entity": "sanphamlinhkien"}
+      - [Linh kiện]{"entity": "sanphamlinhkien"}
 
-- intent: san_pham_ghe
-  examples: |
-    - Ghế gamer E-Dra Queen - EGC225
-    - Ghế
-    - ghế gaming
-    - mua ghế
-    - tôi cần mua ghế
-    - tư vấn ghế
+  - intent: san_pham_ghe
+    examples: | 
+      - [Ghế gamer E-Dra Queen - EGC225]{"entity": "sanphamghe"}
+      - [Ghế]{"entity": "sanphamghe"}
+      - [ghế gaming]{"entity": "sanphamghe"}
+      - mua [ghế]{"entity": "sanphamghe"}
+      - tôi cần mua [ghế]{"entity": "sanphamghe"}
+      - tư vấn [ghế]{"entity": "sanphamghe"}
 
-- intent: location
-  examples: |
-    - hacom có ở đâu?
-    - vị trí của hàng hacom
-    - chi nhánh hacom
-    - địa chỉ hacom
-    - vị trí hacom
-    - hacom cầu giấy ở đâu
-    - hacom vinh ở đâu
-    - mua hàng tại của hàng haco nào gần nhất
-    - hacom gần nhất
-    - vị trí của bạn
-    - bạn ở đâu
-    - địa chỉ của bạn
-    - ở quận nào
-    - phường nào
-    - tỉnh nào
-    - phường xã quận huyện nào
-    - Hacom hà nội, vinh, thanh hóa, hà nam, TP HCM
-    - Hacom hà nội, cầu giấy, thanh trì, đông anh, hđ, HBT
-    - địa chỉ
-    - ở đâu
+  - intent: location
+    examples: |
+      - [hacom có ở đâu?]{"entity": "location"}
+      - [vị trí của hàng hacom]{"entity": "location"}
+      - [chi nhánh hacom]{"entity": "location"}
+      - [địa chỉ hacom]{"entity": "location"}
+      - [vị trí hacom]{"entity": "location"}
+      - [hacom cầu giấy ở đâu]{"entity": "location"}
+      - [hacom vinh ở đâu]{"entity": "location"}
+      - mua hàng tại của hàng [hacom nào gần nhất]{"entity": "location"}
+      - [hacom gần nhất]{"entity": "location"}
+      - [vị trí của bạn]{"entity": "location"}
+      - [bạn ở đâu]{"entity": "location"}
+      - [địa chỉ của bạn]{"entity": "location"}
+      - [ở quận nào]{"entity": "location"}
+      - [phường nào]{"entity": "location"}
+      - [tỉnh nào]{"entity": "location"}
+      - [phường xã quận huyện nào]{"entity": "location"}
+      - [Hacom hà nội, vinh, thanh hóa, hà nam, TP HCM]{"entity": "location"}
+      - [Hacom hà nội, cầu giấy, thanh trì, đông anh, hđ, HBT]{"entity": "location"}
+      - [địa chỉ]{"entity": "location"}
+      - [ở đâu]{"entity": "location"}
 
-- intent: ve_sinh
-  examples: |
-    - Vệ sinh máy tính với thay nước tản nhiệt tại nhà
-    - Chương trình vệ sinh máy miễn phí
-    - vệ sinh laptop
-    - lau chùi laptop
-    - làm sạch laptop
-    - vs laptop
-    - hút bụi laptop
-    - làm mới laptop
-    - bảo trì laptop
-    - vệ sinh
+  - intent: ve_sinh
+    examples: | 
+      - [Vệ sinh]{"entity": "vesinh"} máy tính với thay nước tản nhiệt tại nhà
+      - Chương trình [vệ sinh] máy miễn phí{"entity": "vesinh"}
+      - [vệ sinh laptop]{"entity": "vesinh"}
+      - [lau chùi laptop]{"entity": "vesinh"}
+      - [làm sạch laptop]{"entity": "vesinh"}
+      - [vs laptop]{"entity": "vesinh"}
+      - [hút bụi laptop]{"entity": "vesinh"}
+      - [làm mới laptop]{"entity": "vesinh"}
+      - [vệ sinh]{"entity": "vesinh"}
 
-# examples: |
-#   - 'Hacom có hỗ trợ dán chống xước không '
+  - intent: contact_cskh
+    examples: |
+      - [Chăm sóc khách hàng]{"entity": "contactcskh"}
+      - Liên hệ dịch vụ [chăm sóc khách hàng]{"entity": "contactcskh"}
+      - [Tư vấn bán hàng]{"entity": "contact_skh"}
+      - [chăm sóc khách hàng]{"entity": "contactcskh"}
+      - [cskh]{"entity": "contactcskh"}
 
-- intent: contact_cskh
-  # intent: ve_sinh_chong_xuoc  
-  examples: |
-    - Chăm sóc khách hàng
-    - Liên hệ dịch vụ chăm sóc khách hàng
-    - Tư vấn bán hàng
-    - chăm sóc khách hàng
-    - cskh
+  - intent: kiem_tra
+    examples: |
+      - [Tư vấn lắp thêm ram]{"entity": "kiemtra"}
+      - [Thay tản nhiệt khi thành tản nhiệt nước được không]{"entity": "kiemtra"}
+      - [Vừa sạc vừa dùng máy tính]{"entity": "kiemtra"}
+      - [Bên mình có sửa bàn phím cơ không]{"entity": "kiemtra"}
+      - [Thay tấm nền mất bao lâu và chi phí như thế nào]{"entity": "kiemtra"}
+      - [Bị hỏng tấm nền]{"entity": "kiemtra"}
+      - [Ấn nút nguồn mãi máy mới lên]{"entity": "kiemtra"}
+      - [Máy tính tôi bị lỗi]{"entity": "kiemtra"}
+      - [Cài đặt lại cổng kết nối]{"entity": "kiemtra"}
+      - [Hỗ trợ Kỹ thuật]{"entity": "kiemtra"}
+      - [Tôi đang dùng thì nó báo lỗi rồi nó tắt màn hình]{"entity": "kiemtra"}
+      - [Laptop của tôi báo lỗi rồi tắt màn hình nhưng quạt vẫn chạy]{"entity": "kiemtra"}
+      - [tôi cần kiểm tra máy tính]{"entity": "kiemtra"}
+      - [kiểm tra]{"entity": "kiemtra"}
+      - [Lỗi máy tính]{"entity": "kiemtra"}
+      - [Sửa máy tính]{"entity": "kiemtra"}
+      - [sửa máy]{"entity": "kiemtra"}
 
-- intent: kiem_tra
-  examples: |
-    - Tư vấn lắp thêm ram
-    - Thay tản nhiệt khi thành tản nhiệt nước được không
-    - Vừa sạc vừa dùng máy tính
-    - Bên mình có sửa bàn phím cơ không
-    - Thay tấm nền mất bao lâu và chi phí như thế nào
-    - Bị hỏng tấm nền
-    - Ấn nút nguồn mãi máy mới lên
-    - Máy tính tôi bị lỗi
-    - Cài đặt lại cổng kết nối
-    - Hỗ trợ Kỹ thuật
-    - Tôi đang dùng thì nó báo lỗi rồi nó tắt màn hình
-    - Laptop của tôi báo lỗi rồi tắt màn hình nhưng quạt vẫn chạy
-    - tôi cần kiểm tra máy tính
-    - kiểm tra
-    - Lỗi máy tính
-    - Sửa máy tính
-    - sửa máy
+  - intent: lap_dat
+    examples: |
+      - Có tính phí [lắp đặt]{"entity": "lapdat"} không
+      - Hàng về có được xem [lắp đặt]{"entity": "lapdat"} không
+      - [lắp đặt]{"entity": "lapdat"}
+      - [lắp đặt tận nhà]{"entity": "lapdat"}
 
-- intent: lap_dat
-  examples: |
-    - Có tính phí lắp đặt không
-    - Hàng về có được xem lắp đặt không
-    - lắp đặt
-    - lắp đặt tận nhà
+  - intent: thoi_gian_giao_van
+    examples: |
+      - [Thời gian giao hàng] là bao lâu{"entity": "giaovan"}
+      - [thơi gian giao hàng]{"entity": "giaovan"}
+      - [giao hàng]{"entity": "giaovan"}
+      - [đơn hàng giao] trong bao lâu{"entity": "giaovan"}
+      - [giao hàng] như thế nào{"entity": "giaovan"}
 
-- intent: thoi_gian_giao_van
-  examples: |
-    - Thời gian giao hàng là bao lâu
-    - thơi gian giao hàng
-    - giao hàng
-    - đơn hàng giao trong bao lâu
-    - giao hàng như thế nào
+  - intent: dia_chi_ship 
+    examples: |
+      - [Tôi mong muốn có hàng trong sáng mai]{"entity": "diachiship"}
+      - Nếu mua sản phẩm có đc [hỗ trợ ship]{"entity": "diachiship"} không
+      - [Lấy tại cửa hàng]{"entity": "diachiship"} không ship
+      - [Địa chỉ của tôi]{"entity": "diachiship"}
+      - [Ship tận nhà]{"entity": "diachiship"} tại Hà Nội có miễn phí không 
+      - [địa chỉ ship hàng]{"entity": "diachiship"}
+      - [địa chỉ ship]{"entity": "diachiship"}
 
-- intent: dia_chi_ship
-  examples: |
-    - Tôi mong muốn có hàng trong sáng mai
-    - Nếu mua sản phẩm có đc hỗ trợ ship không
-    - Lấy tại cửa hàng không ship
-    - Địa chỉ của tôi
-    - Ship tận nhà tại Hà Nội có miễn phí không
-    - địa chỉ ship hàng
-    - địa chỉ ship
+  - intent: doi_tra  
+    examples: |
+      - [Hỗ trợ đổi hàng]{"entity": "doitra"}
+      - [đổi trả]{"entity": "doitra"}
+      - tôi muốn [đổi trả hàng]{"entity": "doitra"}
+      - [đổi hàng]{"entity": "doitra"}
+      - [trả hàng]{"entity": "doitra"}
+      - hàng lỗi muốn [đổi hàng]{"entity": "doitra"}
+      - [hàng lỗi]{"entity": "doitra"} muốn đổi hàng như thế nào
+      - [đổi hàng]{"entity": "doitra"} như thế nào
+      - thủ tục [đổi hàng]{"entity": "doitra"}
 
-- intent: doi_tra
-  examples: |
-    - Hỗ trợ đổi hàng
-    - đổi trả
-    - tôi muốn đổi trả hàng
-    - đổi hàng
-    - trả hàng
-    - hàng lỗi muốn đổi hàng
-    - hàng lỗi muốn đổi hàng như thế nào
-    - đổi hàng như thế nào
-    - thủ tục đổi hàng
+  - intent: bao_hanh  
+    examples: |
+      - Kiểm tra thông tin [bảo hành]{"entity": "baohanh"}
+      - Thời hạn [bảo hành]{"entity": "baohanh"} còn không
+      - Chương trình bán sản phẩm mới và vẫn [bảo hành]{"entity": "baohanh"} đầy đủ đúng không]
+      - [Bảo hành bao lâu]{"entity": "baohanh"}
+      - Hết [bảo hành]{"entity": "baohanh"} mà lại bị hỏng tấm nền
+      - [bảo hành sp]{"entity": "baohanh"}
+      - [bảo hành]{"entity": "baohanh"} thế nào
+      - [bảo hành]{"entity": "baohanh"}
+      - [bh chính hãng]{"entity": "baohanh"}
+      - [bảo hành chính hãng]{"entity": "baohanh"}
+      - [bảo hành]{"entity": "baohanh"} theo chế độ nào
+      - [chế độ bảo hành]{"entity": "baohanh"}
+      - [chế độ bh]{"entity": "baohanh"}
+      - [bảo hành]{"entity": "baohanh"}
 
-- intent: bao_hanh
-  examples: |
-    - Kiểm tra thông tin bảo hành
-    - Thời hạn bảo hành còn không
-    - Chương trình bán sản phẩm mới và vẫn bảo hành đầy đủ đúng không?
-    - Bảo hành bao lâu
-    - Hết bảo hành và lại bị hỏng tấm nền
-    - bảo hành sp
-    - bảo hành thế nào
-    - bảo hành Hacom
-    - bh chính hãng
-    - bảo hành chính hãng
-    - bảo hành theo chế độ nào
-    - chế độ bảo hành
-    - chế độ bh
-    - bảo hành
+  - intent: goodbye  
+    examples: |
+      - [Cảm ơn]{"entity": "goodbye"}
+      - [Chúc bạn một buổi tối vui vẻ]{"entity": "goodbye"}
+      - [bye]{"entity": "goodbye"}
+      - [goodbye]{"entity": "goodbye"}
+      - [g9]{"entity": "goodbye"}
+      - [good night]{"entity": "goodbye"}
+      - [bye bye]{"entity": "goodbye"}
+      - [tạm biệt]{"entity": "goodbye"}
+      - [Hẹn gặp lại]{"entity": "goodbye"}
+      - [Ngủ ngon]{"entity": "goodbye"}
+      - [Chúc ngủ ngon]{"entity": "goodbye"}
+      - [Nói chuyện sau nhé]{"entity": "goodbye"}
+      - [Tôi sẽ liên hệ sau]{"entity": "goodbye"}
+      - [tạm biệt em]{"entity": "goodbye"}
+      - [tạm biệt bot nhá]{"entity": "goodbye"}
+      - [quit]{"entity": "goodbye"}
+      - [tam biet hacom]{"entity": "goodbye"}
+      - [tạm biệt hacom]{"entity": "goodbye"}
+      - [Bye Hacom]{"entity": "goodbye"}
+      - [by hacom]{"entity": "goodbye"}
+      - [bb]{"entity": "goodbye"}
 
-- intent: goodbye
-  examples: |
-    - Cảm ơn
-    - Chúc bạn một buổi tối vui vẻ
-    - bye
-    - goodbye
-    - g9
-    - good night
-    - bye bye
-    - tạm biệt
-    - Hẹn gặp lại
-    - Ngủ ngon
-    - Chúc ngủ ngon
-    - Nói chuyện sau nhé
-    - Tôi sẽ liên hệ sau
-    - tạm biệt em
-    - tạm biệt bot nhá
-    - quit
-    - tam biet hacom
-    - tạm biệt hacom
-    - Bye Hacom
-    - by hacom
-    - bb
+  - intent: phan_mem_windows 
+    examples: |
+      - [Windows bản quyền]{"entity": "phanmemwindows"}
+      - [windows]{"entity": "phanmemwindows"}
+      - [cài windows]{"entity": "phanmemwindows"}
+      - [win bản quyền] giá sao ạ{"entity": "phanmemwindows"}
 
-- intent: phan_mem_windows
-  examples: |
-    - Windows bản quyền
-    - windows
-    - cài windows
+  - intent: phan_mem_windows_gia
+    examples: |
+      - [giá]{"entity": "phanmemwindowsgia"} sao ạ
+      - [giá]{"entity": "phanmemwindowsgia"} cả như thế nào
+      - [giá windows]{"entity": "phanmemwindowsgia"} bản quyền
+  - intent: phan_mem  
+    examples: |
+      - Bây giờ tôi đang muốn dùng [microsoft]{"entity": "phanmem"}
+      - Bản cài sẵn trong máy bắt buộc mình phải có tài khoản [microsoft]{"entity": "phanmem"}
+      - [phần mềm]{"entity": "phanmem"}
+      - cài [phần mềm]{"entity": "phanmem"}
 
-- intent: phan_mem
-  examples: |
-    - Bây giờ tôi đang muốn dùng microsoft
-    - Bản cài sẵn trong máy bắt buộc mình phải có tài khoản microsoft
-    - phần mềm
-    - cài phần mềm
+  - intent: ho_tro_khac  
+    examples: |
+      - [Hỗ trợ khác]{"entity": "hotrokhac"}
+      - [hỗ trợ khác]{"entity": "hotrokhac"}
 
-- intent: ho_tro_khac
-  examples: |
-    - Tra cứu giao hàng/ Hỗ trợ khác
-    - Hỗ trợ khác
-    - hỗ trợ khác
+  - intent: tra_gop  
+    examples: |
+      - [Trả góp]{"entity":"tragop"} theo phương thức nào khác không
+      - [Trả góp] qua thẻ visa{"entity":"tragop"}
+      - Có [trả góp]{"entity":"tragop"} được không
+      - Có nhu cầu [trả góp]{"entity":"tragop"}
+      - [trả góp]{"entity":"tragop"}
+      - tôi muốn [trả góp]{"entity":"tragop"}
+      - [trả góp]{"entity":"tragop"} như thế nào
+      - [trả góp]{"entity":"tragop"} là gì
+      - [trả góp]{"entity":"tragop"} lãi suất như thế nào
 
-- intent: tra_gop
-  examples: |
-    - Trả góp theo phương thức nào khác không
-    - Trả góp qua thẻ visa
-    - Có trả góp được không
-    - Có nhu cầu trả góp
-    - Minh chứng thu nhập
-    - trả góp
-    - tôi muốn trả góp
-    - trả góp như thế nào
-    - trả góp là gì
-    - trả góp lãi suất như thế nào
+  - intent: khuyen_mai  
+    examples: |
+      - Tôi muốn xem chương trình [khuyến mãi]{"entity":"khuyenmai"}
+      - Hiện nay có những chương trình [khuyến mãi] nào{"entity":"khuyenmai"}
+      - [khuyến mãi]{"entity":"khuyenmai"}
+      - chương trình [khuyến mãi]{"entity":"khuyenmai"}
 
-- intent: khuyen_mai
-  examples: |
-    - Tôi muốn xem chương trình khuyến mãi
-    - Hiện nay có những chương trình khuyến mãi nào
-    - https://hacom.vn/chuong-trinh-khuyen-mai-mua-card-man-hinh-nvidia-tang-ghe-cao-cap
-    - khuyến mãi
-    - chương trình khuyến mãi
+  - intent: ve_sinh_server
+    examples: |
+      - [vệ sinh server]{"entity":"vesinhserver"}
+      - [vệ sinh máy chủ]{"entity":"vesinhserver"}
+      - [vs server]{"entity":"vesinhserver"}
+      - [vs may chu]{"entity":"vesinhserver"}
+      - [vs máy chủ]{"entity":"vesinhserver"}
 
-- intent: ve_sinh_server
-  examples: |
-    - vệ sinh server
-    - vệ sinh máy chủ
-    - vs server
-    - vs may chu
-    - vs máy chủ
+  - intent: ve_sinh_mtvp
+    examples: |
+      - [vệ sinh máy tính] desktop{"entity":"vesinhmtvp"}
+      - [vs máy tính vp]{"entity":"vesinhmtvp"}
+      - [vệ sinh máy tính văn phòng]{"entity":"vesinhmtvp"}
+      - [vs máy tính văn phòng]{"entity":"vesinhmtvp"}
+      - [vệ sinh mt vp]{"entity":"vesinhmtvp"}
+      - [vệ sinh desktop]{"entity":"vesinhmtvp"}
+      - [làm sạch mt]{"entity":"vesinhmtvp"}
+      - [vệ sinh máy văn phòng]{"entity":"vesinhmtvp"}
+      - [vệ sinh máy vp]{"entity":"vesinhmtvp"}
 
-- intent: ve_sinh_mtvp
-  examples: |
-    - vệ sinh máy tính desktop
-    - vs máy tính vp
-    - vệ sinh máy tính văn phòng
-    - vs máy tính văn phòng
-    - vệ sinh mt vp
-    - vệ sinh desktop
-    - làm sạch mt
-    - vệ sinh máy văn phòng
-    - vệ sinh máy vp
+  - intent: san_pham
+    examples: |
+      - [sản phẩm] giảm giá{"entity":"sanpham"}
+      - thông tin [sp]{"entity":"sanpham"}
+      - thông tin [sản phẩm mới]{"entity":"sanpham"}
+      - [sản phẩm xả tồn]{"entity":"sanpham"}
+      - [hotdeal]{"entity":"sanpham"}
+      - [flash sale]{"entity":"sanpham"}
+      - [sp] top sale{"entity":"sanpham"}
+      - [topsale]{"entity":"sanpham"}
+      - [bán chạy]{"entity":"sanpham"}
+      - [bán chạy] nhất trong tháng{"entity":"sanpham"}
+      - xem thông tin [sp]{"entity":"sanpham"}
+      - chi tiết thông tin [sản phẩm]{"entity":"sanpham"}
+      - chi tiết [cấu hình]
+      - [sản phẩm] hết hàng{"entity":"sanpham"}
+      - [sản phẩm] còn hàng không{"entity":"sanpham"}
+      - [sp] này còn không{"entity":"sanpham"}
+      - [sp] này còn hàng không{"entity":"sanpham"}
+      - [còn hàng]{"entity":"sanpham"}
 
-- intent: san_pham
-  examples: |
-    - sản phẩm giảm giá
-    - thông tin sp
-    - thông tin sản phẩm mới
-    - sản phẩm xả tồn
-    - hotdeal
-    - flash sale
-    - sp top sale
-    - topsale
-    - bán chạy
-    - bán chạy nhất trong tháng
-    - xem thông tin sp
-    - chi tiết thông tin sản phầm
-    - chi tiết cấu hình
-    - sản phầm hết hàng
-    - sản phẩm còn hàng k
-    - sp này còn không
-    - sp này còn hàng k
-    - còn hàng
+  - intent: greet
+    examples: |
+      - [hey???]{"entity":"greet"}
+      - [hello]{"entity":"greet"}
+      - [hi]{"entity":"greet"}
+      - [chào]{"entity":"greet"}
+      - [xin chào]{"entity":"greet"}
+      - [chào bot]{"entity":"greet"}
+      - [có ai ở đó không]{"entity":"greet"}
+      - [tôi cần hỗ trợ]{"entity":"greet"}
+      - [Chào bạn]{"entity":"greet"}
+      - [Chào anh]{"entity":"greet"}
+      - [Chào chị]{"entity":"greet"}
+      - [Chào buổi sáng]{"entity":"greet"}
+      - [Có đó không]{"entity":"greet"}
+      - [Rãnh không]{"entity":"greet"}
+      - [Ê]{"entity":"greet"}
+      - [Hú]{"entity":"greet"}
+      - [chào em]{"entity":"greet"}
+      - [em ơi, cho anh hỏi]{"entity":"greet"}
+      - [bot ơi]{"entity":"greet"}
+      - [cho mình hỏi chút]{"entity":"greet"}
+      - [hacom]{"entity":"greet"}
+      - [chào hacom]{"entity":"greet"}
+      - [Chào Hacom]{"entity":"greet"}
+      - [chao HACOM]{"entity":"greet"}
+      - [hi hacom]{"entity":"greet"}
+      - [hello hacom]{"entity":"greet"}
+      - [morning hacom]{"entity":"greet"}
+      - [chào hanoi computer]{"entity":"greet"}
+      - [hi hanoi computer]{"entity":"greet"}
+      - [hi hanoicomputer]{"entity":"greet"}
+      - [Xin chào admin]{"entity":"greet"}
+      - [Chào]{"entity":"greet"}
+      - [Cảm ơn]{"entity":"greet"}
+      - [Gửi đơn qua email]{"entity":"greet"}
+      - [Đặt cọc sản phẩm]{"entity":"greet"}
+      - [Để tôi tìm sản phẩm khác]{"entity":"greet"}
+      - [Tư vấn thêm cho tôi.]{"entity":"greet"}
+      - [Shop ơi cho em hỏi]{"entity":"greet"}
+      - [ALO]{"entity":"greet"}
+      - [Tư vấn bán hàng]{"entity":"greet"}
+      - [Còn hàng không]{"entity":"greet"}
+      - [Chào bạn]{"entity":"greet"}
+      - [Dạ mình cảm ơn ạ]{"entity":"greet"}
+      - [Bạn cho mình hỏi chút với]{"entity":"greet"}
+      - [Chào bạn]{"entity":"greet"}
 
-- intent: greet
-  examples: |
-    - hey???
-    - hello
-    - hi
-    - chào
-    - xin chào
-    - chào bot
-    - có ai ở đó không
-    - tôi cần hỗ trợ
-    - Chào bạn
-    - Chào anh
-    - Chào chị
-    - Chào buổi sáng
-    - Có đó không
-    - Rãnh không
-    - Ê
-    - Hú
-    - chào em
-    - em ơi, cho anh hỏi
-    - bot ơi
-    - cho mình hỏi chút
-    - hacom
-    - chào hacom
-    - Chào Hacom
-    - chao HACOM
-    - hi hacom
-    - hello hacom
-    - morning hacom
-    - chào hanoi computer
-    - hi hanoi computer
-    - hi hanoicomputer
-    - Xin chào admin
-    - Chào
-    - Cảm ơn
-    - Gửi đơn qua email
-    - Đặt cọc sản phẩm
-    - Để tôi tìm sản phẩm khác
-    - Tư vấn thêm cho tôi.
-    - Shop ơi cho em hỏi
-    - ALO
-    - Tư vấn bán hàng
-    - Còn hàng không
-    - Chào bạn
-    - Dạ mình cảm ơn ạ
-    - Bạn cho mình hỏi chút với
-    - Chào bạn
+  - intent: happy
+    examples: |
+      - Thật [hạnh phúc]{"entity":"happy"}
+      - [Tuyệt vời]{"entity":"happy"}
+      - [Quá tuyệt]{"entity":"happy"}
 
-- intent: happy
-  examples: |
-    - Thật hạnh phúc
-    - Tuyệt vời
-    - Quá tuyệt
+  - intent: iamabot
+    examples: |
+      - bạn là một con [bot]{"entity":"iamabot"} ?
+      - bạn là [human]{"entity":"iamabot"} ?
+      - bạn là [người]{"entity":"iamabot"}
+      - [người] chat{"entity":"iamabot"}
+      - [bot] chat{"entity":"iamabot"}
+      - am I talking to a [bot]{"entity":"iamabot"}
+      - am I talking to a [human]{"entity":"iamabot"}
+      - ai đang [nói chuyện]{"entity":"iamabot"}
+      - ai đang [chat]{"entity":"iamabot"}
+      - [bạn là ai]{"entity":"iamabot"}
+      - [có phải nhân viên không]{"entity":"iamabot"}
+      - [có phải nhân viên chăm sóc khách hàng không]{"entity":"iamabot"}
+      - [có phải nhân viên]{"entity":"iamabot"}
 
-- intent: iamabot
-  examples: |
-    - bạn là một con bot?
-    - bạn là human?
-    - bạn là người
-    - người chat
-    - bot chat
-    - am I talking to a bot?
-    - am I talking to a human?
-    - ai đang nói chuyện
-    - ai đang chat
-    - bạn là ai
-    - có phải nhân viên không
-    - có phải nhân viên chăm sóc khách hàng không
-    - có phải nhân viên
+  - intent: bao_loi
+    examples: |
+      - Máy tính của tôi bị [lỗi] tôi phải làm gì{"entity":"baoloi"}
+      - máy tôi lại [bị treo] r{"entity":"baoloi"}
+      - làm sao đây máy tôi [không khởi động được]{"entity":"baoloi"}
+      - tai nghe tôi [bị rè]{"entity":"baoloi"}
+      - [lỗi]{"entity":"baoloi"}
+      - [báo lỗi]{"entity":"baoloi"}
+      - [lỗi màn hình]{"entity":"baoloi"}
+      - [màn hình bị lỗi]{"entity":"baoloi"}
 
-- intent: bao_loi
-  examples: |
-    - Máy tính của tôi bị lỗi tôi phải làm gì
-    - máy tôi lại bị treo r
-    - làm sao đây máy tôi không khởi động được
-    - tai nghe tôi bị rè
-    - lỗi
-    - báo lỗi
+  - intent: mua_lai_ssd_cu 
+    examples: |
+      - Dịch vụ [nâng cấp ssd]{"entity":"mualaissdcu"}
+      - Hacom sẽ thu lại [ssd] của tôi và lắp một chiếc ssd khác tốt hơn phải không{"entity":"mualaissdcu"}
+      - [mua lại ssd cu]{"entity":"mualaissdcu"}
+      - [mua lại ssd]{"entity":"mualaissdcu"}
+      - [ssd]{"entity":"mualaissdcu"}
+      - [mua ssd]{"entity":"mualaissdcu"}
 
-- intent: mua_lai_ssd_cu
-  examples: |
-    - Dịch vụ nâng cấp ssd
-    - Hacom sẽ thu lại ssd của tôi và lắp một chiếc ssd khác tốt hơn phải không
-    - mua lại ssd cu
-    - mua lại ssd
-    - ssd
-    - mua ssd
+  - intent: lay_hoa_don
+    examples: |
+      - Tôi muốn lấy [hóa đơn mua hàng]{"entity":"layhoadon"}
+      - [Hóa đơn]{"entity":"lay_hoa_don"}
+      - [hóa đơn]{"entity":"lay_hoa_don"}
+      - [hóa đơn] của tôi{"entity":"lay_hoa_don"}
 
-- intent: lay_hoa_don
-  examples: |
-    - Tôi muốn lấy hóa đơn mua hàng
-    - Hóa đơn
-    - hóa đơn
-    - hóa đơn của tôi
+  - intent: contact_nvkd
+    examples: |
+      - [Nhân viên kinh doanh]{"entity":"contactnvkd"}
+      - Kết nối đến [nhân viên kinh doanh]{"entity":"contactnvkd"}
+      - [kinh doanh]{"entity":"contactnvkd"}
+      - [nvkd]{"entity":"contactnvkd"}
 
-- intent: contact_nvkd
-  examples: |
-    - Nhân viên kinh doanh
-    - Kết nối đến nhân viên kinh doanh
-    - kinh doanh
-    - nvkd
+  - intent: dat_lai_mk
+    examples: |
+      - Tôi muốn đặt lại [mật khẩu]{"entity":"datlaimk"}
+      - [mật khẩu]{"entity":"datlaimk"}
+      - đặt lại [mật khẩu] như thế nào{"entity":"datlaimk"}
+      - [mật khẩu] là gì{"entity":"datlaimk"}                                   
+      - [mật khẩu] đặt lại{"entity":"datlaimk"}
 
-- intent: dat_lai_mk
-  examples: |
-    - Tôi muốn đặt lại mật khẩu
-    - mật khẩu
-    - đặt lại mật khẩu như thế nào
-    - mật khẩu là gì
-    - mật khẩu đặt lại
+  - intent: theo_doi_don
+    examples: |
+      - [theo dõi đơn]{"entity":"theodoidon"}
+      - [đơn hàng] của tôi{"entity":"theodoidon"}
+      - theo dõi [đơn hàng]{"entity":"theodoidon"} của tôi
+      - đơn hàng cần [theo dõi]{"entity":"theodoidon"}
 
-- intent: theo_doi_don
-  examples: |
-    - theo dõi đơn
-    - đơn hàng của tôi
-    - theo dõi đơn hàng của tôi
-    - đơn hàng cần theo dõi
+  - intent: gioi_thieu
+    examples: |
+      - [giới thiệu] HACOM{"entity":"gioithieu"}
+      - [hacom]{"entity":"gioithieu"} là gì
+      - [giới thiệu]{"entity":"gioithieu"}
+      - Hacom [thành lập]{"entity":"gioithieu"} như thế nào
 
+  - intent: tong_dai
+    examples: |
+      - [tổng đài]{"entity":"tongdai"}
+      - liên hệ [tổng đài]{"entity":"tongdai"}
+      - số điện thoại [tổng đài]{"entity":"tongdai"}
+      - gọi [tổng đài]{"entity":"tongdai"} hộ tôi
+      - [liên hệ]{"entity":"tongdai"}
+      - xin [sdt]{"entity":"tongdai"}
+      - [số điện thoại] là gì{"entity":"tongdai"}
+      - [sdt] là gì{"entity":"tongdai"}
+
+  - intent: product_code
+    examples: |
+      - Mã sản phẩm của tôi là [LTAC776](productcode).
+      - Mã sản phẩm là [LTAU825](productcode).
+      - [LTDL465](productcode)
+      - [LTDL460](productcode)
+      - [LTDL470](productcode)
+      - [LTDL434](productcode)
+      - [LTDL475](productcode)
+      - [LTDL472](productcode)
+      - [LAHP180](productcode)
+      - [LAHP155](productcode)
+      - [LAHP132](productcode)
+      - [LAHP198](productcode)
+      - [LTMS531](productcode)
+      - [LTMS524](productcode)
+      - [LTMS504](productcode)
+      - [LTLE952](productcode)
+      - [LTLE954](productcode)
+      - [TUID225](productcode)
+      - [LTAU825](productcode)
+      - [HBCT820](productcode)
+      - [TUID247](productcode)
+      - [PCGM692](productcode)
+      - [PCGM626](productcode)
+      - [FAND082](productcode)
+      - [MOAS276](productcode)
+      - [MOVI182](productcode)
+      - [MOVS004](productcode)
+      - [MOAS249](productcode)
+      - [INHP285](productcode)
+      - [INBR082](productcode)
+      - [INHP280](productcode)
+      - [WSDE144](productcode)

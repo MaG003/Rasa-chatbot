@@ -41,6 +41,15 @@
     opacity: 1;
 }
 
+.btn-img:hover{
+    background-color: darkgrey;
+}
+.view-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 .chat-popup {
     font-family: Arial, Helvetica, sans-serif;
     display: none;

@@ -1,223 +1,674 @@
 version: "3.1"
 
 intents:
-- huy_hd
-- ve_sinh
-- kiem_tra
-# - san_pham_tb
-- san_pham
-- contact_cskh
-- doi_tra
-- bao_loi
-- mua_lai_ssd_cu
-- lap_dat
-- thoi_gian_giao_van
-- bao_hanh
-- lay_hoa_don
-- contact_nvkd
-- tra_gop
-- phan_mem
-- phan_mem_windows
-- dia_chi_ship
-- dat_lai_mk
-- theo_doi_don
-- goodbye
-- dat_hang
-- khuyen_mai
-- san_pham_laptop
-- san_pham_ram
-- san_pham_man_hinh
-- san_pham_PC
-- san_pham_card
-- san_pham_game
-- san_pham_camera
-- san_pham_webcam
-- san_pham_wifi
-- san_pham_ghe
-- san_pham_o_cung
-- san_pham_case
-- san_pham_linh_kien
-- san_pham_tai_nghe
-- san_pham_chuot
-- ve_sinh_mtvp
-- ve_sinh_server
-- iamabot
-- happy
-- greet
-- location
-- phi_giao_hang
-- ho_tro_khac
+  - huy_hd
+  - ve_sinh
+  - kiem_tra
+  # - san_pham_tb
+  - san_pham
+  - contact_cskh
+  - doi_tra
+  - bao_loi
+  - mua_lai_ssd_cu  
+  - lap_dat
+  - thoi_gian_giao_van
+  - bao_hanh
+  - lay_hoa_don
+  - contact_nvkd
+  - tra_gop
+  - phan_mem
+  - phan_mem_windows
+  - phan_mem_windows_gia
+  - dia_chi_ship
+  - dat_lai_mk
+  - theo_doi_don
+  - goodbye
+  - dat_hang
+  - khuyen_mai
+  - san_pham_laptop
+  - san_pham_ram
+  - san_pham_man_hinh
+  - san_pham_PC
+  - san_pham_card
+  - san_pham_game
+  - san_pham_camera
+  - san_pham_webcam
+  - san_pham_wifi
+  - san_pham_ghe
+  - san_pham_o_cung
+  - san_pham_case
+  - san_pham_linh_kien
+  - san_pham_tai_nghe
+  - san_pham_chuot
+  - ve_sinh_mtvp
+  - ve_sinh_server
+  - iamabot
+  - happy
+  - greet
+  - location
+  - phi_giao_hang
+  - ho_tro_khac
+  - gioi_thieu
+  - tong_dai
+  - product_info
+  - product_not_found
 
+entities: 
+  - huyhoadon
+  - phigiaohang
+  - sanphamchuot
+  - sanphamlaptop
+  - sanphamram
+  - sanphamocung
+  - sanphammanhinh
+  - samphamcamera
+  - sanphamcard
+  - sanphamPC
+  - sanphamgame
+  - sanphamtainghe
+  - sanphamcase
+  - sanphamwebcam
+  - sanphamwifi
+  - sanphamlinhkien
+  - sanphamghe
+  - location
+  - vesinh
+  - contactcskh
+  - kiemtra
+  - lapdat
+  - giaovan
+  - diachiship
+  - doitra
+  - baohanh
+  - goodbye
+  - phanmemwindows
+  - phanmemwindowsgia
+  - phanmem
+  - hotrokhac
+  - tragop
+  - khuyenmai
+  - vesinhserver
+  - vesinhmtvp
+  - sanpham
+  - greet
+  - happy
+  - iamabot
+  - baoloi
+  - mualaissdcu
+  - layhoadon   
+  - contactnvkd
+  - datlaimk
+  - theodoidon
+  - gioithieu
+  - tongdai
+  - productcode
+ 
+actions:
+  - action_extract_product_code
+  - action_get_product_info
 
+slots:
+
+  huyhoadon:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: huyhoadon
+
+  phigiaohang:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: phigiaohang
+
+  sanphamlaptop:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamlaptop
+
+  sanphamchuot:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamchuot
+
+  sanphamram:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamram
+
+  sanphamocung:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamocung
+
+  sanphammanhinh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphammanhinh
+
+  samphamcamera:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: samphamcamera
+
+  sanphamcard:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamcard
+
+  sanphamPC:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamPC
+
+  sanphamgame:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamgame
+
+  sanphamtainghe:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamtainghe
+
+  sanphamcase:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamcase
+
+  sanphamwebcam:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamwebcam
+
+  sanphamwifi:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamwifi
+
+  sanphamlinhkien:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamlinhkien
+
+  sanphamghe:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanphamghe
+
+  location:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location
+
+  vesinh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vesinh
+
+  contactcskh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: contactcskh
+
+  kiemtra:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kiemtra
+
+  lapdat:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: lapdat
+
+  giaovan:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: giaovan
+
+  diachiship:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: diachiship
+
+  doitra:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: doitra
+
+  baohanh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: baohanh
+
+  goodbye:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: goodbye
+
+  phanmemwindows:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: phanmemwindows
+
+  phanmemwindowsgia:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: phanmemwindowsgia
+
+  phanmem:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: phanmem
+
+  hotrokhac:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: hotrokhac
+
+  tragop:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: tragop
+
+  khuyenmai:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: khuyenmai
+
+  vesinhserver:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vesinhserver
+
+  vesinhmtvp:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vesinhmtvp
+
+  sanpham:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sanpham
+
+  greet:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: greet
+
+  happy:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: happy
+
+  iamabot:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: iamabot
+
+  baoloi:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: baoloi
+
+  mualaissdcu:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: mualaissdcu
+
+  layhoadon:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: layhoadon
+
+  contactnvkd:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: contactnvkd
+
+  datlaimk:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: datlaimk
+
+  theodoidon:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: theodoidon
+
+  gioithieu:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: gioithieu
+
+  tongdai:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: tongdai
+
+  productcode:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: productcode
+
+  product_id:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_id
+    
+  product_sku:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_sku
+
+  product_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_name
+    
+  product_price:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_price
+
+  product_brand:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_brand
+
+  product_url:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_url
+
+  market_price:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: market_price
+
+  warranty:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: warranty
+    
+  shipping:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: shipping
+    
+  description:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: description
+
+  
 responses:
   utter_bao_hanh:
-  - text: Bạn vui lòng truy cập https://hacom.vn/chinh-sach-bao-hanh để biết thêm thông tin về chính sách cũng như điều kiện bảo hành
-  - text: 'HACOM chỉ nhận bảo hành các sản phẩm chưa qua sửa chữa, các hỏng hóc do quá trình sử dụng sẽ không được bảo hành, thông tin chi tiết xem tại: https://hacom.vn/chinh-sach-bao-hanh'
-  - text: Bạn vui lòng cung cấp mã serial number và thông tin của sản phẩm để bên mình hỗ trợ tra cứu
-
+    - text: Bạn vui lòng truy cập https://hacom.vn/chinh-sach-bao-hanh để biết thêm thông tin về chính sách cũng như điều kiện {baohanh}
+    - text: 'HACOM chỉ nhận {baohanh} các sản phẩm chưa qua sửa chữa, các hỏng hóc do quá trình sử dụng sẽ không được bảo hành, thông tin chi tiết xem tại: https://hacom.vn/chinh-sach-bao-hanh'
+    - text: Bạn vui lòng cung cấp mã serial number và thông tin của sản phẩm để bên mình hỗ trợ tra cứu
+  
   utter_bao_loi:
-  - text: Không biết máy của bạn bị lỗi như thế nào ạ! Bạn miêu tả kĩ hơn được không?
-  - text: Nếu máy bị treo, đơ, vui lòng bấm giữ nút nguồn cho đến khi máy tắt hẳn rồi tiến hành bật lại máy!
-
+    - text: Không biết máy của bạn bị lỗi như thế nào ạ! Bạn miêu tả kĩ hơn được không?
+    - text: Nếu máy bị treo, đơ, vui lòng bấm giữ nút nguồn cho đến khi máy tắt hẳn rồi tiến hành bật lại máy!
+  
   utter_contact_cskh:
-  - text: Xin lỗi Quý khách! Hiện nhân viên tư vấn đang bận. Quý khách vui lòng chờ trong giây lát nhân viên tư vấn sẽ hỗ trợ ngay hoặc Quý khách vui lòng liên hệ tổng đài HACOM 19001903 để được phục vụ. Xin cảm ơn!
-  - text: Chào bạn, mình đã sẵn sàng tư vấn ! Mình giúp được gì cho bạn ạ!
-  - text: Nếu hiện tại đang quá giờ hành chính thì quý khách vui lòng chờ đến sáng mai CSKH sẽ liên hệ lại
-  - text: Hiện tại các tư vấn viên đang nhận chat quá tải, quý khách vui lòng để lại số điện thoại , tư vấn viên sẽ liên hệ lại hoặc phản hồi chat trong giây lát, xin cám ơn Quý khách !
-
+    - text: Chào bạn, mình đã sẵn sàng tư vấn ! Mình giúp được gì cho bạn ạ!
+    - text: Nếu hiện tại đang quá giờ hành chính thì quý khách vui lòng chờ đến sáng mai CSKH sẽ liên hệ lại
+    - text: Hiện tại các tư vấn viên đang nhận chat quá tải, quý khách vui lòng để lại số điện thoại , tư vấn viên sẽ liên hệ lại hoặc phản hồi chat trong giây lát, xin cám ơn Quý khách !
+  
   utter_contact_nvkd:
-  - text: Quý khách vui lòng chờ chút để tôi chuyển thông tin cho Kinh doanh tư vấn cho mình ạ
-
+    - text: Quý khách vui lòng chờ chút để tôi chuyển thông tin cho Kinh doanh tư vấn cho mình ạ
+  
   utter_dat_hang:
-  - text: 'Quý khách vui lòng truy cập vào website sau để được hướng dẫn mua hàng: HACOM - Hướng Dẫn Mua Hàng Trực Tuyến'
-
+    - text: 'Quý khách vui lòng truy cập vào website sau để được hướng dẫn mua hàng: HACOM - Hướng Dẫn Mua Hàng Trực Tuyến'
+  
   utter_dat_lai_mk:
-  - text: Vui lòng truy cập vào website https://hacom.vn/quen-mat-khau và làm theo hướng dẫn để lấy lại mật khẩu đã mất
-
+    - text: Vui lòng truy cập vào website https://hacom.vn/quen-mat-khau và làm theo hướng dẫn để {datlaimk}
+  
   utter_dia_chi_ship:
-  - text: Bạn vui lòng cung cấp địa chỉ giao hàng và giờ giao hàng nhé!
-  - text: HACOM cung cấp dịch vụ giao hàng miễn phí trong 100km quanh khu vực Hà Nội và TP.HCM
-
+    - text: Bạn vui lòng cung cấp địa chỉ giao hàng và giờ giao hàng nhé!
+    - text: HACOM cung cấp dịch vụ giao hàng miễn phí trong 100km quanh khu vực Hà Nội và TP.HCM
+  
   utter_doi_tra:
-  - text: Quý khách vui lòng lưu ý, sản phẩm bên em không nhận đổi trả nếu sản phẩm không lỗi, 1 đổi 1 trong vòng 15 ngày nếu sản phẩm lỗi, sau 15 ngày bảo hànhchính hãng (Không áp dụng đổi mới với các sản phẩm CPU, máy in, máy chiếu,máy photo, máy fax, Tivi, các sản phẩm của Apple, surface, hàng thanh lý...)!
-  - text: HACOM hỗ trợ đổi trả sản phẩm trong 15 ngày đầu, chính sách và điều kiện đổi trả xem tại https://hacom.vn/chinh-sach-bao-hanh
-  - text: Dạ đổi trả theo nhu cầu sẽ tính phí ạ!
-  - text: Bên mình ko hỗ trợ đổi trả theo nhu cầu ạ!
-
+    - text: Quý khách vui lòng lưu ý, sản phẩm bên em không nhận {doitra} nếu sản phẩm không lỗi, 1 đổi 1 trong vòng 15 ngày nếu sản phẩm lỗi, sau 15 ngày bảo hànhchính hãng (Không áp dụng đổi mới với các sản phẩm CPU, máy in, máy chiếu,máy photo, máy fax, Tivi, các sản phẩm của Apple, surface, hàng thanh lý...)!
+    - text: HACOM hỗ trợ {doitra} sản phẩm trong 15 ngày đầu, chính sách và điều kiện đổi trả xem tại https://hacom.vn/chinh-sach-bao-hanh
+    - text: Dạ {doitra} theo nhu cầu sẽ tính phí ạ!
+    - text: Bên mình ko hỗ trợ {doitra} theo nhu cầu ạ!
+  
   utter_goodbye:
-  - text: Cảm ơn quý khách đã quan tâm và sử dụng dịch vụ bên HACOM. Chúc quý khách luôn mạnh khỏe và thành công!
-  - text: "Tạm biệt bạn!"
-  - text: "Bye!"
+    - text: Cảm ơn quý khách đã quan tâm và sử dụng dịch vụ bên HACOM. Chúc quý khách luôn mạnh khỏe và thành công!
+    - text: "Tạm biệt bạn!"
+    - text: "Bye!"
 
   utter_huy_hd:
-  - text: Bạn cung cấp thông tin đơn đã tạo để Hacom hướng dẫn chi tiết bạn nhé !
-  - text: Mình sẽ kết nối tời BP Bán hàng để tư vấn hủy đơn cho bạn nhé !
-
+    - text: Bạn cung cấp thông tin đơn đã tạo để Hacom hướng dẫn chi tiết bạn nhé !
+    - text: Mình sẽ kết nối tời BP Bán hàng để tư vấn {huyhoadon} cho bạn nhé !
+  
   utter_khuyen_mai:
-  - text: 'Quý khách vui lòng truy cập vào website sau để biết thêm thông tin ưu đãi: https://hacom.vn/tin-khuyen-mai-su-kien'
-
+    - text: 'Quý khách vui lòng truy cập vào website sau để biết thêm thông tin ưu đãi: https://hacom.vn/tin-khuyen-mai-su-kien'
+  
   utter_kiem_tra:
-  - text: Bạn vui lòng liên hệ bên kỹ thuật hoặc đến cửa hàng HACOM gần nhất để được hỗ trợ kịp thời!
-  - text: Bạn vui lòng mang máy qua để bên mình kiểm tra nhé!
-
+    - text: Bạn vui lòng liên hệ bên kỹ thuật hoặc đến cửa hàng HACOM gần nhất để được hỗ trợ kịp thời!
+    - text: Bạn vui lòng mang máy qua để bên mình kiểm tra nhé!
+  
   utter_lap_dat:
-  - text: 'Bên mình có hỗ trợ lắp đặt sản phẩm, giá dịch vụ tham khảo tại đây: https://hacom.vn/bang-gia-vat-tu-va-dich-vu-lap-dat-hacom'
-  - text: Bạn vui lòng để lại địa chỉ nhận hàng ạ!
-
+    - text: 'Bên mình có hỗ trợ lắp đặt sản phẩm, giá dịch vụ tham khảo tại đây: https://hacom.vn/bang-gia-vat-tu-va-dich-vu-lap-dat-hacom'
+    - text: Bạn vui lòng để lại địa chỉ nhận hàng ạ!
+  
   utter_lay_hoa_don:
-  - text: 'Quý khách vui lòng cung cấp thông tin như sau : 1. Họ và tên 2. Địa chỉ 3. Số điện thoại di động 4. Thông tin viết VAT cho công ty ( nếu có ) + Email nhận hóa đơn điện tử'
-
+    - text: 'Quý khách vui lòng cung cấp thông tin như sau :
+        1. Họ và tên
+        2. Địa chỉ
+        3. Số điện thoại di động
+        4. Thông tin viết VAT cho công ty ( nếu có ) + Email nhận hóa đơn điện tử'
+  
   utter_mua_lai_ssd_cu:
-  - text: Bên mình hỗ trợ lắp đặt SSD mới, còn SSD cũ thì tạm thời chưa hỗ trợ thu lại ạ!
-  - text: Bên mình không thu mua lại SSD đã qua sử dụng đâu bạn nhé!
-
+    - text: Bên mình hỗ trợ lắp đặt SSD mới, còn SSD cũ thì tạm thời chưa hỗ trợ thu lại ạ!
+    - text: Bên mình không thu mua lại SSD đã qua sử dụng đâu bạn nhé!
+  
   utter_phan_mem:
-  - text: 'Bên mình có hỗ trợ cài đặt hệ điều hành Windows, bộ công cụ Office 365 và các phần mềm Antivirus bản quyền. Chi tiết xem tại: https://hacom.vn/phan-mem-ban-quyen'
-
+    - text: 'Bên mình có hỗ trợ cài đặt hệ điều hành Windows, bộ công cụ Office 365 và các phần mềm Antivirus bản quyền. Chi tiết xem tại: https://hacom.vn/phan-mem-ban-quyen'
+  
   utter_phan_mem_windows:
-  - text: 'Bên mình hỗ trợ cài Windows bản quyền cho cá nhân và doanh nghiệp: https://hacom.vn/he-dieu-hanh'
+    - text: 'Bên mình hỗ trợ cài Windows bản quyền cho cá nhân và doanh nghiệp: https://hacom.vn/he-dieu-hanh'
+    - text: 'Bên mình thì chỉ được phép cài win bản quyền thôi bạn nhé, còn không hỗ trợ các phần mềm và hệ điều hành không bản quyền'
+  
+  utter_phan_mem_windows_gia:
+    - text: 'Giá Windows bản quyền dao động từ 2 triệu 6 đến 3 triệu 2 bạn nhé'
 
   utter_san_pham_PC:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/may-tinh-de-ban'
-
+    - text: "Đây là danh sách {sanphamPC} bên mình đang quan tâm: https://hacom.vn/may-tinh-de-ban. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_san_pham_camera:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/camera-thiet-bi-an-ninh'
-
+    - text: "Đây là danh sách {samphamcamera} bên mình đang quan tâm: https://hacom.vn/camera-thiet-bi-an-ninh \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_san_pham_card:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/vga-card-man-hinh'
-
+    - text: "Đây là danh sách {sanphamcard} bên mình đang quan tâm: https://hacom.vn/vga-card-man-hinh. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_san_pham_case:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/vo-case'
-
+    - text: "Đây là danh sách {sanphamcase} bên mình đang quan tâm: https://hacom.vn/vo-case. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_san_pham_game:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/may-choi-game-tay-game'
-
+    - text: "Đây là danh sách {sanphamgame} bên mình đang quan tâm: https://hacom.vn/may-choi-game-tay-game. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_san_pham_ghe:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/ghe-gaming-ghe-choi-game'
-
+    - text: "Đây là danh sách {sanphamghe} bên mình đang quan tâm: https://hacom.vn/ghe-gaming-ghe-choi-game. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
   utter_san_pham_laptop:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/laptop'
-
+    - text: "Đây là danh sách {sanphamlaptop} bên mình đang quan tâm: https://hacom.vn/laptop. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+            
   utter_san_pham_linh_kien:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/linh-kien-may-tinh'
+    - text: "Đây là danh sách {sanphamlinhkien} bên mình đang quan tâm: https://hacom.vn/linh-kien-may-tinh. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
 
   utter_san_pham_man_hinh:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/man-hinh-may-tinh'
-
+    - text: "Đây là danh sách {sanphammanhinh} bên mình đang quan tâm: https://hacom.vn/man-hinh-may-tinh. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_san_pham_o_cung:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/o-cung-ssd'
-
+    - text: "Đây là danh sách {sanphamocung} bên mình đang quan tâm: https://hacom.vn/o-cung-ssd.\n 
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_san_pham_ram:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/ram-bo-nho-trong'
+    - text: "Đây là danh sách {sanphamram} bên mình đang quan tâm: https://hacom.vn/ram-bo-nho-trong.\n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
 
   utter_san_pham_tai_nghe:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/tai-nghe'
-
+    - text: "Đây là danh sách {sanphamtainghe} bên mình đang quan tâm: https://hacom.vn/tai-nghe. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   # utter_san_pham_tb:
   #   - text: Sản phẩm hiện đang tạm hết hàng, không biết bạn có nhu cầu sử dụng như thế nào để mình tư vấn sản phẩm khác tương đương hoặc thay thế.
   #   - text: Bên kho hàng của mình đề chữ liên hệ là hết hàng nhé!
   #   - text: Sản phẩm hiện vẫn còn hàng thưa quý khách!
-
+  
   utter_san_pham_webcam:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/webcam'
-
+    - text: "Đây là danh sách {sanphamwebcam} bên mình đang quan tâm: https://hacom.vn/webcam. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_san_pham_wifi:
-  - text: 'Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/thiet-bi-mang'
-
+    - text: "Đây là danh sách {sanphamwifi} bên mình đang quan tâm: https://hacom.vn/thiet-bi-mang. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
   utter_theo_doi_don:
-  - text: 'Quý khách vui lòng truy cập vào website sau và nhập thông tin cá nhân để theo dõi đơn hàng: https://hacom.vn/tra-don-hang'
-
+    - text: 'Quý khách vui lòng truy cập vào website sau và nhập thông tin cá nhân để theo dõi đơn hàng: https://hacom.vn/tra-don-hang'
+  
   utter_thoi_gian_giao_van:
-  - text: Bên mình giao hàng miễn phí trong ngày phạm vi nội thành Hà Nội, TP.HCM
-  - text: Bên mình hỗ trợ giao hàng toàn quốc, thời gian từ 1 -3 ngày tùy địa điểm, vui lòng để lại địa chỉ để mình đưa ra thông tin chính xác hơn
-
+    - text: Bên mình giao hàng miễn phí trong ngày phạm vi nội thành Hà Nội, TP.HCM
+    - text: Bên mình hỗ trợ giao hàng toàn quốc, thời gian từ 1 -3 ngày tùy địa điểm, vui lòng để lại địa chỉ để mình đưa ra thông tin chính xác hơn
+  
   utter_san_pham:
-  - text: "Bên có thể cung cấp cho mình mã sản phầm bạn quan tâm không !"
-  - text: "Mình sẽ gửi cho bạn thông tin mô tả chi tiết sản phẩm, giá và các chương trình chiết khấu nhé!"
-  - text: "Anh chị đang quan tâm tới dòng sản phẩm nào ạ?"
-
+    - text: "Bên có thể cung cấp cho mình mã sản phầm bạn quan tâm không !"
+    - text: "Mình sẽ gửi cho bạn thông tin mô tả chi tiết sản phẩm, giá và các chương trình chiết khấu nhé!"
+    - text: "Anh chị đang quan tâm tới dòng sản phẩm nào ạ?"
+  
   utter_tra_gop:
-  - text: 'HACOM hiện đang hỗ trợ trả góp 0%, thông tin xem tại: https://hacom.vn/huong-dan-mua-hang-tra-gop'
+    - text: 'HACOM hiện đang hỗ trợ {tragop} 0%, thông tin xem tại: https://hacom.vn/huong-dan-mua-hang-tra-gop'
 
   utter_ve_sinh:
-  - text: Bên mình có nhận vệ sinh laptop tại nhà và tại cửa hàng bạn nhé !
-  - text: Máy mang qua chi nhánh sẽ được vệ sinh miễn phí bạn nhé!
-  - text: Những sản phầm laptop mua tại Hacom được vệ sinh miễn phí bạn nhé !
+    - text: Bên mình có nhận {vesinh} tại nhà và tại cửa hàng bạn nhé !
+    - text: Máy mang qua chi nhánh sẽ được {vesinh} miễn phí bạn nhé!
+    - text: Những sản phẩm laptop mua tại Hacom được vệ sinh miễn phí bạn nhé !
 
   utter_ve_sinh_mtvp:
-  - text: "Bên mình có nhận vệ sinh destop tại VP bạn nhé !"
-  - text: "Những sản phầm desktop mua tại Hacom được vệ sinh miễn phí bạn nhé !"
+    - text: "Bên mình có nhận {vesinhmtvp} tại VP bạn nhé !"
+    - text: "Những sản phầm desktop mua tại Hacom được vệ sinh miễn phí bạn nhé !"
 
   utter_ve_sinh_server:
-  - text: "Bên mình có nhận vệ sinh server tại VP bạn nhé !"
-  - text: "Những sản phầm mua tại Hacom được vệ sinh miễn phí bạn nhé !"
-
+    - text: "Bên mình có nhận {vesinhserver} tại VP bạn nhé !"
+    - text: "Những sản phầm mua tại Hacom được vệ sinh miễn phí bạn nhé !"
+  
   utter_iamabot:
-  - text: "Tôi là 1 con Bot"
+    - text: "Tôi là 1 con Bot"
 
   utter_happy:
-  - text: "Great. Thật tuyệt, tiếp thôi!"
+    - text: "Great. Thật tuyệt, tiếp thôi!"
 
   utter_did_that_help:
-  - text: "Nó có thể giúp bạn không?"
+    - text: "Nó có thể giúp bạn không?"
 
   utter_greet:
-  - text: "Xin chào bạn, tôi là trợ lý ảo của Hacom, tôi có thể giúp gì cho bạn!"
-
+    - text: "Xin chào bạn, tôi là trợ lý ảo của Hacom, tôi có thể giúp gì cho bạn!"
+  
   utter_location:
-  - text: "Hacom có showroom tại Hà nội, TP HCM, Vinh, Thanh Hóa, Hải Phòng, Hà Nam, Nam Định bạn nhé !"
-  - text: "Hacom Hà nội có tại Cầu Giấy, HBT, HĐ, Thanh Trì, Đông Anh bạn nhé !"
-  - text: "Bạn cần cung cấp vị trí chính xác để Hacom tính toán khoảng cách và đề xuất ưu đãi free-ship cho bạn nhé"
-  - text: "Bạn ở xa quá Hacom phải tính phí ship bạn nhé !"
+    - text: "Hacom có showroom tại Hà nội, TP HCM, Vinh, Thanh Hóa, Hải Phòng, Hà Nam, Nam Định bạn nhé !"
+    - text: "Hacom Hà nội có tại Cầu Giấy, HBT, HĐ, Thanh Trì, Đông Anh bạn nhé !"
 
   utter_phi_giao_hang:
-  - text: "Tùy vào vị trí mà Hacom sẽ tính ship cho bạn !"
+    - text: "Tùy vào vị trí mà Hacom sẽ tính ship cho bạn !"
 
   utter_san_pham_chuot:
-  - text: "Đây là danh sách sản phẩm bên mình đang quan tâm: https://hacom.vn/chuot-may-tinh"
-
+    - text: "Đây là danh sách {sanphamchuot} bên mình đang quan tâm: https://hacom.vn/chuot-may-tinh. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
   utter_ho_tro_khac:
-  - text: "Bạn đợi mình một chút, sẽ có nhân viên tư vấn liên lạc với bạn trong thời gian sớm nhất"
+    - text: "Bạn đợi mình một chút, sẽ có nhân viên tư vấn liên lạc với bạn trong thời gian sớm nhất"
+
+  utter_gioi_thieu:
+    - text: "Công ty Cổ phần Đầu tư Công nghệ HACOM (viết tắt là “HACOM”, tiền thân là Công ty Cổ phần Máy Tính Hà Nội - HANOICOMPUTER), được thành lập vào tháng 9/2001, hoạt động chủ yếu trong lĩnh vực bán lẻ các sản phẩm máy tính và thiết bị văn phòng. Trải qua chặng đường hơn 20 năm phát triển, đến nay HACOM đã trở thành một trong những thương hiệu hàng đầu trong lĩnh vực kinh doanh các sản phẩm Công nghệ thông tin tại Việt Nam với hệ thống các showroom quy mô và hiện đại trải dài từ Bắc vào Nam. Nhiều tổ chức uy tín liên tục đánh giá cao HACOM với nhiều giải thưởng danh giá: Top 50 Nhãn hiệu nổi tiếng Việt Nam do Hội Sở hữu Trí tuệ Việt Nam công nhận và trao tặng; Top 500 Doanh nghiệp tăng trưởng nhanh nhất Việt Nam 2021 và 2022 (FAST500), top 500 Doanh nghiệp lớn nhất Việt Nam 2021 (VNR500) do Vietnam Report công nhận và trao tặng, top 50 Thương hiệu Uy tín Hàng đầu Châu Á 2022 do Trung tâm Nghiên cứu Phát triển Doanh nghiệp Châu Á phối hợp với tổ chức Giám sát Chất lượng Quốc tế xét chọn. Với khẩu hiệu “Uy tín tạo dựng niềm tin”, HACOM mong muốn xây dựng “niềm tin” của Khách hàng bằng chất lượng dịch vụ tốt nhất, vượt trội nhất. Đó cũng chính là kim chỉ nam cho sự phát triển bền vững mà HACOM hướng đến."
+
+  utter_tong_dai:
+    - text: "19001903\n
+            Bấm phím 1: Khách hàng Doanh nghiệp (8h-24h)\n
+            Bấm phím 2: Khách hàng Cá nhân (8h-24h)\n
+            Bấm phím 3: Hỗ trợ Kỹ thuật (8h-21h)\n
+            Bấm phím 4: Hỗ trợ Bảo hành (8h-17h30)\n
+            Bấm phím 0: Chăm sóc Khách hàng (8h-19h)"
+
+  utter_product_info:
+    - text: "Thông tin sản phẩm:\n 
+            ID: {product_id}\n
+            Mã sản phẩm: {product_sku}\n
+            Link sản phẩm: https://hacom.vn/{product_url}\n
+            Tên sản phẩm: {product_name}\n
+            Thương hiệu: {product_brand}\n
+            Giá sản phẩm: {product_price}\n
+            Giá thị trường: {market_price}\n
+            Bảo hành: {warranty}\n
+            Vận chuyển: {shipping}\n
+            {description}"
 
 session_config:
   session_expiration_time: 60

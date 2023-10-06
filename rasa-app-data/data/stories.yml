@@ -1,66 +1,11 @@
-# version: "2.0"
-
-# stories:
-
-# - story: hoi sp
-#   steps:
-#   - intent: sanpham
-#   - action: utter_sanpham
-
-# - story: hoi bh
-#   steps:
-#   - intent: baohanh
-#   - action: utter_baohanh
-
-# - story: hoi vs laptop
-#   steps:
-#   - intent: vesinh
-#   - action: utter_vesinh
-
-# - story: hoi vs destop
-#   steps:
-#   - intent: vesinhmtvp
-#   - action: utter_vesinhmtvp
-
-# - story: hoi vs server
-#   steps:
-#   - intent: vesinhserver
-#   - action: utter_vesinhserver
-
-# - story: happy path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_great
-#   - action: utter_happy
-
-# - story: sad path 1
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: affirm
-#   - action: utter_happy
-
-# - story: sad path 2
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye
-
-
 version: "3.1"
 
 stories:
 
 - story: Hỏi hủy hóa đơn
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: huy_hd
   - action: utter_huy_hd
 
@@ -73,13 +18,10 @@ stories:
   steps:
   - intent: kiem_tra
   - action: utter_kiem_tra
+  - intent: tong_dai
+  - action: utter_tong_dai
 
 - story: Hỏi sản phẩm
-  # - story: Hỏi còn sản phẩm 
-  #   steps:
-  #   - intent: san_pham_tb
-  #   - action: utter_san_pham_tb
-
   steps:
   - intent: san_pham
   - action: utter_san_pham
@@ -143,6 +85,9 @@ stories:
   steps:
   - intent: phan_mem_windows
   - action: utter_phan_mem_windows
+  - intent: phan_mem_windows_gia
+  - action: utter_phan_mem_windows_gia
+
 
 - story: Hỏi địa chỉ ship hàng
   steps:
@@ -174,8 +119,10 @@ stories:
   - intent: khuyen_mai
   - action: utter_khuyen_mai
 
-- story: Hỏi laptop
+- story: Hỏi mua laptop
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: san_pham_laptop
   - action: utter_san_pham_laptop
 

@@ -1,4 +1,5 @@
-version: '3.1'
+version: "3.1"
+
 rules:
 
 - rule: Hỏi hủy hóa đơn
@@ -16,12 +17,12 @@ rules:
   - intent: kiem_tra
   - action: utter_kiem_tra
 
-- rule: Hỏi sản phẩm
-  # - rule: Hỏi còn sản phẩm 
-  #   steps:
-  #   - intent: san_pham_tb
-  #   - action: utter_san_pham_tb
+# - rule: Hỏi còn sản phẩm 
+#   steps:
+#   - intent: san_pham_tb
+#   - action: utter_san_pham_tb
 
+- rule: Hỏi sản phẩm
   steps:
   - intent: san_pham
   - action: utter_san_pham
@@ -230,3 +231,22 @@ rules:
   steps:
   - intent: ho_tro_khac
   - action: utter_ho_tro_khac
+
+- rule: Giới thiệu HACOM
+  steps:
+  - intent: gioi_thieu
+  - action: utter_gioi_thieu
+
+- rule: Tổng đài
+  steps:
+  - intent: tong_dai
+  - action: utter_tong_dai
+
+
+- rule: Xử lý thông tin sản phẩm
+  steps:
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  # - action: utter_product_info
+
