@@ -251,13 +251,15 @@ function setBotResponse(val) {
             //if we get response from Rasa
             for (i = 0; i < val.length; i++) {
                 //check if there is text message
-                if (val[i].hasOwnProperty("text")) {
+                f (val[i].hasOwnProperty("text")) {
                     const botMsg = val[i].text;
                     if (botMsg.includes("password")) {
                         chatInput.type = "password";
                         passwordInput = true;
                     }
-                    var BotResponse = `<div class='bot-msg'><img class='bot-img' src ='${botLogoPath}' /><span class='msg'>${val[i].text}</span></div>`;
+
+                    botMsgWithLineBreaks = botMsg.replace(/\n/g, '<br>');
+                    var BotResponse = `<div class='bot-msg'><img class='bot-img' src ='${botLogoPath}' /><span class='msg'>${botMsgWithLineBreaks}</span></div>`;
                     $(BotResponse).appendTo('.chat-area').hide().fadeIn(1000);
                 }
 
