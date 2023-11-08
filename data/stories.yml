@@ -343,85 +343,85 @@ stories:
   - intent: KDOL_chuong_trinh_khuyen_mai
   - action: utter_KDOL_chuong_trinh_khuyen_mai
 
-- story: Kĩ thuật Cài đặt máy in máy scan
-  steps:
-  - intent: KT_cai_dat_may_in_may_scan
-  - action: utter_KT_cai_dat_may_in_may_scan
+# - story: Kĩ thuật Cài đặt máy in máy scan
+#   steps:
+#   - intent: KT_cai_dat_may_in_may_scan
+#   - action: utter_KT_cai_dat_may_in_may_scan
 
-- story: Kĩ thuật chính sách bảo hành sản phẩmphẩm
-  steps:
-  - intent: KT_chinh_sach_bh_sp
-  - action: utter_KT_chinh_sach_bh_sp
+# - story: Kĩ thuật chính sách bảo hành sản phẩm
+#   steps:
+#   - intent: KT_chinh_sach_bh_sp
+#   - action: utter_KT_chinh_sach_bh_sp
 
 - story: Kĩ Thuật đổ mực máy in
   steps:
   - intent: KT_do_muc_may_in
   - action: utter_KT_do_muc_may_in
 
-- story: KT dịch vụ sữa chữa laptop máy in
-  steps:
-  - intent: KT_dv_sua_chua_laptop_mayin
-  - action: utter_KT_dv_sua_chua_laptop_mayin
+# - story: KT dịch vụ sữa chữa laptop máy in
+#   steps:
+#   - intent: KT_dv_sua_chua_laptop_mayin
+#   - action: utter_KT_dv_sua_chua_laptop_mayin
 
 - story: KT dịch vụ sửa macbook, macmini
   steps:
   - intent: KT_dv_sua_macbook_macmini
   - action: utter_KT_dv_sua_macbook_macmini
 
-- story: KT hỏi camera
-  steps:
-  - intent: KT_hoi_camera
-  - action: utter_KT_hoi_camera
+# - story: KT hỏi camera
+#   steps:
+#   - intent: KT_hoi_camera
+#   - action: utter_KT_hoi_camera
 
 - story: KT hướng dẫn sử dụng sản phẩm
   steps:
   - intent: KT_huong_dan_su_dung_SP
   - action: utter_KT_huong_dan_su_dung_SP
 
-- story: KT kiểm tra
-  steps:
-  - intent: KT_kiem_tra
-  - action: utter_KT_kiem_tra
+# - story: KT kiểm tra
+#   steps:
+#   - intent: KT_kiem_tra
+#   - action: utter_KT_kiem_tra
 
-- story: KT vệ sinh PC, laptop
-  steps:
-  - intent: KT_ve_sinh_pc_laptop
-  - action: utter_KT_ve_sinh_pc_laptop
+# - story: KT vệ sinh PC, laptop
+#   steps:
+#   - intent: KT_ve_sinh_pc_laptop
+#   - action: utter_KT_ve_sinh_pc_laptop
 
-- story: KT mát kết nối wifi
-  steps:
-  - intent: KT_wifi_mat_ket_noi
-  - action: utter_KT_wifi_mat_ket_noi
+# - story: KT mát kết nối wifi
+#   steps:
+#   - intent: KT_wifi_mat_ket_noi
+#   - action: utter_KT_wifi_mat_ket_noi
 
-- story: KT cài win bản quyền
-  steps:
-  - intent: KT_win
-  - action: utter_KT_win
+# - story: KT cài win bản quyền
+#   steps:
+#   - intent: KT_win
+#   - action: utter_KT_win
 
-- story: KT vệ sinh PC, laptop
-  steps:
-  - intent: KT_ve_sinh_pc_laptop
-  - action: utter_KT_ve_sinh_pc_laptop
+# - story: KT vệ sinh PC, laptop
+#   steps:
+#   - intent: KT_ve_sinh_pc_laptop
+#   - action: utter_KT_ve_sinh_pc_laptop
 
-- story: Tư vấn Kdol
-  steps:
-  - intent: toi_can_tu_van_kdol_0945
-  - action: utter_toi_can_tu_van_kdol_0945
+# - story: Tư vấn Kdol
+#   steps:
+#   - intent: toi_can_tu_van_kdol_0945
+#   - action: utter_toi_can_tu_van_kdol_0945
 
 - story: Tư vấn thời gian hoạt động
   steps:
   - intent: Tu_van_thoi_gian_hoat_dong
   - action: utter_Tu_van_thoi_gian_hoat_dong
 
-- story: KDOL bảo hành
-  steps:
-  - intent: KDOL_bao_hanh
-  - action: utter_KDOL_bao_hanh
+# - story: KDOL bảo hành
+#   steps:
+#   - intent: KDOL_bao_hanh
+#   - action: utter_KDOL_bao_hanh
 
-- story: KDOL bảo hành máy in
-  steps:
-  - intent: KDOL_bao_hanh_may_in
-  - action: utter_KDOL_bao_hanh_may_in
+# - story: KDOL bảo hành máy in
+#   steps:
+#   - intent: KDOL_bao_hanh_may_in
+#   - action: utter_KDOL_bao_hanh_may_in
 
 - story: KDOL bảo hành sản phẩm trừ máy in
   steps:
@@ -438,10 +438,10 @@ stories:
   - intent: KDOL_can_may_cham_cong
   - action: utter_KDOL_can_may_cham_cong
 
-- story: KDOL cần mua laptop
-  steps:
-  - intent: KDOL_can_may_cham_cong
-  - action: utter_KDOL_can_may_cham_cong
+# - story: KDOL cần mua laptop
+#   steps:
+#   - intent: KDOL_can_may_cham_cong
+#   - action: utter_KDOL_can_may_cham_cong
 
 - story: KDOL code
   steps:
@@ -458,10 +458,10 @@ stories:
   - intent: KDOL_chuong_trinh_ve_sinh_may
   - action: utter_KDOL_chuong_trinh_ve_sinh_may
 
-- story: KDOL đổ mực máy in
-  steps:
-  - intent: KDOL_do_muc_may_in
-  - action: utter_KDOL_do_muc_may_in
+# - story: KDOL đổ mực máy in
+#   steps:
+#   - intent: KDOL_do_muc_may_in
+#   - action: utter_KDOL_do_muc_may_in
 
 - story: KDOL đổi mới sản phẩm
   steps:
@@ -473,10 +473,10 @@ stories:
   - intent: KDOL_Gui_hang_xe_khach
   - action: utter_KDOL_Gui_hang_xe_khach
 
-- story: KDOL GIAO HÀNG TRONG BAO LÂU
-  steps:
-  - intent: KDOL_GIAO_HANG_TRONG_BAO_LAU
-  - action: utter_KDOL_GIAO_HANG_TRONG_BAO_LAU
+# - story: KDOL GIAO HÀNG TRONG BAO LÂU
+#   steps:
+#   - intent: KDOL_GIAO_HANG_TRONG_BAO_LAU
+#   - action: utter_KDOL_GIAO_HANG_TRONG_BAO_LAU
 
 - story: KDOL Hàng gửi tỉnh
   steps:
@@ -508,10 +508,10 @@ stories:
   - intent: KDOL_Khach_hang_hoi_thanh_toan
   - action: utter_KDOL_Khach_hang_hoi_thanh_toan
 
-- story: KDOL Khách hàng mua màn hình
-  steps:
-  - intent: KDOL_khach_hang_mua_man_hinh
-  - action: utter_KDOL_khach_hang_mua_man_hinh
+# - story: KDOL Khách hàng mua màn hình
+#   steps:
+#   - intent: KDOL_khach_hang_mua_man_hinh
+#   - action: utter_KDOL_khach_hang_mua_man_hinh
 
 - story: KDOL máy chơi game ps5
   steps:
@@ -558,50 +558,50 @@ stories:
   - intent: KDOL_san_pham_con_hang
   - action: utter_KDOL_san_pham_con_hang
 
-- story: KDOL sản phẩm máy chấm công
-  steps:
-  - intent: KDOL_san_pham_may_cham_cong
-  - action: utter_KDOL_san_pham_may_cham_cong
+# - story: KDOL sản phẩm máy chấm công
+#   steps:
+#   - intent: KDOL_san_pham_may_cham_cong
+#   - action: utter_KDOL_san_pham_may_cham_cong
 
 - story: KDOL sản phẩm vệ sinh
   steps:
   - intent: KDOL_san_pham_ve_sinh
   - action: utter_KDOL_san_pham_ve_sinh
 
-- story: KDOL tư vấn trả góp
-  steps:
-  - intent: KDOL_tu_van_tra_gop
-  - action: utter_KDOL_tu_van_tra_gop
+# - story: KDOL tư vấn trả góp
+#   steps:
+#   - intent: KDOL_tu_van_tra_gop
+#   - action: utter_KDOL_tu_van_tra_gop
 
-- story: KDOL thay vỏ case
-  steps:
-  - intent: KDOL_thay_vo_case
-  - action: utter_KDOL_thay_vo_case
+# - story: KDOL thay vỏ case
+#   steps:
+#   - intent: KDOL_thay_vo_case
+#   - action: utter_KDOL_thay_vo_case
 
 - story: KDOL thời gian làm việc
   steps:
   - intent: KDOL_thoi_gian_lam_viec
   - action: utter_KDOL_thoi_gian_lam_viec
 
-- story: KDOL thu cũ đổi mới
-  steps:
-  - intent: KDOL_thu_cu_doi_moi
-  - action: utter_KDOL_thu_cu_doi_moi
+# - story: KDOL thu cũ đổi mới
+#   steps:
+#   - intent: KDOL_thu_cu_doi_moi
+#   - action: utter_KDOL_thu_cu_doi_moi
 
-- story: KDOL tra cứu bảo hành
-  steps:
-  - intent: KDOL_tra_cuu_bao_hanh
-  - action: utter_KDOL_tra_cuu_bao_hanh
+# - story: KDOL tra cứu bảo hành
+#   steps:
+#   - intent: KDOL_tra_cuu_bao_hanh
+#   - action: utter_KDOL_tra_cuu_bao_hanh
 
-- story: KDOL trả góp
-  steps:
-  - intent: KDOL_tra_gop
-  - action: utter_KDOL_tra_gop
+# - story: KDOL trả góp
+#   steps:
+#   - intent: KDOL_tra_gop
+#   - action: utter_KDOL_tra_gop
 
-- story: KDOL vệ sinh laptop pc
-  steps:
-  - intent: KDOL_ve_sinh_laptop_pc
-  - action: utter_KDOL_ve_sinh_laptop_pc
+# - story: KDOL vệ sinh laptop pc
+#   steps:
+#   - intent: KDOL_ve_sinh_laptop_pc
+#   - action: utter_KDOL_ve_sinh_laptop_pc
 
 - story: khiếu nại đổi trả sản phẩm
   steps:

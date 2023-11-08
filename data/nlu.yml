@@ -173,7 +173,7 @@ nlu:
       - [vs laptop]{"entity": "vesinh"}
       - [hút bụi laptop]{"entity": "vesinh"}
       - [làm mới laptop]{"entity": "vesinh"}
-      - [vệ sinh]{"entity": "vesinh"}
+      - [vệ sinh laptop]{"entity": "vesinh"}
 
   - intent: contact_cskh
     examples: |
@@ -1081,19 +1081,19 @@ nlu:
       - Hacom [Nghệ An]{"entity": "diachivinh"}
 
   # Update 5/11/2023
-  - intent: KT_cai_dat_may_in_may_scan
-    examples: |
-      - cai lai [may in]{"entity": "KTcaidatmayinmayscan"} 
-      - cài lại [máy in]{"entity": "KTcaidatmayinmayscan"} 
-      - cai lai may [scan]{"entity": "KTcaidatmayinmayscan"} 
-      - cài đặt [máy in]{"entity": "KTcaidatmayinmayscan"} 
+  # - intent: KT_cai_dat_may_in_may_scan
+  #   examples: |
+  #     - cai lai [may in]{"entity": "KTcaidatmayinmayscan"} 
+  #     - cài lại [máy in]{"entity": "KTcaidatmayinmayscan"} 
+  #     - cai lai may [scan]{"entity": "KTcaidatmayinmayscan"} 
+  #     - cài đặt [máy in]{"entity": "KTcaidatmayinmayscan"} 
       
-  - intent: KT_chinh_sach_bh_sp
-    examples: |
-      - chính sách [bảo hành]{"entity": "KTchinhsachbhsp"} 
-      - chính sách [bh]{"entity": "KTchinhsachbhsp"} 
-      - chinh sach [bao hanh]{"entity": "KTchinhsachbhsp"} 
-      - cơ sở [bảo hành]{"entity": "KTchinhsachbhsp"} 
+  # - intent: KT_chinh_sach_bh_sp
+  #   examples: |
+  #     - chính sách [bảo hành]{"entity": "KTchinhsachbhsp"} 
+  #     - chính sách [bh]{"entity": "KTchinhsachbhsp"} 
+  #     - chinh sach [bao hanh]{"entity": "KTchinhsachbhsp"} 
+  #     - cơ sở [bảo hành]{"entity": "KTchinhsachbhsp"} 
 
   - intent: KT_do_muc_may_in
     examples: |
@@ -1102,27 +1102,26 @@ nlu:
       - may in [het muc]{"entity": "KTdomucmayin"}
       - dich vu [do muc]{"entity": "KTdomucmayin"} may in
 
-  - intent: KT_dv_sua_chua_laptop_mayin
-    examples: |
-      - [sửa chữa]{"entity": "KTdvsuachualaptopmayin"} máy in
-      - dịch vụ [sữa chữa]{"entity": "KTdvsuachualaptopmayin"} laptop
-      - [sua chua]{"entity": "KTdvsuachualaptopmayin"} laptop
-      - dich vu [sua chua]{"entity": "KTdvsuachualaptopmayin"} may in
+  # - intent: KT_dv_sua_chua_laptop_mayin
+  #   examples: |
+  #     - [sửa chữa]{"entity": "KTdvsuachualaptopmayin"} máy in
+  #     - dịch vụ [sữa chữa]{"entity": "KTdvsuachualaptopmayin"} laptop
+  #     - [sua chua]{"entity": "KTdvsuachualaptopmayin"} laptop
+  #     - dich vu [sua chua]{"entity": "KTdvsuachualaptopmayin"} may in
 
   - intent: KT_dv_sua_macbook_macmini
     examples: |
       - [imac]{"entity": "KTdvsuamacbookmacmini"} bị lỗi
       - sửa [macbook]{"entity": "KTdvsuamacbookmacmini"} may i
       - [mac mini]{"entity": "KTdvsuamacbookmacmini"} bị lỗi
-      - sửa chữa[do muc]{"entity": "KTdvsuamacbookmacmini"} may in
 
-  - intent: KT_hoi_camera
-    examples: |
-      - [camera]{"entity": "KThoicamera"} bị lỗi
-      - cài đặt [camera]{"entity": "KThoicamera"}
-      - [camera]{"entity": "KThoicamera"} bị lỗi
-      - [camera]{"entity": "KThoicamera"} gặp vấn đề
-      - hỗ trợ [cam]{"entity": "KThoicamera"}
+  # - intent: KT_hoi_camera
+  #   examples: |
+  #     - [camera]{"entity": "KThoicamera"} bị lỗi
+  #     - cài đặt [camera]{"entity": "KThoicamera"}
+  #     - [camera]{"entity": "KThoicamera"} bị lỗi
+  #     - [camera]{"entity": "KThoicamera"} gặp vấn đề
+  #     - hỗ trợ [cam]{"entity": "KThoicamera"}
 
   - intent: KT_huong_dan_su_dung_SP
     examples: |
@@ -1132,70 +1131,70 @@ nlu:
       - [sử dụng]{"entity": "KThuongdansudungSP"} thế nào
       - cách [sd]{"entity": "KThuongdansudungSP"} 
 
-  - intent: KT_kiem_tra
-    examples: |
-      - Laptop của tôi báo lỗi rồi tắt màn hình nhưng quạt vẫn chạy
-      - Cho mình hỏi tầm 10tr thì cấu hình có CPU, main, ram, nguồn, vỏ case thì nên lấy những
-      - Tư vấn lắp thêm ram
-      - Hacom sẽ thu lại ssd của tôi và lắp một chiếc ssd khác tốt hơn phải không
-      - Máy tính tôi bị lỗi
-      - Thay tấm nền mất bao lâu và chi phí như thế nào
-      - Hỗ trợ Kỹ thuật
-      - Tôi đang dùng thì nó báo lỗi rồi nó tắt màn hình
-      - Cài đặt lại cổng kết nối
-      - Ấn nút nguồn mãi máy mới lên
-      - Vừa sạc vừa dùng máy tính
-      - Bên mình có sửa bàn phím cơ không
-      - Bị hỏng tấm nền
-      - Thay tản nhiệt khi thành tản nhiệt nước được không
-      - Dịch vụ nâng cấp ssd
+  # - intent: KT_kiem_tra
+  #   examples: |
+  #     - Laptop của tôi báo lỗi rồi tắt màn hình nhưng quạt vẫn chạy
+  #     - Cho mình hỏi tầm 10tr thì cấu hình có CPU, main, ram, nguồn, vỏ case thì nên lấy những
+  #     - Tư vấn lắp thêm ram
+  #     - Hacom sẽ thu lại ssd của tôi và lắp một chiếc ssd khác tốt hơn phải không
+  #     - Máy tính tôi bị lỗi
+  #     - Thay tấm nền mất bao lâu và chi phí như thế nào
+  #     - Hỗ trợ Kỹ thuật
+  #     - Tôi đang dùng thì nó báo lỗi rồi nó tắt màn hình
+  #     - Cài đặt lại cổng kết nối
+  #     - Ấn nút nguồn mãi máy mới lên
+  #     - Vừa sạc vừa dùng máy tính
+  #     - Bên mình có sửa bàn phím cơ không
+  #     - Bị hỏng tấm nền
+  #     - Thay tản nhiệt khi thành tản nhiệt nước được không
+  #     - Dịch vụ nâng cấp ssd
       
-  - intent: KT_ve_sinh_pc_laptop
-    examples: |
-      - [vệ sinh]{"entity": "KTvesinhpclaptop"} pc
-      - [ve sinh]{"entity": "KTvesinhpclaptop"} laptop
-      - [bao duong]{"entity": "KTvesinhpclaptop"} laptop
-      - [vs]{"entity": "KTvesinhpclaptop"} thế nào
-      - [ve sinh]{"entity": "KTvesinhpclaptop"} máy
-      - tra keo tan nhiet
+  # - intent: KT_ve_sinh_pc_laptop
+  #   examples: |
+  #     - [vệ sinh]{"entity": "KTvesinhpclaptop"} pc
+  #     - [ve sinh]{"entity": "KTvesinhpclaptop"} laptop
+  #     - [bao duong]{"entity": "KTvesinhpclaptop"} laptop
+  #     - [vs]{"entity": "KTvesinhpclaptop"} thế nào
+  #     - [ve sinh]{"entity": "KTvesinhpclaptop"} máy
+  #     - tra keo tan nhiet
 
-  - intent: KT_wifi_mat_ket_noi
-    examples: |
-      - [wifi]{"entity": "KTwifimatketnoi"} không vào được
-      - không dùng được [wifi]{"entity": "KTwifimatketnoi"}
-      - cần cài lại [wifi]{"entity": "KTwifimatketnoi"} laptop
-      - mất kết nối [wifi]{"entity": "KTwifimatketnoi"} thế nào
-      - [wifi]{"entity": "KTwifimatketnoi"} khong vao duoc
+  # - intent: KT_wifi_mat_ket_noi
+  #   examples: |
+  #     - [wifi]{"entity": "KTwifimatketnoi"} không vào được
+  #     - không dùng được [wifi]{"entity": "KTwifimatketnoi"}
+  #     - cần cài lại [wifi]{"entity": "KTwifimatketnoi"} laptop
+  #     - mất kết nối [wifi]{"entity": "KTwifimatketnoi"} thế nào
+  #     - [wifi]{"entity": "KTwifimatketnoi"} khong vao duoc
     
-  - intent: KT_win
-    examples: |
-      - cai lai [win]{"entity": "KTwin"}
-      - cài [windows]{"entity": "KTwin"} bản quyền
-      - cai [win]{"entity": "KTwin"}
-      - chạy lại [win]{"entity": "KTwin"}
-      - lỗi [win]{"entity": "KTwin"} máy
+  # - intent: KT_win
+  #   examples: |
+  #     - cai lai [win]{"entity": "KTwin"}
+  #     - cài [windows]{"entity": "KTwin"} bản quyền
+  #     - cai [win]{"entity": "KTwin"}
+  #     - chạy lại [win]{"entity": "KTwin"}
+  #     - lỗi [win]{"entity": "KTwin"} máy
 
-  - intent: KT_ve_sinh_pc_laptop
-    examples: |
-      - [vệ sinh]{"entity": "KTvesinhpclaptop"} pc
-      - [ve sinh]{"entity": "KTvesinhpclaptop"} laptop
-      - [bao duong]{"entity": "KTvesinhpclaptop"} laptop
-      - [vs]{"entity": "KTvesinhpclaptop"} thế nào
-      - [ve sinh]{"entity": "KTvesinhpclaptop"} máy
-      - tra keo tan nhiet
+  # - intent: KT_ve_sinh_pc_laptop
+  #   examples: |
+  #     - [vệ sinh]{"entity": "KTvesinhpclaptop"} pc
+  #     - [ve sinh]{"entity": "KTvesinhpclaptop"} laptop
+  #     - [bao duong]{"entity": "KTvesinhpclaptop"} laptop
+  #     - [vs]{"entity": "KTvesinhpclaptop"} thế nào
+  #     - [ve sinh]{"entity": "KTvesinhpclaptop"} máy
+  #     - tra keo tan nhiet
 
-  - intent: toi_can_tu_van_kdol_0945
-    examples: |
-      - [tư vấn]{"entity": "toicantuvankdol0945"} cho anh con i3 tầm 10-12tr 
-      - [tư vấn]{"entity": "toicantuvankdol0945"} cho anh con i7
+  # - intent: toi_can_tu_van_kdol_0945
+  #   examples: |
+  #     - [tư vấn]{"entity": "toicantuvankdol0945"} cho anh con i3 tầm 10-12tr 
+  #     - [tư vấn]{"entity": "toicantuvankdol0945"} cho anh con i7
     
-  - intent: tu_van_ngoai_gio_phuc_vu_CSKH
-    examples: |
-      - [vệ sinh]{"entity": "tuvanngoaigiophucvuCSKH"} pc
-      - [ve sinh]{"entity": "tuvanngoaigiophucvuCSKH"} laptop
-      - [bao duong]{"entity": "tuvanngoaigiophucvuCSKH"} laptop
-      - [vs]{"entity": "tuvanngoaigiophucvuCSKH"} thế nào
-      - [ve sinh]{"entity": "tuvanngoaigiophucvuCSKH"} máy
+  # - intent: tu_van_ngoai_gio_phuc_vu_CSKH
+  #   examples: |
+  #     - [vệ sinh]{"entity": "tuvanngoaigiophucvuCSKH"} pc
+  #     - [ve sinh]{"entity": "tuvanngoaigiophucvuCSKH"} laptop
+  #     - [bao duong]{"entity": "tuvanngoaigiophucvuCSKH"} laptop
+  #     - [vs]{"entity": "tuvanngoaigiophucvuCSKH"} thế nào
+  #     - [ve sinh]{"entity": "tuvanngoaigiophucvuCSKH"} máy
     
   - intent: Tu_van_thoi_gian_hoat_dong
     examples: |
@@ -1205,35 +1204,51 @@ nlu:
       - thời gian [mở cửa]{"entity": "Tuvanthoigianhoatdong"} thế nào
       - Hacom có mở cửa [dịp Tết]{"entity": "Tuvanthoigianhoatdong"}
 
-  - intent: KDOL_bao_hanh
-    examples: |
-      - CHính sách [bảo hành]{"entity" : "KDOLbaohanh"} bên mình ntn ạ
-      - Sp này [bảo hành]{"entity" : "KDOLbaohanh"} bao lâu ạ
+  # - intent: KDOL_bao_hanh
+  #   examples: |
+  #     - CHính sách [bảo hành]{"entity" : "KDOLbaohanh"} bên mình ntn ạ
+  #     - Sp này [bảo hành]{"entity" : "KDOLbaohanh"} bao lâu ạ
       
-  - intent: KDOL_bao_hanh_may_in
-    examples: |
-      - Khách hỏi bảo hành [máy in]{"entity" : "KDOLbaohanhmayin"} 
+  # - intent: KDOL_bao_hanh_may_in
+  #   examples: |
+  #     - Khách hỏi bảo hành [máy in]{"entity" : "KDOLbaohanhmayin"} 
 
   - intent: KDOL_bao_hanh_san_pham_tru may in
     examples: |
       - Khách hỏi [sản phẩm mới bảo hành]{"entity" : "KDOLbaohanhsanphamtrumayin"} thì như nào
+      - [sản phẩm mới bảo hành]{"entity" : "KDOLbaohanhsanphamtrumayin"}
+      - [sản phẩm bảo hành]{"entity" : "KDOLbaohanhsanphamtrumayin"}
+      - [sp bảo hành]{"entity" : "KDOLbaohanhsanphamtrumayin"}
 
   - intent: KDOL_bo_phan_ky_thuat_tam_nghi
     examples: |
       - Khách yêu cầu [hỗ trợ kỹ thuật ngoài giờ làm]{"entity" : "KDOLbophankythuattamnghi"}
+      - [hỗ trợ kỹ thuật ngoài giờ làm]{"entity" : "KDOLbophankythuattamnghi"}
+      - [HTKT ngoài giờ làm]{"entity" : "KDOLbophankythuattamnghi"}
 
   - intent: KDOL_can_may_cham_cong
     examples: |
-      - Cần mua máy [chấm công]{"entity" : "KDOLcanmaychamcong"}
+      - Cần mua máy [chấm công]{"entity": "KDOLcanmaychamcong"}
+      - Mua máy [chấm công]{"entity": "KDOLcanmaychamcong"}
+      - Đặt hàng [máy chấm công]{"entity": "KDOLcanmaychamcong"} giùm tôi
+      - Tôi cần tìm [máy chấm công]{"entity": "KDOLcanmaychamcong"}
+      - Cho tôi xin thông tin về [máy chấm công]{"entity": "KDOLcanmaychamcong"}
+      - Máy [chấm công]{"entity": "KDOLcanmaychamcong"} có sẵn không?
+      - Cần tìm [thiết bị chấm công]{"entity": "KDOLcanmaychamcong"}
 
-  - intent: KDOL_can_mua_laptop
-    examples: |
-      - Mức kinh phí anh định đầu tư khoảng bao nhiêu ạ 
-      - Anh [cần mua laptop]{"entity" : "KDOLcanmualaptop"} nhu cầu sử dụng là gì ạ 
+
+  # - intent: KDOL_can_mua_laptop
+  #   examples: |
+  #     - Mức kinh phí anh định đầu tư khoảng bao nhiêu ạ 
+  #     - Anh [cần mua laptop]{"entity" : "KDOLcanmualaptop"} nhu cầu sử dụng là gì ạ 
 
   - intent: KDOL_code
     examples: |
-      - XIN [CODE]{"entity" : "KDOLcode"} GAME
+      - XIN [CODE]{"entity": "KDOLcode"} GAME
+      - Cho tôi [mã code]{"entity": "KDOLcode"} để chơi game
+      - Có thể gửi cho tôi [mã kích hoạt]{"entity": "KDOLcode"} của game được không?
+      - Tôi cần [mã game]{"entity": "KDOLcode"} để bắt đầu chơi
+      - Xin vui lòng cung cấp [mã ghi]{"entity": "KDOLcode"} game
 
   - intent: KDOL_chuong_trinh_khuyen_mai
     examples: |
@@ -1250,13 +1265,6 @@ nlu:
       - mình qua [vệ sinh máy]{"entity" : "KDOLchuongtrinhvesinhmay"} có lâu không
       - bên mình cơ sở có [vệ sinh máy]{"entity" : "KDOLchuongtrinhvesinhmay"} không và hết bao nhiêu
 
-  - intent: KDOL_do_muc_may_in
-    examples: |
-      - Bên bạn có [đổ mực]{"entity" : "KDOLdomucmayin"} máy in ko
-      - shop có [đổ mực]{"entity" : "KDOLdomucmayin"} cho máy in ko
-      - shop có dịch vụ [đổ mực]{"entity" : "KDOLdomucmayin"} không ạ 
-
-
   - intent: KDOL_doi_moi_san_pham
     examples: |
       - sản phẩm lỗi thì được [đổi mới]{"entity" : "KDOLdoimoisanpham"} hay chỉ bảo hành
@@ -1266,15 +1274,36 @@ nlu:
 
   - intent: KDOL_Gui_hang_xe_khach
     examples: |
-      - Cần [gửi hàng xe khách]{"entity" : "KDOLGuihangxekhach"} đi tỉnh 
+      - Cần [gửi hàng xe khách]{"entity": "KDOLGuihangxekhach"} đi tỉnh
+      - Gửi [đơn hàng xe khách]{"entity": "KDOLGuihangxekhach"} đến tỉnh
+      - Tôi muốn [vận chuyển hàng xe khách]{"entity": "KDOLGuihangxekhach"} đến tỉnh
+      - Đặt dịch vụ [giao nhận xe khách]{"entity": "KDOLGuihangxekhach"} đi tỉnh
+      - Có dịch vụ [vận tải xe khách]{"entity": "KDOLGuihangxekhach"} không?
+      - Xin thông tin về việc [gửi xe khách]{"entity": "KDOLGuihangxekhach"} đến tỉnh
+      - Tôi cần [vận chuyển xe khách]{"entity": "KDOLGuihangxekhach"} đến tỉnh
 
-  - intent: KDOL_GIAO_HANG_TRONG_BAO_LAU
-    examples: |
-      - [Giao hàng trong thời gian bao nhiêu lâu]{"entity" : "KDOLGIAOHANGTRONGBAOLAU"}
+  # - intent: KDOL_GIAO_HANG_TRONG_BAO_LAU
+  #   examples: |
+  #     - [Giao hàng trong bao nhiêu thời gian]{"entity": "KDOLGIAOHANGTRONGBAOLAU"}?
+  #     - [Thời gian giao hàng]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} bao lâu?
+  #     - Có thể biết [bao nhiêu ngày]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} để giao hàng?
+  #     - [Giao hàng]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} mất bao nhiêu thời gian?
+  #     - Xin thông tin về [thời gian giao hàng]{"entity": "KDOLGIAOHANGTRONGBAOLAU"}.
+  #     - Tôi muốn biết [bao nhiêu ngày]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} để nhận hàng.
+  #     - [Giao hàng]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} mất bao lâu?
+  #     - [Thời gian]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} giao hàng là bao lâu?
 
   - intent: KDOL_Hang_gui_tinh
     examples: |
-      - [Hàng gửi đi tỉnh]{"entity" : "KDOLHangguitinh"}
+      - Cần [gửi hàng đi tỉnh]{"entity": "KDOLHangguitinh"}.
+      - [Chuyển phát hàng]{"entity": "KDOLHangguitinh"} đến tỉnh.
+      - Tôi muốn [gửi hàng tới tỉnh]{"entity": "KDOLHangguitinh"}.
+      - Có dịch vụ [gửi hàng tỉnh]{"entity": "KDOLHangguitinh"} không?
+      - [Gửi hàng đi]{"entity": "KDOLHangguitinh"} đến các tỉnh.
+      - Thông tin về dịch vụ [gửi hàng tới tỉnh]{"entity": "KDOLHangguitinh"}.
+      - Làm thế nào để [chuyển hàng đi tỉnh]{"entity": "KDOLHangguitinh"}?
+      - [Dịch vụ]{"entity": "KDOLHangguitinh"} gửi hàng đến tỉnh.
+      - Gửi hàng qua dịch vụ [gửi hàng tới tỉnh]{"entity": "KDOLHangguitinh"}.
 
   - intent: KDOL_ho_tro_ky_thuat
     examples: |
@@ -1287,7 +1316,7 @@ nlu:
 
   - intent: KDOL_khach_build_pc
     examples: |
-      - anh muốn [build bộ p]{"entity" : "KDOLkhachbuildpc"} gaming
+      - anh muốn [build bộ pc]{"entity" : "KDOLkhachbuildpc"} gaming
       - anh muốn [build bộ pc]{"entity" : "KDOLkhachbuildpc"} văn phòng
       - anh muốn [build bộ pc]{"entity" : "KDOLkhachbuildpc"} đồ họa
 
@@ -1301,32 +1330,59 @@ nlu:
 
   - intent: KDOL_Khach_gui_COD
     examples: |
-      - Hacom có hỗ trợ [gửi COD]{"entity" : "KDOLKhachguiCOD"} không
+      - Có [dịch vụ gửi COD]{"entity": "KDOLKhachguiCOD"} không?
+      - [COD]{"entity": "KDOLKhachguiCOD"} là gì?
+      - Tôi muốn biết về [gửi COD]{"entity": "KDOLKhachguiCOD"}.
+      - Hacom có [dịch vụ thu hộ COD]{"entity": "KDOLKhachguiCOD"} không?
+      - [COD]{"entity": "KDOLKhachguiCOD"} có sẵn tại Hacom không?
+      - Làm thế nào để [gửi hàng thu hộ COD]{"entity": "KDOLKhachguiCOD"} tại Hacom?
+      - Có [hỗ trợ gửi COD]{"entity": "KDOLKhachguiCOD"} cho khách hàng không?
+      - Thông tin về dịch vụ [gửi COD]{"entity": "KDOLKhachguiCOD"} tại Hacom.
+      - Gửi hàng với [dịch vụ COD]{"entity": "KDOLKhachguiCOD"} tại Hacom.
+      - [Gửi hàng thu hộ COD]{"entity": "KDOLKhachguiCOD"} ở Hacom thế nào?
 
   - intent: KDOL_Khach_hang_hoi_thanh_toan
     examples: |
       - anh muốn [chuyển khoản trước]{"entity" : "KDOLkhachhanghoithanhtoan"} thì sẽ chuyển như nào
       - em cho anh [thông tin tài khoản]{"entity" : "KDOLkhachhanghoithanhtoan"} thanh toán nhé
 
-  - intent: KDOL_khach_hang_mua_man_hinh
-    examples: |
-      - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} gaming
-      - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} đồ họa
-      - [màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} bên em có hàng không
-      - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} văn phòng
+  # - intent: KDOL_khach_hang_mua_man_hinh
+  #   examples: |
+  #     - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} gaming
+  #     - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} đồ họa
+  #     - [màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} bên em có hàng không
+  #     - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} văn phòng
 
   - intent: KDOL_may_choi_game_ps5
     examples: |
-      - [tham khảo các dòng máy chơi game PS5]{"entity" : "KDOLmaychoigameps5"} 
+      - Tôi muốn tham khảo các dòng máy chơi game [PS5]{"entity": "KDOLmaychoigameps5"}.
+      - [PS5]{"entity": "KDOLmaychoigameps5"} là dòng máy chơi game nào?
+      - [Máy chơi game PS5]{"entity": "KDOLmaychoigameps5"} có những phiên bản nào?
+      - Tôi cần tìm hiểu về các [dòng máy chơi game PS5]{"entity": "KDOLmaychoigameps5"}.
+      - Thông tin về [máy chơi game PS5]{"entity": "KDOLmaychoigameps5"}.
+      - [PS5]{"entity": "KDOLmaychoigameps5"} có gì đặc biệt?
+      - [Dòng máy chơi game PS5]{"entity": "KDOLmaychoigameps5"} có những tính năng gì?
+      - Cho tôi biết về [PS5]{"entity": "KDOLmaychoigameps5"}.
+      - Các phiên bản [máy chơi game PS5]{"entity": "KDOLmaychoigameps5"} hiện có.
+      - [Máy chơi game Sony PS5]{"entity": "KDOLmaychoigameps5"} có gì đặc biệt?
 
   - intent: KDOL_may_chu_server
     examples: |
-      - [tham khảo các dòng máy chủ server]{"entity" : "KDOLmaychuserver"} 
+      - Tôi muốn tham khảo các dòng [máy chủ server]{"entity": "KDOLmaychuserver"}.
+      - Các [máy chủ server]{"entity": "KDOLmaychuserver"} hiện có nào?
+      - Tôi cần thông tin về các [dòng máy chủ server]{"entity": "KDOLmaychuserver"}.
+      - Cho tôi biết về các [máy chủ server]{"entity": "KDOLmaychuserver"}.
+      - [Máy chủ server]{"entity": "KDOLmaychuserver"} có những loại nào?
+      - Tìm hiểu về [máy chủ server]{"entity": "KDOLmaychuserver"}.
+      - [Dòng máy chủ server]{"entity": "KDOLmaychuserver"} có những tính năng gì?
+      - Các phiên bản [máy chủ server]{"entity": "KDOLmaychuserver"} hiện có.
+      - [Máy chủ server]{"entity": "KDOLmaychuserver"} có gì đặc biệt?
+      - Tôi muốn xem thông tin về [máy chủ server]{"entity": "KDOLmaychuserver"}.
 
   - intent: KDOL_may_in
     examples: |
       - Anh cần [máy in]{"entity" : "KDOLmayin"}  đa năng
-      - Anh cần mua  [máy in]{"entity" : "KDOLmayin"} A4
+      - Anh cần mua [máy in]{"entity" : "KDOLmayin"} A4
 
   - intent: KDOL_mua_ban_phim
     examples: |
@@ -1347,31 +1403,58 @@ nlu:
 
   - intent: KDOL_nang_cap_may_tinh
     examples: |
-      - [nâng cấp]{"entity" : "KDOLnangcapmaytinh"} ram ổ cứng máy tính laptop 
+      - Tôi muốn [nâng cấp]{"entity": "KDOLnangcapmaytinh"} ram của máy tính.
+      - Làm thế nào để [nâng cấp]{"entity": "KDOLnangcapmaytinh"} ổ cứng laptop?
+      - [Nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính thế nào?
+      - [Nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính,ram và ổ cứng.
+      - Tôi cần [nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính của mình.
+      - Hướng dẫn [nâng cấp]{"entity": "KDOLnangcapmaytinh"} ram và ổ cứng laptop.
+      - Làm thế nào để [nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính để bàn?
+      - [Nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính xách tay thế nào?
+      - Tôi muốn biết cách [nâng cấp]{"entity": "KDOLnangcapmaytinh"} ổ cứng laptop.
+
   
   - intent: KDOL_san_pham_box_o_cung
     examples: |
-      - [mua box đựng ổ cứng]{"entity" : "KDOLsanphamboxocung"}
-  
+      - Tôi muốn mua [box đựng ổ cứng]{"entity": "KDOLsanphamboxocung"} để lưu trữ dữ liệu.
+      - Mua [box đựng ổ cứng]{"entity": "KDOLsanphamboxocung"} giá rẻ.
+      - Mua [ổ cứng gắn ngoài]{"entity": "KDOLsanphamboxocung"}.
+      - Tìm [box lưu trữ]{"entity": "KDOLsanphamboxocung"}.
+      - Cần [box HDD]{"entity": "KDOLsanphamboxocung"} cho máy tính.
+      - Tôi muốn mua [box ngoại vi HDD]{"entity": "KDOLsanphamboxocung"}.
+      - Mua [box lưu trữ ổ cứng]{"entity": "KDOLsanphamboxocung"} cho máy tính.
+      - Có đề xuất nào cho [box đựng ổ cứng]{"entity": "KDOLsanphamboxocung"} không?
+      - Tìm [box lưu trữ ổ cứng di động]{"entity": "KDOLsanphamboxocung"}.
+
   - intent: KDOL_san_pham_con_hang
     examples: |
-      - [Khách gửi link , ảnh hoặc đang tham khảo sản phẩm có sẵn hàng]{"entity" : "KDOLsanphamconhang"}
+      - Khách hàng [gửi link sản phẩm]{"entity": "KDOLsanphamconhang"} để kiểm tra tình trạng còn hàng.
+      - [Tôi muốn xem]{"entity": "KDOLsanphamconhang"} sản phẩm còn hàng không.
+      - [Kiểm tra]{"entity": "KDOLsanphamconhang"} sản phẩm có còn sẵn không.
+      - [Đang tham khảo]{"entity": "KDOLsanphamconhang"} sản phẩm, vui lòng xác nhận tình trạng hàng.
+      - [Tôi cần biết]{"entity": "KDOLsanphamconhang"} sản phẩm đã được bán nhiều chưa.
+      - [Tình trạng hàng]{"entity": "KDOLsanphamconhang"} của sản phẩm này thế nào?
 
-  - intent: KDOL_san_pham_may_cham_cong
-    examples: |
-      - danh sách [sản phẩm máy chấm công]{"entity" : "KDOLsanphammaychamcong"}
+  # - intent: KDOL_san_pham_may_cham_cong
+  #   examples: |
+  #     - danh sách [sản phẩm máy chấm công]{"entity" : "KDOLsanphammaychamcong"}
 
   - intent: KDOL_san_pham_ve_sinh
     examples: |
-      - danh sách các [sản phẩm thiết bị vệ sinh]{"entity" : "KDOLsanphamvesinh"}
-  
-  - intent: KDOL_tu_van_tra_gop
-    examples: |
-      - [Tư vấn trả góp]{"entity" : "KDOLtuvantragop"} 
+      - Danh sách các [sản phẩm vệ sinh]{"entity": "KDOLsanphamvesinh"} hiện có.
+      - [Sản phẩm thiết bị vệ sinh]{"entity": "KDOLsanphamvesinh"} nào đang bán.
+      - [Các sản phẩm]{"entity": "KDOLsanphamvesinh"} vệ sinh đang có sẵn.
+      - [Các mặt hàng]{"entity": "KDOLsanphamvesinh"} thiết bị vệ sinh có sẵn.
+      - Tôi cần biết về [sản phẩm vệ sinh]{"entity": "KDOLsanphamvesinh"}.
+      - Các sản phẩm dành cho vệ sinh đang được bán.
 
-  - intent: KDOL_thay_vo_case
-    examples: |
-      - ANh mua [vỏ case]{"entity" : "KDOLthayvocase"} có được chuyển linh kiện từ vỏ cũ không
+  # - intent: KDOL_tu_van_tra_gop
+  #   examples: |
+  #     - [Tư vấn trả góp]{"entity" : "KDOLtuvantragop"} 
+
+  # - intent: KDOL_thay_vo_case
+  #   examples: |
+  #     - ANh mua [vỏ case]{"entity" : "KDOLthayvocase"} có được chuyển linh kiện từ vỏ cũ không
 
   - intent: KDOL_thoi_gian_lam_viec
     examples: |
@@ -1379,37 +1462,37 @@ nlu:
       - [thời gian làm việc]{"entity" : "KDOLthoigianlamviec"} của shop là như nào ạ
       - bên shop [làm đến mấy giờ]{"entity" : "KDOLthoigianlamviec"}
 
-  - intent: KDOL_thu_cu_doi_moi
-    examples: |
-      - shop có [mua lại]{"entity" : "KDOLthucudoimoi"} sp không
-      - Bên mình có [thu mua đồ cũ]{"entity" : "KDOLthucudoimoi"} không
-      - mình có [sản phẩm cũ]{"entity" : "KDOLthucudoimoi"} muốn bán, shop [thu lại]{"entity" : "KDOLthucudoimoi"} không
-      - mình có [laptop cũ]{"entity" : "KDOLthucudoimoi"} muốn bán lại 
+  # - intent: KDOL_thu_cu_doi_moi
+  #   examples: |
+  #     - shop có [mua lại]{"entity" : "KDOLthucudoimoi"} sp không
+  #     - Bên mình có [thu mua đồ cũ]{"entity" : "KDOLthucudoimoi"} không
+  #     - mình có [sản phẩm cũ]{"entity" : "KDOLthucudoimoi"} muốn bán, shop [thu lại]{"entity" : "KDOLthucudoimoi"} không
+  #     - mình có [laptop cũ]{"entity" : "KDOLthucudoimoi"} muốn bán lại 
 
-  - intent: KDOL_tra_cuu_bao_hanh
-    examples: |
-      - cho hỏi sản phẩm của mình [bảo hành]{"entity" : "KDOLtracuubaohanh"} xong chưa
-      - kiểm tra [bảo hành]{"entity" : "KDOLtracuubaohanh"} sản phẩm như thế nào shop 
-      - kiểm tra giúp mình thông tin gửi [bảo hành]{"entity" : "KDOLtracuubaohanh"}
-      - [tra cứu bảo hành]{"entity" : "KDOLtracuubaohanh"} online như nào ạ
+  # - intent: KDOL_tra_cuu_bao_hanh
+  #   examples: |
+  #     - cho hỏi sản phẩm của mình [bảo hành]{"entity" : "KDOLtracuubaohanh"} xong chưa
+  #     - kiểm tra [bảo hành]{"entity" : "KDOLtracuubaohanh"} sản phẩm như thế nào shop 
+  #     - kiểm tra giúp mình thông tin gửi [bảo hành]{"entity" : "KDOLtracuubaohanh"}
+  #     - [tra cứu bảo hành]{"entity" : "KDOLtracuubaohanh"} online như nào ạ
 
-  - intent: KDOL_tra_gop
-    examples: |
-      - có [trả góp]{"entity" : "KDOLtragop"} 0% không shop
-      - thủ tục [trả góp]{"entity" : "KDOLtragop"} như nào ạ
-      - thời gian [trả góp]{"entity" : "KDOLtragop"} như nào ạ 
-      - shop có những [hình thức trả góp]{"entity" : "KDOLtragop"} nào
-      - sp nào thì [trả góp]{"entity" : "KDOLtragop"} được hả shop
-      - bên mình có [trả góp]{"entity" : "KDOLtragop"} không
-      - shop có [hỗ trợ trả góp]{"entity" : "KDOLtragop"} không
+  # - intent: KDOL_tra_gop
+  #   examples: |
+  #     - có [trả góp]{"entity" : "KDOLtragop"} 0% không shop
+  #     - thủ tục [trả góp]{"entity" : "KDOLtragop"} như nào ạ
+  #     - thời gian [trả góp]{"entity" : "KDOLtragop"} như nào ạ 
+  #     - shop có những [hình thức trả góp]{"entity" : "KDOLtragop"} nào
+  #     - sp nào thì [trả góp]{"entity" : "KDOLtragop"} được hả shop
+  #     - bên mình có [trả góp]{"entity" : "KDOLtragop"} không
+  #     - shop có [hỗ trợ trả góp]{"entity" : "KDOLtragop"} không
 
-  - intent: KDOL_ve_sinh_laptop_pc
-    examples: |
-      - shop có [vệ sinh laptop]{"entity" : "KDOLvesinhlaptop"} không
-      - shop có [vệ sinh tại nhà]{"entity" : "KDOLvesinhlaptop"} không
-      - shop có  [vệ sinh]{"entity" : "KDOLvesinhlaptop"} pc không
-      - bên bạn có [vệ sinh laptop]{"entity" : "KDOLvesinhlaptop"} không
-      - [vệ sinh laptop pc]{"entity" : "KDOLvesinhlaptop"}
+  # - intent: KDOL_ve_sinh_laptop_pc
+  #   examples: |
+  #     - shop có [vệ sinh laptop]{"entity" : "KDOLvesinhlaptop"} không
+  #     - shop có [vệ sinh tại nhà]{"entity" : "KDOLvesinhlaptop"} không
+  #     - shop có  [vệ sinh]{"entity" : "KDOLvesinhlaptop"} pc không
+  #     - bên bạn có [vệ sinh laptop]{"entity" : "KDOLvesinhlaptop"} không
+  #     - [vệ sinh laptop pc]{"entity" : "KDOLvesinhlaptop"}
 
   - intent: khieu_nai_doi_tra_san_pham
     examples: |
@@ -1430,14 +1513,11 @@ nlu:
   - intent: khieu_nai_giao_hang_cham
     examples: |
       - [kiểm tra đơn hàng]{"entity" : "khieunaigiaohangcham"}
-      - sai hẹn [giao hàng] {"entity" : "khieunaigiaohangcham"} nhiều lần
+      - [sai hẹn giao hàng] {"entity" : "khieunaigiaohangcham"} nhiều lần
       - [giao hàng muộn]{"entity" : "khieunaigiaohangcham"}
-      - [giao hàng]{"entity" : "khieunaigiaohangcham"} trong ngày
       - [sai hẹn giao hàng]{"entity" : "khieunaigiaohangcham"}
-      - [giao hàng]{"entity" : "khieunaigiaohangcham"} không đúng cam kết
       - [giao hàng chậm]{"entity" : "khieunaigiaohangcham"}
       - [giao hàng gấp]{"entity" : "khieunaigiaohangcham"}
-      - khi nào [giao hàng]{"entity" : "khieunaigiaohangcham"}
 
   - intent: khieu_nai_hoan_don_hang 
     examples: |
@@ -1552,3 +1632,11 @@ nlu:
       - [hỏng lên hỏng xuống nhiều lần]{"entity" : "khieunaisanpham"}
       - [gửi bh rồi vẫn lỗi]{"entity" : "khieunaisanpham"}
       - [máy lỗi suốt, không dùng được]{"entity" : "khieunaisanpham"}
+
+  - intent: dat_hang
+    examples: |
+      - Tôi muốn đặt hàng.
+      - Làm ơn gửi đơn hàng cho tôi.
+      - Tôi cần mua sản phẩm.
+      - Tôi muốn mua sản phẩm từ bạn.
+      - Có thể tôi muốn mua hàng.
