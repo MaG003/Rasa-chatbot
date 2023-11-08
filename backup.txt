@@ -1,0 +1,399 @@
+version: "2.0"
+nlu:
+  - intent: vesinh
+    examples: |
+      - vệ sinh laptop
+      - lau chùi laptop
+      - làm sạch laptop
+      - vs laptop
+      - hút bụi laptop
+      - làm mới laptop
+      - bảo trì laptop
+
+  - intent: vesinhserver
+    examples: |
+      - vệ sinh server
+      - vệ sinh máy chủ
+      - vs server
+      - vs may chu
+      - vs máy chủ
+
+  - intent: vesinhmtvp
+    examples: |
+      - vệ sinh máy tính desktop
+      - vs máy tính vp
+      - vệ sinh máy tính văn phòng
+      - vs máy tính văn phòng
+      - vệ sinh mt vp
+      - vệ sinh desktop
+      - làm sạch mt
+      - vệ sinh máy văn phòng
+      - vệ sinh máy vp
+
+  - intent: baohanh
+    examples: |
+      - bảo hành sp
+      - bảo hành thế nào
+      - bảo hành Hacom
+      - bh chính hãng
+      - bảo hành chính hãng
+      - bảo hành theo chế độ nào
+      - chế độ bảo hành
+      - chế độ bh
+
+  - intent: sanpham
+    examples: |
+      - sản phẩm giảm giá
+      - thông tin sp
+      - thông tin sản phẩm mới
+      - sản phẩm xả tồn
+      - hotdeal
+      - flash sale
+      - sp top sale
+      - topsale
+      - bán chạy
+      - bán chạy nhất trong tháng
+      - xem thông tin sp
+      - chi tiết thông tin sản phầm
+      - chi tiết cấu hình
+      - sản phầm hết hàng
+      - sản phẩm còn hàng k
+      - sp này còn không
+      - sp này còn hàng k
+      - còn hàng
+
+
+  - intent: location
+    examples: |
+      - hacom có ở đâu?
+      - vị trí của hàng hacom
+      - chi nhánh hacom
+      - địa chỉ hacom
+      - vị trí hacom
+      - hacom cầu giấy ở đâu
+      - hacom vinh ở đâu
+      - mua hàng tại của hàng haco nào gần nhất
+      - hacom gần nhất
+      - vị trí của bạn
+      - bạn ở đâu
+      - địa chỉ của bạn
+      - ở quận nào
+      - phường nào
+      - tỉnh nào
+      - phường xã quận huyện nào
+      - Hacom hà nội, vinh, thanh hóa, hà nam, TP HCM
+      - Hacom hà nội, cầu giấy, thanh trì, đông anh, hđ, HBT
+      - miễn phí ship
+      - miễn phí ship nội thành
+      - tính phí ship khoảng cách > 20km
+      - freeship nội thành
+      - anh cần e gửi ship cho a
+
+  - intent: greet
+    examples: |
+      - hey???
+      - hello
+      - hi
+      - chào
+      - xin chào
+      - chào bot
+      - có ai ở đó không
+      - tôi cần hỗ trợ
+      - Chào bạn
+      - Chào anh
+      - Chào chị
+      - Chào buổi sáng
+      - Có đó không
+      - Rãnh không
+      - Ê
+      - Hú
+      - chào em
+      - em ơi, cho anh hỏi
+      - bot ơi
+      - cho mình hỏi chút
+      - hacom
+      - chào hacom
+      - Chào Hacom
+      - chao HACOM
+      - hi hacom
+      - hello hacom
+      - morning hacom
+      - chào hanoi computer
+      - hi hanoi computer
+      - hi hanoicomputer
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - g9
+      - good night
+      - bye bye
+      - tạm biệt
+      - Hẹn gặp lại
+      - Ngủ ngon
+      - Chúc ngủ ngon
+      - Nói chuyện sau nhé
+      - Tôi sẽ liên hệ sau
+      - tạm biệt em
+      - tạm biệt bot nhá
+      - quit
+      - tam biet hacom
+      - tạm biệt hacom
+      - Bye Hacom
+      - by hacom
+      - bb
+    
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - bạn là một con bot?
+      - bạn là human?
+      - bạn là người
+      - người chat
+      - bot chat
+      - am I talking to a bot?
+      - am I talking to a human?
+
+
+domain
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - sanpham
+  - location
+  - vesinh
+  - vesinhmtvp
+  - vesinhserver
+  - baohanh
+
+responses:
+  utter_vesinh:
+    - text: "Bên mình có nhận vệ sinh laptop tại nhà và tại cửa hàng bạn nhé !"
+    - text: "Những sản phầm laptop mua tại Hacom được vệ sinh miễn phí bạn nhé !"
+  
+  utter_vesinhmtvp:
+    - text: "Bên mình có nhận vệ sinh destop tại VP bạn nhé !"
+    - text: "Những sản phầm desktop mua tại Hacom được vệ sinh miễn phí bạn nhé !"
+
+  utter_vesinhserver:
+    - text: "Bên mình có nhận vệ sinh server tại VP bạn nhé !"
+    - text: "Những sản phầm mua tại Hacom được vệ sinh miễn phí bạn nhé !"
+
+  utter_sanpham:
+    - text: "Dạ sản phẩm này bên em hiện hết hàng trên toàn hệ thống rồi ạ !"
+    - text: "Bên có thể cung cấp cho mình mã sản phầm bạn quan tâm không !"
+    - text: "Mình sẽ gửi cho bạn thông tin mô tả chi tiết sản phẩm, giá và các chương trình chiết khấu nhé!"
+    - text: "Anh chị đang quan tâm tới dòng sản phẩm nào ạ?"
+      
+  utter_baohanh:
+   - text: "Những sản phầm mua tại Hacom được bảo hành theo chính hãng và chế độ bảo hành riêng miễn phí thêm 1 năm của Hacom bạn nhé !"
+   - text: "Anh nhắn em xin địa chỉ nhận hàng nhé ạ !"
+
+  utter_location:
+    - text: "Hacom có showroom tại Hà nội, TP HCM, Vinh, Thanh Hóa, Hải Phòng, Hà Nam, Nam Định bạn nhé !"
+    - text: "Hacom Hà nội có tại Cầu Giấy, HBT, HĐ, Thanh Trì, Đông Anh bạn nhé !"
+    - text: "Bạn cần cung cấp vị trí chính xác để Hacom tính toán khoảng cách và đề xuất ưu đãi free-ship cho bạn nhé"
+    - text: "Bạn ở xa quá Hacom phải tính phí ship bạn nhé !"
+      
+  utter_greet:
+  - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
+  - text: "Chào bạn! Bạn cần Bot giúp gì không?"
+  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!"
+  - text: "HACOM: HACOM xin kính chào! Cảm ơn anh, chị đã liên hệ tới HACOM. Thời gian hỗ trợ, tư vấn, trả lời từ 8h-24h hàng ngày. Hãy gửi cho chúng tôi mọi câu hỏi của quý anh, chị. Trân trọng!"
+  - text: "HACOM sẵn sàng hỗ trợ ạ!"
+  
+  utter_cheer_up:
+  - text: "Đây là thiệp gửi bạn, mong bạn sẽ vui:"
+    image: "https://img5.thuthuatphanmem.vn/uploads/2021/12/03/anh-chu-xin-chao-dep_080700039.jpg"
+
+  utter_did_that_help:
+  - text: "Nó có thể giúp bạn không?"
+
+  utter_happy:
+  - text: "Great. Thật tuyệt, tiếp thôi!"
+
+  utter_goodbye:
+  - text: "Tạm biệt bạn!"
+  - text: "Bye!"
+
+  utter_iamabot:
+  - text: "Tôi là 1 con Bot"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACOM ChatBot</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Tệp CSS để tùy chỉnh giao diện -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e5e5e5;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        section {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        p1 {
+            font-size: 2rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Nội dung trang web của bạn -->
+    <section>
+        <h1><img src="https://hanoicomputercdn.com/media/lib/09-08-2023/logo-hacom-since-2001.png" /></h1>
+        <h1>HACOM ChatBot</h1>
+        <p1>Click on the chat button to start chatting</p1>
+    </section>
+
+    <!-- Hộp thoại Chat với Bot và Chat với Nhân viên -->
+    <div class="chat-dialog">
+        <button id="close-chat" class="close-button">×</button>
+        <div class="chat-options">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="chat-option-container">
+                            <button id="chat-with-bot" class="round-button chat-option">
+                                <img src="https://salt.tikicdn.com/ts/ta/66/f3/96/f1f16558a00b4453f55b4f1f85ed727a.png" alt="Chat">
+                            </button>
+                            <p>Chat với bot</p>
+                            <script>
+                                !(function () {
+                                        let e = document.createElement("script"),
+                                            t = document.head || document.getElementsByTagName("head")[0];
+                                        (e.src =
+                                            "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+                                            // Replace 1.x.x with the version that you want
+                                            (e.async = !0),
+                                            (e.onload = () => {
+                                                window.WebChat.default(
+                                                    {
+                                                        initPayload:'/greet',
+                                                        customData: { language: "en" },
+                                                        socketUrl: "http://localhost:5005",
+                                                        // add other props here
+                                                    },
+                                                    null
+                                                );
+                                            }),
+                                            t.insertBefore(e, t.firstChild);
+                                    })();
+                                </script>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="chat-option-container">
+                            <button id="chat-with-human" class="round-button chat-option">
+                                <img src="https://salt.tikicdn.com/ts/ta/4e/cd/92/b3593adaf274fc49a6ace088ff96471b.png" alt="Chat">
+                            </button>
+                            <p>Chat với nhân viên</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Button Chat ở góc dưới cùng bên phải -->
+    <div class="chat-button">
+        <button id="open-chat" class="round-button">
+            <img src="https://salt.tikicdn.com/ts/ta/66/f3/96/f1f16558a00b4453f55b4f1f85ed727a.png" alt="Chat">
+        </button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script> <!-- Tệp JavaScript để xử lý sự kiện -->
+</body>
+</html>

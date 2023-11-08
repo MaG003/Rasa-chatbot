@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-sanphamlaptop",
+      "2": "I-sanphamlaptop",
+      "3": "L-sanphamlaptop",
+      "4": "U-sanphamlaptop",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-sanphamlaptop": 1,
+      "I-sanphamlaptop": 2,
+      "L-sanphamlaptop": 3,
+      "U-sanphamlaptop": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

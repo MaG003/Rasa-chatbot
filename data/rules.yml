@@ -1,0 +1,658 @@
+version: "3.1"
+
+rules:
+
+- rule: Hỏi hủy hóa đơn
+  steps:
+  - intent: huy_hd
+  - action: utter_huy_hd
+
+- rule: Hỏi vệ sinh
+  steps:
+  - intent: ve_sinh
+  - action: utter_ve_sinh
+
+- rule: Kiểm tra sảm phẩm lỗi
+  steps:
+  - intent: kiem_tra
+  - action: utter_kiem_tra
+
+# - rule: Hỏi còn sản phẩm 
+#   steps:
+#   - intent: san_pham_tb
+#   - action: utter_san_pham_tb
+
+- rule: Hỏi sản phẩm
+  steps:
+  - intent: san_pham
+  - action: utter_san_pham
+
+- rule: Hỏi kết nối với chăm sóc khách hàng
+  steps:
+  - intent: contact_cskh
+  - action: utter_contact_cskh
+
+- rule: Hỏi đổi trả
+  steps:
+  - intent: doi_tra
+  - action: utter_doi_tra
+
+- rule: Báo lỗi sản phẩm
+  steps:
+  - intent: bao_loi
+  - action: utter_bao_loi
+
+- rule: Hỏi mua lại SSD cũ
+  steps:
+  - intent: mua_lai_ssd_cu
+  - action: utter_mua_lai_ssd_cu
+
+- rule: Hỏi Lắp đặt
+  steps:
+  - intent: lap_dat
+  - action: utter_lap_dat
+
+- rule: Hỏi Thời gian giao vận
+  steps:
+  - intent: thoi_gian_giao_van
+  - action: utter_thoi_gian_giao_van
+
+- rule: Hỏi bảo hành
+  steps:
+  - intent: bao_hanh
+  - action: utter_bao_hanh
+
+- rule: Hỏi hóa đơn
+  steps:
+  - intent: lay_hoa_don
+  - action: utter_lay_hoa_don
+
+- rule: Hỏi nhân viên kinh doanh
+  steps:
+  - intent: contact_nvkd
+  - action: utter_contact_nvkd
+
+- rule: Hỏi trả góp
+  steps:
+  - intent: tra_gop
+  - action: utter_tra_gop
+
+- rule: Hỏi phầm mềm
+  steps:
+  - intent: phan_mem
+  - action: utter_phan_mem
+
+- rule: Hỏi window bản quyền
+  steps:
+  - intent: phan_mem_windows
+  - action: utter_phan_mem_windows
+
+- rule: Hỏi địa chỉ ship hàng
+  steps:
+  - intent: dia_chi_ship
+  - action: utter_dia_chi_ship
+
+- rule: Hỏi đặt lại mật khẩu
+  steps:
+  - intent: dat_lai_mk
+  - action: utter_dat_lai_mk
+
+- rule: Hỏi theo dõi đơn
+  steps:
+  - intent: theo_doi_don
+  - action: utter_theo_doi_don
+
+- rule: Tạm biệt
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Hỏi đặt hàng
+  steps:
+  - intent: dat_hang
+  - action: utter_dat_hang
+
+- rule: Hỏi khuyến mãi
+  steps:
+  - intent: khuyen_mai
+  - action: utter_khuyen_mai
+
+- rule: Hỏi laptop
+  steps:
+  - intent: san_pham_laptop
+  - action: utter_san_pham_laptop
+
+- rule: Hỏi ram
+  steps:
+  - intent: san_pham_ram
+  - action: utter_san_pham_ram
+
+- rule: Hỏi man hình
+  steps:
+  - intent: san_pham_man_hinh
+  - action: utter_san_pham_man_hinh
+
+- rule: Hỏi PC
+  steps:
+  - intent: san_pham_PC
+  - action: utter_san_pham_PC
+
+- rule: Hỏi card
+  steps:
+  - intent: san_pham_card
+  - action: utter_san_pham_card
+
+- rule: Hỏi sản phẩm chơi game
+  steps:
+  - intent: san_pham_game
+  - action: utter_san_pham_game
+
+- rule: Hỏi camera an ninh
+  steps:
+  - intent: san_pham_camera
+  - action: utter_san_pham_camera
+
+- rule: Hỏi webcam
+  steps:
+  - intent: san_pham_webcam
+  - action: utter_san_pham_webcam
+
+- rule: Hỏi wifi
+  steps:
+  - intent: san_pham_wifi
+  - action: utter_san_pham_wifi
+
+- rule: Hỏi ghế
+  steps:
+  - intent: san_pham_ghe
+  - action: utter_san_pham_ghe
+
+- rule: Hỏi ổ cứng
+  steps:
+  - intent: san_pham_o_cung
+  - action: utter_san_pham_o_cung
+
+- rule: Hỏi vỏ case
+  steps:
+  - intent: san_pham_case
+  - action: utter_san_pham_case
+
+- rule: Hỏi linh kiện
+  steps:
+  - intent: san_pham_linh_kien
+  - action: utter_san_pham_linh_kien
+
+- rule: Hỏi tai nghe
+  steps:
+  - intent: san_pham_tai_nghe
+  - action: utter_san_pham_tai_nghe
+
+- rule: Hỏi chuột máy tính
+  steps:
+  - intent: san_pham_chuot
+  - action: utter_san_pham_chuot
+
+- rule: Hỏi vệ sinh máy tính văn phòng
+  steps:
+  - intent: ve_sinh_mtvp
+  - action: utter_ve_sinh_mtvp
+
+- rule: Hỏi vệ sinh server
+  steps:
+  - intent: ve_sinh_server
+  - action: utter_ve_sinh_server
+
+- rule: Tôi là rô bốt
+  steps:
+  - intent: iamabot
+  - action: utter_iamabot
+
+- rule: Happy
+  steps:
+  - intent: happy
+  - action: utter_happy
+
+- rule: Xin chào
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Hỏi địa chỉ
+  steps:
+  - intent: location
+  - action: utter_location
+
+- rule: Hỏi phí giao hàng
+  steps:
+  - intent: phi_giao_hang
+  - action: utter_phi_giao_hang
+
+- rule: Hỏi hỗ trợ khác
+  steps:
+  - intent: ho_tro_khac
+  - action: utter_ho_tro_khac
+
+- rule: Giới thiệu HACOM
+  steps:
+  - intent: gioi_thieu
+  - action: utter_gioi_thieu
+
+- rule: Tổng đài
+  steps:
+  - intent: tong_dai
+  - action: utter_tong_dai
+
+
+- rule: Xử lý thông tin sản phẩm
+  steps:
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  # - action: utter_product_info
+
+# Update 4/11/2023
+- rule: bảo hành tại nhà
+  steps:
+  - intent: bao_hanh_tai_nha
+  - action: utter_bao_hanh_tai_nha
+
+- rule: cài đặt máy in
+  steps:
+  - intent: cai_dat_may_in
+  - action: utter_cai_dat_may_in
+
+- rule: bắc giang
+  steps:
+  - intent: dia_chi_bac_giang
+  - action: utter_dia_chi_bac_giang
+
+- rule: câu giấy
+  steps:
+  - intent: dia_chi_cau_giay
+  - action: utter_dia_chi_cau_giay
+
+- rule: đông anh
+  steps:
+  - intent: dia_chi_dong_anh
+  - action: utter_dia_chi_dong_anh
+
+- rule: gần nhất
+  steps:
+  - intent: dia_chi_gan_nhat
+  - action: utter_dia_chi_gan_nhat
+
+- rule: hà đông 1
+  steps:
+  - intent: dia_chi_ha_dong_1
+  - action: utter_dia_chi_ha_dong_1
+
+- rule: hà đông 2
+  steps:
+  - intent: dia_chi_ha_dong_2
+  - action: utter_dia_chi_ha_dong_2
+
+- rule: hà nam
+  steps:
+  - intent: dia_chi_ha_nam
+  - action: utter_dia_chi_ha_nam
+
+- rule: đống đa
+  steps:
+  - intent: dia_chi_dong_da
+  - action: utter_dia_chi_dong_da
+
+- rule: hai bà trưng
+  steps:
+  - intent: dia_chi_hai_ba_trung
+  - action: utter_dia_chi_hai_ba_trung
+
+- rule: hải phòng
+  steps:
+  - intent: dia_chi_hai_phong
+  - action: utter_dia_chi_hai_phong
+
+- rule: linh đàm
+  steps:
+  - intent: dia_chi_linh_dam
+  - action: utter_dia_chi_linh_dam
+
+- rule: ling biên
+  steps:
+  - intent: dia_chi_long_bien
+  - action: utter_dia_chi_long_bien
+
+- rule: quận 3
+  steps:
+  - intent: dia_chi_quan_3
+  - action: utter_dia_chi_quan_3
+
+- rule: quận 7
+  steps:
+  - intent: dia_chi_quan_7
+  - action: utter_dia_chi_quan_7
+
+- rule: từ sơn
+  steps:
+  - intent: dia_chi_tu_son
+  - action: utter_dia_chi_tu_son
+
+- rule: thái nguyên
+  steps:
+  - intent: dia_chi_thai_nguyen
+  - action: utter_dia_chi_thai_nguyen
+
+- rule: thanh hóa
+  steps:
+  - intent: dia_chi_thanh_hoa
+  - action: utter_dia_chi_thanh_hoa
+
+- rule: vinh
+  steps:
+  - intent: dia_chi_vinh
+  - action: utter_dia_chi_vinh
+
+# Update 5/11/2023
+- rule: KDOL chương trình khuyến mãi
+  steps:
+  - intent: KDOL_chuong_trinh_khuyen_mai
+  - action: utter_KDOL_chuong_trinh_khuyen_mai
+
+- rule: Kĩ thuật Cài đặt máy in máy scan
+  steps:
+  - intent: KT_cai_dat_may_in_may_scan
+  - action: utter_KT_cai_dat_may_in_may_scan
+
+- rule: Kĩ thuật chính sách bảo hành sản phẩmphẩm
+  steps:
+  - intent: KT_chinh_sach_bh_sp
+  - action: utter_KT_chinh_sach_bh_sp
+
+- rule: Kĩ Thuật đổ mực máy in
+  steps:
+  - intent: KT_do_muc_may_in
+  - action: utter_KT_do_muc_may_in
+
+- rule: KT dịch vụ sữa chữa laptop máy in
+  steps:
+  - intent: KT_dv_sua_chua_laptop_mayin
+  - action: utter_KT_dv_sua_chua_laptop_mayin
+
+- rule: KT dịch vụ sửa macbook, macmini
+  steps:
+  - intent: KT_dv_sua_macbook_macmini
+  - action: utter_KT_dv_sua_macbook_macmini
+
+- rule: KT hỏi camera
+  steps:
+  - intent: KT_hoi_camera
+  - action: utter_KT_hoi_camera
+
+- rule: KT hướng dẫn sử dụng sản phẩm
+  steps:
+  - intent: KT_huong_dan_su_dung_SP
+  - action: utter_KT_huong_dan_su_dung_SP
+
+- rule: KT kiểm tra
+  steps:
+  - intent: KT_kiem_tra
+  - action: utter_KT_kiem_tra
+
+- rule: KT vệ sinh PC, laptop
+  steps:
+  - intent: KT_ve_sinh_pc_laptop
+  - action: utter_KT_ve_sinh_pc_laptop
+
+- rule: KT mát kết nối wifi
+  steps:
+  - intent: KT_wifi_mat_ket_noi
+  - action: utter_KT_wifi_mat_ket_noi
+
+- rule: KT cài win bản quyền
+  steps:
+  - intent: KT_win
+  - action: utter_KT_win
+
+- rule: KT vệ sinh PC, laptop
+  steps:
+  - intent: KT_ve_sinh_pc_laptop
+  - action: utter_KT_ve_sinh_pc_laptop
+
+- rule: Tư vấn Kdol
+  steps:
+  - intent: toi_can_tu_van_kdol_0945
+  - action: utter_toi_can_tu_van_kdol_0945
+
+- rule: Tư vấn thời gian hoạt động
+  steps:
+  - intent: Tu_van_thoi_gian_hoat_dong
+  - action: utter_Tu_van_thoi_gian_hoat_dong
+
+- rule: KDOL bảo hành
+  steps:
+  - intent: KDOL_bao_hanh
+  - action: utter_KDOL_bao_hanh
+
+- rule: KDOL bảo hành máy in
+  steps:
+  - intent: KDOL_bao_hanh_may_in
+  - action: utter_KDOL_bao_hanh_may_in
+  
+- rule: KDOL bảo hành sản phẩm trừ máy in
+  steps:
+  - intent: KDOL_bao_hanh_san_pham_tru may in
+  - action: utter_KDOL_bao_hanh_san_pham_tru may in
+
+- rule: KDOL bộ phận kỹ thuạt tạm nghỉ
+  steps:
+  - intent: KDOL_bo_phan_ky_thuat_tam_nghi
+  - action: utter_KDOL_bo_phan_ky_thuat_tam_nghi
+
+- rule: KDOL cần máy chấm công
+  steps:
+  - intent: KDOL_can_may_cham_cong
+  - action: utter_KDOL_can_may_cham_cong
+  
+- rule: KDOL cần mua laptop
+  steps:
+  - intent: KDOL_can_may_cham_cong
+  - action: utter_KDOL_can_may_cham_cong
+
+- rule: KDOL code
+  steps:
+  - intent: KDOL_code
+  - action: utter_KDOL_code
+
+- rule: KDOL chương trình khuyến mại
+  steps:
+  - intent: KDOL_chuong_trinh_khuyen_mai
+  - action: utter_KDOL_chuong_trinh_khuyen_mai
+
+- rule: KDOL chương trình vệ sinh máy
+  steps:
+  - intent: KDOL_chuong_trinh_ve_sinh_may
+  - action: utter_KDOL_chuong_trinh_ve_sinh_may
+
+- rule: KDOL đổ mực máy in
+  steps:
+  - intent: KDOL_do_muc_may_in
+  - action: utter_KDOL_do_muc_may_in
+
+- rule: KDOL đổi mới sản phẩm
+  steps:
+  - intent: KDOL_doi_moi_san_pham
+  - action: utter_KDOL_doi_moi_san_pham
+
+- rule: KDOL Gửi hàng xe khách
+  steps:
+  - intent: KDOL_Gui_hang_xe_khach
+  - action: utter_KDOL_Gui_hang_xe_khach
+
+- rule: KDOL GIAO HÀNG TRONG BAO LÂU
+  steps:
+  - intent: KDOL_GIAO_HANG_TRONG_BAO_LAU
+  - action: utter_KDOL_GIAO_HANG_TRONG_BAO_LAU
+
+- rule: KDOL Hàng gửi tỉnh
+  steps:
+  - intent: KDOL_Hang_gui_tinh
+  - action: utter_KDOL_Hang_gui_tinh
+
+- rule: KDOL hỗ trợ kỹ thuật
+  steps:
+  - intent: KDOL_ho_tro_ky_thuat
+  - action: utter_KDOL_ho_tro_ky_thuat
+
+- rule: KDOL khách build pc
+  steps:
+  - intent: KDOL_khach_build_pc
+  - action: utter_KDOL_khach_build_pc
+
+- rule: KDOL khách hàng chờ lâu không thấy phản hồi
+  steps:
+  - intent: KDOL_khach_cho_lau_khong_thay_phan_hoi
+  - action: utter_KDOL_khach_cho_lau_khong_thay_phan_hoi
+
+- rule: KDOL Khách gửi COD
+  steps:
+  - intent: KDOL_Khach_gui_COD
+  - action: utter_KDOL_Khach_gui_COD
+
+- rule: KDOL Khách hàng hỏi thanh toán
+  steps:
+  - intent: KDOL_Khach_hang_hoi_thanh_toan
+  - action: utter_KDOL_Khach_hang_hoi_thanh_toan
+
+- rule: KDOL Khách hàng mua màn hình
+  steps:
+  - intent: KDOL_khach_hang_mua_man_hinh
+  - action: utter_KDOL_khach_hang_mua_man_hinh
+
+- rule: KDOL máy chơi game ps5
+  steps:
+  - intent: KDOL_may_choi_game_ps5
+  - action: utter_KDOL_may_choi_game_ps5
+
+- rule: KDOL máy chủ server
+  steps:
+  - intent: KDOL_may_chu_server
+  - action: utter_KDOL_may_chu_server
+
+- rule: KDOL máy in
+  steps:
+  - intent: KDOL_may_in
+  - action: utter_KDOL_may_in
+
+- rule: KDOL mua bàn phím
+  steps:
+  - intent: KDOL_mua_ban_phim
+  - action: utter_KDOL_mua_ban_phim
+
+- rule: KDOL mua hàng
+  steps:
+  - intent: KDOL_mua_hang
+  - action: utter_KDOL_mua_hang
+
+- rule: KDOL mua hàng online
+  steps:
+  - intent: KDOL_mua_hang_online
+  - action: utter_KDOL_mua_hang_online
+
+- rule: KDOL nâng cấp máy tính
+  steps:
+  - intent: KDOL_nang_cap_may_tinh
+  - action: utter_KDOL_nang_cap_may_tinh
+
+- rule: KDOL sản phẩm box ổ cứng
+  steps:
+  - intent: KDOL_san_pham_box_o_cung
+  - action: utter_KDOL_san_pham_box_o_cung
+
+- rule: KDOL sản phẩm còn hàng
+  steps:
+  - intent: KDOL_san_pham_con_hang
+  - action: utter_KDOL_san_pham_con_hang
+
+- rule: KDOL sản phẩm máy chấm công
+  steps:
+  - intent: KDOL_san_pham_may_cham_cong
+  - action: utter_KDOL_san_pham_may_cham_cong
+
+- rule: KDOL sản phẩm vệ sinh
+  steps:
+  - intent: KDOL_san_pham_ve_sinh
+  - action: utter_KDOL_san_pham_ve_sinh
+
+- rule: KDOL tư vấn trả góp
+  steps:
+  - intent: KDOL_tu_van_tra_gop
+  - action: utter_KDOL_tu_van_tra_gop
+
+- rule: KDOL thay vỏ case
+  steps:
+  - intent: KDOL_thay_vo_case
+  - action: utter_KDOL_thay_vo_case
+
+- rule: KDOL thời gian làm việc
+  steps:
+  - intent: KDOL_thoi_gian_lam_viec
+  - action: utter_KDOL_thoi_gian_lam_viec
+
+- rule: KDOL thu cũ đổi mới
+  steps:
+  - intent: KDOL_thu_cu_doi_moi
+  - action: utter_KDOL_thu_cu_doi_moi
+
+- rule: KDOL tra cứu bảo hành
+  steps:
+  - intent: KDOL_tra_cuu_bao_hanh
+  - action: utter_KDOL_tra_cuu_bao_hanh
+
+- rule: KDOL trả góp
+  steps:
+  - intent: KDOL_tra_gop
+  - action: utter_KDOL_tra_gop
+
+- rule: KDOL vệ sinh laptop pc
+  steps:
+  - intent: KDOL_ve_sinh_laptop_pc
+  - action: utter_KDOL_ve_sinh_laptop_pc
+
+- rule: khiếu nại đổi trả sản phẩm
+  steps:
+  - intent: khieu_nai_doi_tra_san_pham
+  - action: utter_khieu_nai_doi_tra_san_pham
+
+- rule: khiếu nại giao hàng chậm
+  steps:
+  - intent: khieu_nai_giao_hang_cham
+  - action: utter_khieu_nai_giao_hang_cham
+
+- rule: khiếu nại hoàn đơn hàng
+  steps:
+  - intent: khieu_nai_hoan_don_hang 
+  - action: utter_khieu_nai_hoan_don_hang 
+
+- rule: khiếu nại hoàn tiền
+  steps:
+  - intent: khieu_nai_hoan_tien
+  - action: utter_khieu_nai_hoan_tien
+
+- rule: khiếu nại nhân viên
+  steps:
+  - intent: khieu_nai_nhan_vien
+  - action: utter_khieu_nai_nhan_vien
+
+- rule: khiếu nại nhân viên bán hàng
+  steps:
+  - intent: khieu_nai_nhan_vien_ban_hang
+  - action: utter_khieu_nai_nhan_vien_ban_hang
+
+- rule: khiếu nại sai thông tin xuất hóa đơn 
+  steps:
+  - intent: khieu_nai_sai_thong_tin_xuat_hoa_don
+  - action: utter_khieu_nai_sai_thong_tin_xuat_hoa_don
+
+- rule: khiếu nại sản phẩm
+  steps:
+  - intent: khieu_nai_san_pham
+  - action: utter_khieu_nai_san_pham
