@@ -1,506 +1,539 @@
 version: '3.1'
 
 nlu:
-  - intent: huy_hd
+  - intent: dv.huy_don
     examples: |
-      - Tôi muốn [hủy đơn]{"entity":"huyhoadon"} tôi vừa tạo
-      - làm thế nào để tôi [hủy đơn]{"entity":"huyhoadon"} mua hàng của tôi
-      - làm thế nào tôi có thể [hủy đơn]{"entity":"huyhoadon"} cuối cùng tôi đã tạo
-      - tôi cố gắng [hủy đơn]{"entity":"huyhoadon"}
-      - tôi muốn hướng dẫn để [hủy đơn]{"entity":"huyhoadon"}
-      - [hủy đơn]{"entity":"huyhoadon"}
+      - Tôi muốn [hủy đơn]{"entity":"dv.huydon"} tôi vừa tạo
+      - làm thế nào để tôi [hủy đơn]{"entity":"dv.huydon"} mua hàng của tôi
+      - làm thế nào tôi có thể [hủy đơn]{"entity":"dv.huydon"} cuối cùng tôi đã tạo
+      - tôi cố gắng [hủy đơn]{"entity":"dv.huydon"}
+      - tôi muốn hướng dẫn để [hủy đơn]{"entity":"dv.huydon"}
+      - [hủy đơn]{"entity":"dv.huydon"}
 
-  - intent: phi_giao_hang
+  - intent: dv.giao_hang_phi
     examples: |
-      - Có được miễn [phí giao hàng]{"entity":"phigiaohang"} không
-      - [phí giao hàng]{"entity":"phigiaohang"}
-      - [freeship]{"entity":"phigiaohang"}
-      - [free ship]{"entity":"phigiaohang"}
+      - Có được miễn [phí giao hàng]{"entity":"dv.giaohangphi"} không
+      - [phí giao hàng]{"entity":"dv.giaohangphi"}
+      - [freeship]{"entity":"dv.giaohangphi"}
+      - [free ship]{"entity":"dv.giaohangphi"}
+      - [phí giao hàng]{"entity":"dv.giaohangphi"} được tính như thế nào
 
-  - intent: san_pham_chuot
+  - intent: kd.san_pham_chuot
     examples: | 
-      - [Chuột laptop]{"entity": "sanphamchuot"}
-      - Tôi muốn mua [chuột]{"entity": "sanphamchuot"}
-      - [tôi muốn mua chuột]{"entity": "sanphamchuot"}
-      - [chuột]{"entity": "sanphamchuot"}
-      - [chuột máy tính]{"entity": "sanphamchuot"}
+      - [Chuột laptop]{"entity": "kd.sanphamchuot"}
+      - Tôi muốn mua [chuột]{"entity": "kd.sanphamchuot"}
+      - tôi muốn mua [chuột]{"entity": "kd.sanphamchuot"}
+      - [chuột]{"entity": "kd.sanphamchuot"}
+      - [chuột] máy tính{"entity": "kd.sanphamchuot"}
 
-  - intent: san_pham_laptop
+  - intent: kd.san_pham_laptop
     examples: | 
-      - Tôi muốn mua [Laptop]{"entity": "sanphamlaptop"} nhé !
-      - Tôi mua [laptop]{"entity": "sanphamlaptop"}
-      - [laptop]{"entity": "sanphamlaptop"} 
-      - [Máy tính sách tay]{"entity": "sanphamlaptop"}
-      - [Laptop gaming]{"entity": "sanphamlaptop"}
-      - [máy tính sách tay]{"entity": "sanphamlaptop"}
+      - Tôi muốn mua [Laptop]{"entity": "kd.sanphamlaptop"} nhé !
+      - Tôi mua [laptop]{"entity": "kd.sanphamlaptop"}
+      - [laptop]{"entity": "kd.sanphamlaptop"} 
+      - [Máy tính sách tay]{"entity": "kd.sanphamlaptop"}
+      - [Laptop]{"entity": "kd.sanphamlaptop"} gaming
+      - [máy tính sách tay]{"entity": "kd.sanphamlaptop"}
 
-  - intent: san_pham_ram
+  - intent: kd.san_pham_ram
     examples: | 
-      - [Ram Desktop]{"entity": "sanphamram"}
-      - [ram]{"entity": "sanphamram"}
-      - tôi cần mua [ram]{"entity": "sanphamram"}
-      - bạn tư vấn cho tôi vài con [ram]{"entity": "sanphamram"} đi
-      - [ram máy tính]{"entity": "sanphamram"}
+      - [Ram]{"entity": "kd.sanphamram"} Desktop
+      - [ram]{"entity": "kd.sanphamram"}
+      - tôi cần mua [ram]{"entity": "kd.sanphamram"}
+      - bạn tư vấn cho tôi vài con [ram]{"entity": "kd.sanphamram"} đi
+      - [ram]{"entity": "kd.sanphamram"} máy tính
 
-  - intent: san_pham_o_cung
+  - intent: kd.san_pham_o_cung
     examples: | 
-      - [Ổ cứng ssd]{"entity": "sanphamocung"}
-      - [Ổ cứng di động]{"entity": "sanphamocung"}
-      - Mình muốn hỏi [ổ cứng ngoài]{"entity": "sanphamocung"}
-      - [Ổ cứng SSD 512]{"entity": "sanphamocung"}
-      - [ổ cứng]{"entity": "sanphamocung"}
-      - [Ổ cứng]{"entity": "sanphamocung"}
-      - [ổ cứng giá rẻ]{"entity": "sanphamocung"}
+      - [Ổ cứng]{"entity": "kd.sanphamocung"} ssd
+      - [Ổ cứng]{"entity": "kd.sanphamocung"} di động
+      - Mình muốn hỏi [ổ cứng]{"entity": "kd.sanphamocung"} ngoài
+      - [Ổ cứng]{"entity": "kd.sanphamocung"} SSD 512
+      - [ổ cứng]{"entity": "kd.sanphamocung"}
+      - [Ổ cứng]{"entity": "kd.sanphamocung"}
+      - [ổ cứng]{"entity": "kd.sanphamocung"} giá rẻ
     
-  - intent: san_pham_man_hinh  
+  - intent: kd.san_pham_man_hinh 
     examples: | 
-      - [Màn hình]{"entity": "sanphammanhinh"}
-      - [màn hình]{"entity": "sanphammanhinh"}
-      - tôi cần mua [màn hình]{"entity": "sanphammanhinh"}
-      - tư vấn [màn hình]{"entity": "sanphammanhinh"}
-      - [màn hình led]{"entity": "sanphammanhinh"}
-      - [màn hình giá rẻ]{"entity": "sanphammanhinh"}
-      - [màn hình 4k]{"entity": "sanphammanhinh"}
-      - [màn hình vi tính]{"entity": "sanphammanhinh"}
+      - [Màn hình]{"entity": "kd.sanphammanhinh"}
+      - [màn hình]{"entity": "kd.sanphammanhinh"}
+      - tôi cần mua [màn hình]{"entity": "kd.sanphammanhinh"}
+      - tư vấn [màn hình]{"entity": "kd.sanphammanhinh"}
+      - [màn hình]{"entity": "kd.sanphammanhinh"} led
+      - [màn hình]{"entity": "kd.sanphammanhinh"} giá rẻ
+      - [màn hình]{"entity": "kd.sanphammanhinh"} 4k
+      - [màn hình]{"entity": "kd.sanphammanhinh"} vi tính
 
-  - intent: san_pham_camera  
+  - intent: kd.san_pham_camera 
     examples: | 
-      - [camera]{"entity": "sanphamcamera"}
-      - tôi cần mua [camera]{"entity": "sanphamcamera"}
-      - tư vấn [camera]{"entity": "sanphamcamera"}
+      - [camera]{"entity": "kd.sanphamcamera"}
+      - tôi cần mua [camera]{"entity": "kd.sanphamcamera"}
+      - tư vấn [camera]{"entity": "kd.sanphamcamera"}
 
-  - intent: san_pham_card  
+  - intent: kd.san_pham_card 
     examples: | 
-      - [Card màn hình]{"entity": "sanphamcard"}
-      - [card]{"entity": "sanphamcard"}
-      - tôi muốn mua [card màn hình]{"entity": "sanphamcard"}
+      - [Card]{"entity": "kd.sanphamcard"} màn hình
+      - [card]{"entity": "kd.sanphamcard"}
+      - tôi muốn mua [card]{"entity": "kd.sanphamcard"} màn hình
 
-  - intent: san_pham_PC  
+  - intent: kd.san_pham_PC  
     examples: | 
-      - [Máy tính] mini đơn giản{"entity": "sanphamPC"}
-      - Tôi cần [máy mini] chạy ít tốn điện nhất{"entity": "sanphamPC"}
-      - tôi cần mua [PC]{"entity": "sanphamPC"}
-      - [máy tính]{"entity": "sanphamPC"}
-      - [máy tính cây]{"entity": "sanphamPC"}
-      - [PC]{"entity": "sanphamPC"}
+      - [Máy tính]{"entity": "kd.sanphamPC"} mini đơn giản
+      - Tôi cần [máy mini]{"entity": "kd.sanphamPC"} chạy ít tốn điện nhất
+      - tôi cần mua [PC]{"entity": "kd.sanphamPC"}
+      - [máy tính]{"entity": "kd.sanphamPC"}
+      - [máy tính cây]{"entity": "kd.sanphamPC"}
+      - [PC]{"entity": "kd.sanphamPC"}
 
-  - intent: san_pham_game  
+  - intent: kd.san_pham_game 
     examples: | 
-      - [Tay cầm]{"entity": "sanphamgame"}
-      - [Xbox series x]{"entity": "sanphamgame"}
-      - [Vô lăng PXN V900]{"entity": "sanphamgame"}
-      - [Sản phẩm phục vụ chơi game]{"entity": "sanphamgame"}
-      - [phụ kiện chơi game]{"entity": "sanphamgame"}
-      - [game]{"entity": "sanphamgame"}
+      - [Tay cầm]{"entity": "kd.sanphamgame"}
+      - [Xbox series x]{"entity": "kd.sanphamgame"}
+      - [Vô lăng PXN V900]{"entity": "kd.sanphamgame"}
+      - Sản phẩm phục vụ chơi [game]{"entity": "kd.sanphamgame"}
+      - [phụ kiện]{"entity": "kd.sanphamgame"} chơi game
+      - [game]{"entity": "kd.sanphamgame"}
 
-  - intent: san_pham_tai_nghe  
+  - intent: kd.san_pham_tai_nghe 
     examples: | 
-      - [tai nghe]{"entity": "sanphamtainghe"}
-      - shop có bán [tai nghe] không{"entity": "sanphamtainghe"}
-      - [tai nghe giá rẻ]{"entity": "sanphamtainghe"}
-      - [tai nghe không dây]{"entity": "sanphamtainghe"}
-      - [tai nghe có dây]{"entity": "sanphamtainghe"}
+      - [tai nghe]{"entity": "kd.sanphamtainghe"}
+      - shop có bán [tai nghe]{"entity": "kd.sanphamtainghe"} không
+      - [tai nghe]{"entity": "kd.sanphamtainghe"} giá rẻ
+      - [tai nghe]{"entity": "kd.sanphamtainghe"} không dây
+      - [tai nghe]{"entity": "kd.sanphamtainghe"} có dây
 
-  - intent: san_pham_case  
+  - intent: kd.san_pham_case 
     examples: | 
-      - [vỏ case]{"entity": "sanphamcase"}
-      - [case]{"entity": "sanphamcase"}
-      - mua [vỏ case]{"entity": "sanphamcase"}
-      - build máy tính cần [vỏ case]{"entity": "sanphamcase"}
-      - build máy tính cần [case]{"entity": "sanphamcase"}
+      - vỏ [case]{"entity": "kd.sanphamcase"}
+      - [case]{"entity": "kd.sanphamcase"}
+      - mua vỏ [case]{"entity": "kd.sanphamcase"}
+      - build máy tính cần vỏ [case]{"entity": "kd.sanphamcase"}
+      - build máy tính cần [case]{"entity": "kd.sanphamcase"}
 
-  - intent: san_pham_webcam  
+  - intent: kd.san_pham_webcam  
     examples: | 
-      - [Webcam]{"entity": "sanphamwebcam"}
-      - tôi cần mua [webcam]{"entity": "sanphamwebcam"}
-      - [webcam]{"entity": "sanphamwebcam"}
-      - mua [webcam]{"entity": "sanphamwebcam"}
-      - [webcam] học sinh, sinh viên{"entity": "sanphamwebcam"}
-      - [webcam] học online{"entity": "sanphamwebcam"}
+      - [Webcam]{"entity": "kd.sanphamwebcam"}
+      - tôi cần mua [webcam]{"entity": "kd.sanphamwebcam"}
+      - [webcam]{"entity": "kd.sanphamwebcam"}
+      - mua [webcam]{"entity": "kd.sanphamwebcam"}
+      - [webcam]{"entity": "kd.sanphamwebcam"} học sinh, sinh viên
+      - [webcam]{"entity": "kd.sanphamwebcam"} học online
 
-  - intent: san_pham_wifi 
+  - intent: kd.san_pham_wifi
     examples: | 
-      - Moden nào vừa cắm trực tiếp vừa phát [wifi]{"entity": "sanphamwifi "}
-      - [Wifi mesh]{"entity": "sanphamwifi "}
-      - mua [wifi]{"entity": "sanphamwifi "}
-      - [wifi]{"entity": "sanphamwifi "}
+      - Moden nào vừa cắm trực tiếp vừa phát [wifi]{"entity": "kd.sanphamwifi"}
+      - [Wifi]{"entity": "kd.sanphamwifi"} mesh
+      - mua [wifi]{"entity": "kd.sanphamwifi"}
+      - [wifi]{"entity": "kd.sanphamwifi"}
 
-  - intent: san_pham_linh_kien
+  - intent: kd.san_pham_linh_kien
     examples: | 
-      - PC - Laptop và [linh kiện]{"entity": "sanphamlinhkien"}
-      - [linh kiện]{"entity": "sanphamlinhkien"}
-      - [Linh kiện]{"entity": "sanphamlinhkien"}
+      - PC - Laptop và [linh kiện]{"entity": "kd.sanphamlinhkien"}
+      - [linh kiện]{"entity": "kd.sanphamlinhkien"}
+      - [Linh kiện]{"entity": "kd.sanphamlinhkien"}
 
-  - intent: san_pham_ghe
+  - intent: kd.san_pham_ghe
     examples: | 
-      - [Ghế gamer E-Dra Queen - EGC225]{"entity": "sanphamghe"}
-      - [Ghế]{"entity": "sanphamghe"}
-      - [ghế gaming]{"entity": "sanphamghe"}
-      - mua [ghế]{"entity": "sanphamghe"}
-      - tôi cần mua [ghế]{"entity": "sanphamghe"}
-      - tư vấn [ghế]{"entity": "sanphamghe"}
+      - [Ghế]{"entity": "kd.sanphamghe"} gamer E-Dra Queen - EGC225
+      - [Ghế]{"entity": "kd.sanphamghe"}
+      - [ghế gaming]{"entity": "kd.sanphamghe"}
+      - mua [ghế]{"entity": "kd.sanphamghe"}
+      - tôi cần mua [ghế]{"entity": "kd.sanphamghe"}
+      - tư vấn [ghế]{"entity": "kd.sanphamghe"}
 
-  - intent: location
+  - intent: vt.dia_chi
     examples: |
-      - [hacom có ở đâu?]{"entity": "location"}
-      - [vị trí của hàng hacom]{"entity": "location"}
-      - [chi nhánh hacom]{"entity": "location"}
-      - [địa chỉ hacom]{"entity": "location"}
-      - [vị trí hacom]{"entity": "location"}
-      - [hacom cầu giấy ở đâu]{"entity": "location"}
-      - [hacom vinh ở đâu]{"entity": "location"}
-      - mua hàng tại của hàng [hacom nào gần nhất]{"entity": "location"}
-      - [hacom gần nhất]{"entity": "location"}
-      - [vị trí của bạn]{"entity": "location"}
-      - [bạn ở đâu]{"entity": "location"}
-      - [địa chỉ của bạn]{"entity": "location"}
-      - [ở quận nào]{"entity": "location"}
-      - [phường nào]{"entity": "location"}
-      - [tỉnh nào]{"entity": "location"}
-      - [phường xã quận huyện nào]{"entity": "location"}
-      - [Hacom hà nội, vinh, thanh hóa, hà nam, TP HCM]{"entity": "location"}
-      - [Hacom hà nội, cầu giấy, thanh trì, đông anh, hđ, HBT]{"entity": "location"}
-      - [địa chỉ]{"entity": "location"}
-      - [ở đâu]{"entity": "location"}
+      - hacom có ở đâu?
+      - vị trí của hàng hacom
+      - Hacom hà nội, vinh, thanh hóa, hà nam, TP HCM
+      - Hacom hà nội, cầu giấy, thanh trì, đông anh, hđ, HBT
+      - mua hàng tại của hàng hacom nào gần nhất
+      - hacom gần nhất
+      - vị trí của bạn
+      - bạn ở đâu      
+      - phường xã quận huyện nào
+      - [địa chỉ]{"entity": "vt.diachi"} của bạn
+      - ở [quận]{"entity": "vt.diachi"} nào
+      - [phường]{"entity": "vt.diachi"} nào
+      - [tỉnh]{"entity": "vt.diachi"} nào
+      - [địa chỉ]{"entity": "vt.diachi"}
+      - [ở đâu]{"entity": "vt.diachi"}      
+      - [chi nhánh]{"entity": "vt.diachi"} hacom
+      - [địa chỉ]{"entity": "vt.diachi"} hacom
+      - [vị trí]{"entity": "vt.diachi"} hacom
 
-  - intent: ve_sinh
+  - intent: kt.ve_sinh
     examples: | 
-      - [Vệ sinh]{"entity": "vesinh"} máy tính với thay nước tản nhiệt tại nhà
-      - Chương trình [vệ sinh] máy miễn phí{"entity": "vesinh"}
-      - [vệ sinh laptop]{"entity": "vesinh"}
-      - [lau chùi laptop]{"entity": "vesinh"}
-      - [làm sạch laptop]{"entity": "vesinh"}
-      - [vs laptop]{"entity": "vesinh"}
-      - [hút bụi laptop]{"entity": "vesinh"}
-      - [làm mới laptop]{"entity": "vesinh"}
-      - [vệ sinh laptop]{"entity": "vesinh"}
+      - Vệ sinh máy tính với thay nước tản nhiệt tại nhà
+      - Chương trình vệ sinh máy miễn phí
+      - vệ sinh laptop
+      - lau chùi laptop
+      - làm sạch laptop
+      - vs laptop
+      - hút bụi laptop
+      - làm mới laptop
+      - vệ sinh laptop
+      - bên mình có vệ sinh máy không ạ
+      - em có thể mang qua cơ sở nào để vệ sinh máy
+      - mình qua vệ sinh máy có lâu không
+      - bên mình cơ sở có vệ sinh máy không và hết bao nhiêu
 
-  - intent: contact_cskh
+  - intent: grt.contact_cskh
     examples: |
-      - [Chăm sóc khách hàng]{"entity": "contactcskh"}
-      - Liên hệ dịch vụ [chăm sóc khách hàng]{"entity": "contactcskh"}
+      - [Chăm sóc khách hàng]{"entity": "grt.contactcskh"}
+      - Liên hệ dịch vụ [chăm sóc khách hàng]{"entity": "grt.contactcskh"}
       - [Tư vấn bán hàng]{"entity": "contact_skh"}
-      - [chăm sóc khách hàng]{"entity": "contactcskh"}
-      - [cskh]{"entity": "contactcskh"}
+      - [chăm sóc khách hàng]{"entity": "grt.contactcskh"}
+      - [cskh]{"entity": "grt.contactcskh"}
 
-  - intent: kiem_tra
+  - intent: kt.kiem_tra
     examples: |
-      - [Tư vấn lắp thêm ram]{"entity": "kiemtra"}
-      - [Thay tản nhiệt khi thành tản nhiệt nước được không]{"entity": "kiemtra"}
-      - [Vừa sạc vừa dùng máy tính]{"entity": "kiemtra"}
-      - [Bên mình có sửa bàn phím cơ không]{"entity": "kiemtra"}
-      - [Thay tấm nền mất bao lâu và chi phí như thế nào]{"entity": "kiemtra"}
-      - [Bị hỏng tấm nền]{"entity": "kiemtra"}
-      - [Ấn nút nguồn mãi máy mới lên]{"entity": "kiemtra"}
-      - [Máy tính tôi bị lỗi]{"entity": "kiemtra"}
-      - [Cài đặt lại cổng kết nối]{"entity": "kiemtra"}
-      - [Hỗ trợ Kỹ thuật]{"entity": "kiemtra"}
-      - [Tôi đang dùng thì nó báo lỗi rồi nó tắt màn hình]{"entity": "kiemtra"}
-      - [Laptop của tôi báo lỗi rồi tắt màn hình nhưng quạt vẫn chạy]{"entity": "kiemtra"}
-      - [tôi cần kiểm tra máy tính]{"entity": "kiemtra"}
-      - [kiểm tra]{"entity": "kiemtra"}
-      - [Lỗi máy tính]{"entity": "kiemtra"}
-      - [Sửa máy tính]{"entity": "kiemtra"}
-      - [sửa máy]{"entity": "kiemtra"}
+      - Tư vấn lắp thêm ram
+      - Thay tản nhiệt khi thành tản nhiệt nước được không
+      - Vừa sạc vừa dùng máy tính      
+      - Thay tấm nền mất bao lâu và chi phí như thế nào      
+      - Ấn nút nguồn mãi máy mới lên      
+      - Cài đặt lại cổng kết nối
+      - Bên mình có sửa bàn phím cơ không
+      - Bị hỏng tấm nền
+      - Máy tính tôi bị lỗi
+      - Hỗ trợ Kỹ thuật
+      - Tôi đang dùng thì nó báo lỗi rồi nó tắt màn hình
+      - Laptop của tôi báo lỗi rồi tắt màn hình nhưng quạt vẫn chạy
+      - tôi cần kiểm tra máy tính
+      - kiểm tra
+      - Lỗi máy tính
+      - Sửa máy tính
+      - sửa máy
 
-  - intent: lap_dat
+  - intent: dv.lap_dat
     examples: |
-      - Có tính phí [lắp đặt]{"entity": "lapdat"} không
-      - Hàng về có được xem [lắp đặt]{"entity": "lapdat"} không
-      - [lắp đặt]{"entity": "lapdat"}
-      - [lắp đặt tận nhà]{"entity": "lapdat"}
+      - Có tính phí [lắp đặt]{"entity": "dv.lapdat"} không
+      - Hàng về có được xem [lắp đặt]{"entity": "dv.lapdat"} không
+      - [lắp đặt]{"entity": "dv.lapdat"}
+      - [lắp đặt]{"entity": "dv.lapdat"} tận nhà
 
-  - intent: thoi_gian_giao_van
+  - intent: dv.giao_hang_thoi_gian
     examples: |
-      - [Thời gian giao hàng] là bao lâu{"entity": "giaovan"}
-      - [thơi gian giao hàng]{"entity": "giaovan"}
-      - [giao hàng]{"entity": "giaovan"}
-      - [đơn hàng giao] trong bao lâu{"entity": "giaovan"}
-      - [giao hàng] như thế nào{"entity": "giaovan"}
+      - [Thời gian]{"entity": "dv.giaohangthoigian"} giao hàng là bao lâu
+      - [thơi gian]{"entity": "dv.giaohangthoigian"} giao hàng
+      - [thời gian]{"entity": "dv.giaohangthoigian"}
+      - đơn hàng giao trong bao lâu
+      - giao hàng như thế nào
+      - Tôi mong muốn có hàng trong sáng mai
+      - Giao hàng trong bao nhiêu [thời gian]{"entity": "dv.giaohangthoigian"}?
+      - [Thời gian]{"entity": "dv.giaohangthoigian"} giao hàng bao lâu?
+      - Có thể biết bao nhiêu ngày để giao hàng?
+      - Giao hàng mất bao nhiêu [thời gian]{"entity": "dv.giaohangthoigian"}?
+      - Xin thông tin về [thời gian]{"entity": "dv.giaohangthoigian"} giao hàng.
+      - Tôi muốn biết bao nhiêu ngày để nhận hàng.
+      - Giao hàng mất bao lâu?
+      - [Thời gian]{"entity": "dv.giaohangthoigian"}? giao hàng là bao lâu?
 
-  - intent: dia_chi_ship 
+  - intent: dv.giao_hang_dia_chi 
     examples: |
-      - [Tôi mong muốn có hàng trong sáng mai]{"entity": "diachiship"}
-      - Nếu mua sản phẩm có đc [hỗ trợ ship]{"entity": "diachiship"} không
-      - [Lấy tại cửa hàng]{"entity": "diachiship"} không ship
-      - [Địa chỉ của tôi]{"entity": "diachiship"}
-      - [Ship tận nhà]{"entity": "diachiship"} tại Hà Nội có miễn phí không 
-      - [địa chỉ ship hàng]{"entity": "diachiship"}
-      - [địa chỉ ship]{"entity": "diachiship"}
+      - Nếu mua sản phẩm có đc hỗ trợ ship không
+      - Lấy tại cửa hàng không ship
+      - Địa chỉ ship của tôi
+      - Ship tận nhà tại Hà Nội có miễn phí không 
+      - địa chỉ ship hàng
+      - địa chỉ ship
 
-  - intent: doi_tra  
+  - intent: dv.doi_tra  
     examples: |
-      - [Hỗ trợ đổi hàng]{"entity": "doitra"}
-      - [đổi trả]{"entity": "doitra"}
-      - tôi muốn [đổi trả hàng]{"entity": "doitra"}
-      - [đổi hàng]{"entity": "doitra"}
-      - [trả hàng]{"entity": "doitra"}
-      - hàng lỗi muốn [đổi hàng]{"entity": "doitra"}
-      - [hàng lỗi]{"entity": "doitra"} muốn đổi hàng như thế nào
-      - [đổi hàng]{"entity": "doitra"} như thế nào
-      - thủ tục [đổi hàng]{"entity": "doitra"}
+      - Hỗ trợ [đổi trả]{"entity": "dv.doitra"} hàng
+      - [đổi trả]{"entity": "dv.doitra"}
+      - tôi muốn [đổi trả]{"entity": "dv.doitra"} hàng
+      - [đổi]{"entity": "dv.doitra"} hàng
+      - [trả]{"entity": "dv.doitra"} hàng
+      - hàng lỗi muốn [đổi]{"entity": "dv.doitra"} hàng
+      - hàng lỗi muốn [đổi]{"entity": "dv.doitra"} hàng như thế nào
+      - [đổi]{"entity": "dv.doitra"} hàng như thế nào
+      - thủ tục [đổi]{"entity": "dv.doitra"} hàng
+      - hàng lỗi trả lại
+      - trả lại hàng đã mua
+      - trả sản phẩm
+      - muốn trả hàng
+      - muốn đổi hàng
+      - trả sp hoàn tiền
+      - hoàn hàng
+      - hoàn trả hàng
+      - đổi sp khác
+      - đổi mới sp"}
+      - đổi sản phẩm khác
+      - trả hàng trả tiền
+      - trả sp
 
-  - intent: bao_hanh  
+  - intent: dv.bao_hanh  
     examples: |
-      - Kiểm tra thông tin [bảo hành]{"entity": "baohanh"}
-      - Thời hạn [bảo hành]{"entity": "baohanh"} còn không
-      - Chương trình bán sản phẩm mới và vẫn [bảo hành]{"entity": "baohanh"} đầy đủ đúng không]
-      - [Bảo hành bao lâu]{"entity": "baohanh"}
-      - Hết [bảo hành]{"entity": "baohanh"} mà lại bị hỏng tấm nền
-      - [bảo hành sp]{"entity": "baohanh"}
-      - [bảo hành]{"entity": "baohanh"} thế nào
-      - [bảo hành]{"entity": "baohanh"}
-      - [bh chính hãng]{"entity": "baohanh"}
-      - [bảo hành chính hãng]{"entity": "baohanh"}
-      - [bảo hành]{"entity": "baohanh"} theo chế độ nào
-      - [chế độ bảo hành]{"entity": "baohanh"}
-      - [chế độ bh]{"entity": "baohanh"}
-      - [bảo hành]{"entity": "baohanh"}
+      - Kiểm tra thông tin [bảo hành]{"entity": "dv.baohanh"}
+      - Thời hạn [bảo hành]{"entity": "dv.baohanh"} còn không
+      - Chương trình bán sản phẩm mới và vẫn [bảo hành]{"entity": "dv.baohanh"} đầy đủ đúng không
+      - [Bảo hành]{"entity": "dv.baohanh"} bao lâu
+      - Hết [bảo hành]{"entity": "dv.baohanh"} mà lại bị hỏng tấm nền
+      - [bảo hành]{"entity": "dv.baohanh"} sp
+      - [bảo hành]{"entity": "dv.baohanh"} thế nào
+      - [bảo hành]{"entity": "dv.baohanh"}
+      - [bh]{"entity": "dv.baohanh"} chính hãng
+      - [bảo hành]{"entity": "dv.baohanh"} chính hãng
+      - [bảo hành]{"entity": "dv.baohanh"} theo chế độ nào
+      - chế độ [bảo hành]{"entity": "dv.baohanh"}
+      - chế độ [bh]{"entity": "dv.baohanh"}
+      - [bảo hành]{"entity": "dv.baohanh"}
+      - sản phẩm mới [bảo hành]{"entity":"dv.baohanh"} thì như nào.
+      - sản phẩm mới [bảo hành]{"entity":"dv.baohanh"}
+      - sản phẩm [bảo hành]{"entity":"dv.baohanh"}
+      - sp [bảo hành]{"entity":"dv.baohanh"}
+      - sp [bảo hành]{"entity":"dv.baohanh"}
 
-  - intent: goodbye  
+  - intent: grt.goodbye 
     examples: |
-      - [Cảm ơn]{"entity": "goodbye"}
-      - [Chúc bạn một buổi tối vui vẻ]{"entity": "goodbye"}
-      - [bye]{"entity": "goodbye"}
-      - [goodbye]{"entity": "goodbye"}
-      - [g9]{"entity": "goodbye"}
-      - [good night]{"entity": "goodbye"}
-      - [bye bye]{"entity": "goodbye"}
-      - [tạm biệt]{"entity": "goodbye"}
-      - [Hẹn gặp lại]{"entity": "goodbye"}
-      - [Ngủ ngon]{"entity": "goodbye"}
-      - [Chúc ngủ ngon]{"entity": "goodbye"}
-      - [Nói chuyện sau nhé]{"entity": "goodbye"}
-      - [Tôi sẽ liên hệ sau]{"entity": "goodbye"}
-      - [tạm biệt em]{"entity": "goodbye"}
-      - [tạm biệt bot nhá]{"entity": "goodbye"}
-      - [quit]{"entity": "goodbye"}
-      - [tam biet hacom]{"entity": "goodbye"}
-      - [tạm biệt hacom]{"entity": "goodbye"}
-      - [Bye Hacom]{"entity": "goodbye"}
-      - [by hacom]{"entity": "goodbye"}
-      - [bb]{"entity": "goodbye"}
+      - Cảm ơn
+      - Chúc bạn một buổi tối vui vẻ
+      - bye
+      - goodbye
+      - g9
+      - good night
+      - bye bye
+      - tạm biệt
+      - Hẹn gặp lại
+      - Ngủ ngon
+      - Chúc ngủ ngon
+      - Nói chuyện sau nhé
+      - Tôi sẽ liên hệ sau
+      - tạm biệt em
+      - tạm biệt bot nhá
+      - quit
+      - tam biet hacom
+      - tạm biệt hacom
+      - Bye Hacom
+      - by hacom
+      - bb
 
-  - intent: phan_mem_windows 
+  - intent: kd.phan_mem_windows 
     examples: |
-      - [Windows bản quyền]{"entity": "phanmemwindows"}
-      - [windows]{"entity": "phanmemwindows"}
-      - [cài windows]{"entity": "phanmemwindows"}
-      - [win bản quyền] giá sao ạ{"entity": "phanmemwindows"}
+      - [Windows]{"entity": "kd.phanmemwindows"} bản quyền
+      - [windows]{"entity": "kd.phanmemwindows"}
+      - cài [windows]{"entity": "kd.phanmemwindows"}
+      - [win]{"entity": "kd.phanmemwindows"} bản quyền giá sao ạ
 
-  - intent: phan_mem_windows_gia
+  - intent: kd.phan_mem_windows_gia
     examples: |
-      - [giá]{"entity": "phanmemwindowsgia"} sao ạ
-      - [giá]{"entity": "phanmemwindowsgia"} cả như thế nào
-      - [giá windows]{"entity": "phanmemwindowsgia"} bản quyền
-  - intent: phan_mem  
-    examples: |
-      - Bây giờ tôi đang muốn dùng [microsoft]{"entity": "phanmem"}
-      - Bản cài sẵn trong máy bắt buộc mình phải có tài khoản [microsoft]{"entity": "phanmem"}
-      - [phần mềm]{"entity": "phanmem"}
-      - cài [phần mềm]{"entity": "phanmem"}
+      - giá phần mềm sao ạ
+      - giá cả như thế nào
+      - giá windows bản quyền là bao nhiêu
 
-  - intent: ho_tro_khac  
+  - intent: kd.phan_mem 
     examples: |
-      - [Hỗ trợ khác]{"entity": "hotrokhac"}
-      - [hỗ trợ khác]{"entity": "hotrokhac"}
+      - Bây giờ tôi đang muốn dùng microsoft
+      - Bản cài sẵn trong máy bắt buộc mình phải có tài khoản microsoft
+      - phần mềm
+      - cài phần mềm
 
-  - intent: tra_gop  
+  - intent: grt.ho_tro_khac  
     examples: |
-      - [Trả góp]{"entity":"tragop"} theo phương thức nào khác không
-      - [Trả góp] qua thẻ visa{"entity":"tragop"}
-      - Có [trả góp]{"entity":"tragop"} được không
-      - Có nhu cầu [trả góp]{"entity":"tragop"}
-      - [trả góp]{"entity":"tragop"}
-      - tôi muốn [trả góp]{"entity":"tragop"}
-      - [trả góp]{"entity":"tragop"} như thế nào
-      - [trả góp]{"entity":"tragop"} là gì
-      - [trả góp]{"entity":"tragop"} lãi suất như thế nào
+      - [Hỗ trợ khác]{"entity": "grt.hotrokhac"}
+      - [hỗ trợ khác]{"entity": "grt.hotrokhac"}
 
-  - intent: khuyen_mai  
+  - intent: dv.tra_gop  
     examples: |
-      - Tôi muốn xem chương trình [khuyến mãi]{"entity":"khuyenmai"}
-      - Hiện nay có những chương trình [khuyến mãi] nào{"entity":"khuyenmai"}
-      - [khuyến mãi]{"entity":"khuyenmai"}
-      - chương trình [khuyến mãi]{"entity":"khuyenmai"}
+      - [Trả góp]{"entity":"dv.tragop"} theo phương thức nào khác không
+      - [Trả góp] qua thẻ visa{"entity":"dv.tragop"}
+      - Có [trả góp]{"entity":"dv.tragop"} được không
+      - Có nhu cầu [trả góp]{"entity":"dv.tragop"}
+      - [trả góp]{"entity":"dv.tragop"}
+      - tôi muốn [trả góp]{"entity":"dv.tragop"}
+      - [trả góp]{"entity":"dv.tragop"} như thế nào
+      - [trả góp]{"entity":"dv.tragop"} là gì
+      - [trả góp]{"entity":"dv.tragop"} lãi suất như thế nào
 
-  - intent: ve_sinh_server
+  - intent: kd.khuyen_mai  
     examples: |
-      - [vệ sinh server]{"entity":"vesinhserver"}
-      - [vệ sinh máy chủ]{"entity":"vesinhserver"}
-      - [vs server]{"entity":"vesinhserver"}
-      - [vs may chu]{"entity":"vesinhserver"}
-      - [vs máy chủ]{"entity":"vesinhserver"}
+      - Tôi muốn xem chương trình [khuyến mãi]{"entity":"kd.khuyenmai"}
+      - Hiện nay có những chương trình [khuyến mãi] nào{"entity":"kd.khuyenmai"}
+      - [khuyến mãi]{"entity":"kd.khuyenmai"}
+      - chương trình [khuyến mãi]{"entity":"kd.khuyenmai"}
+      - giờ mua PC có [km]{"entity" : "kd.khuyenmai"} gì ko shop
+      - shop có [khuyến mại]{"entity" : "kd.khuyenmai"} gì không
+      - mình mua sản phẩm này có [KM]{"entity" : "kd.khuyenmai"} gì ko ạ 
+      - mua sản phẩm này có [KM]{"entity" : "kd.khuyenmai"} gì ko
+      - bên shop đang có chương trình [KM]{"entity" : "kd.khuyenmai"} gì ạ
 
-  - intent: ve_sinh_mtvp
+  - intent: kt.ve_sinh_server
     examples: |
-      - [vệ sinh máy tính] desktop{"entity":"vesinhmtvp"}
-      - [vs máy tính vp]{"entity":"vesinhmtvp"}
-      - [vệ sinh máy tính văn phòng]{"entity":"vesinhmtvp"}
-      - [vs máy tính văn phòng]{"entity":"vesinhmtvp"}
-      - [vệ sinh mt vp]{"entity":"vesinhmtvp"}
-      - [vệ sinh desktop]{"entity":"vesinhmtvp"}
-      - [làm sạch mt]{"entity":"vesinhmtvp"}
-      - [vệ sinh máy văn phòng]{"entity":"vesinhmtvp"}
-      - [vệ sinh máy vp]{"entity":"vesinhmtvp"}
+      - vệ sinh server
+      - vệ sinh máy chủ
+      - vs server
+      - vs may chu
+      - vs máy chủ
 
-  - intent: san_pham
+  - intent: kt.ve_sinh_mtvp
     examples: |
-      - [sản phẩm] giảm giá{"entity":"sanpham"}
-      - thông tin [sp]{"entity":"sanpham"}
-      - thông tin [sản phẩm mới]{"entity":"sanpham"}
-      - [sản phẩm xả tồn]{"entity":"sanpham"}
-      - [hotdeal]{"entity":"sanpham"}
-      - [flash sale]{"entity":"sanpham"}
-      - [sp] top sale{"entity":"sanpham"}
-      - [topsale]{"entity":"sanpham"}
-      - [bán chạy]{"entity":"sanpham"}
-      - [bán chạy] nhất trong tháng{"entity":"sanpham"}
-      - xem thông tin [sp]{"entity":"sanpham"}
-      - chi tiết thông tin [sản phẩm]{"entity":"sanpham"}
-      - chi tiết [cấu hình]
-      - [sản phẩm] hết hàng{"entity":"sanpham"}
-      - [sản phẩm] còn hàng không{"entity":"sanpham"}
-      - [sp] này còn không{"entity":"sanpham"}
-      - [sp] này còn hàng không{"entity":"sanpham"}
-      - [còn hàng]{"entity":"sanpham"}
+      - vệ sinh máy tính desktop
+      - vs máy tính vp
+      - vệ sinh máy tính văn phòng
+      - vs máy tính văn phòng
+      - vệ sinh mtvp
+      - vệ sinh desktop
+      - làm sạch mt
+      - vệ sinh máy văn phòng
+      - vệ sinh máy vp
 
-  - intent: greet
+  - intent: kd.san_pham
     examples: |
-      - [hey???]{"entity":"greet"}
-      - [hello]{"entity":"greet"}
-      - [hi]{"entity":"greet"}
-      - [chào]{"entity":"greet"}
-      - [xin chào]{"entity":"greet"}
-      - [chào bot]{"entity":"greet"}
-      - [có ai ở đó không]{"entity":"greet"}
-      - [tôi cần hỗ trợ]{"entity":"greet"}
-      - [Chào bạn]{"entity":"greet"}
-      - [Chào anh]{"entity":"greet"}
-      - [Chào chị]{"entity":"greet"}
-      - [Chào buổi sáng]{"entity":"greet"}
-      - [Có đó không]{"entity":"greet"}
-      - [Rãnh không]{"entity":"greet"}
-      - [Ê]{"entity":"greet"}
-      - [Hú]{"entity":"greet"}
-      - [chào em]{"entity":"greet"}
-      - [em ơi, cho anh hỏi]{"entity":"greet"}
-      - [bot ơi]{"entity":"greet"}
-      - [cho mình hỏi chút]{"entity":"greet"}
-      - [hacom]{"entity":"greet"}
-      - [chào hacom]{"entity":"greet"}
-      - [Chào Hacom]{"entity":"greet"}
-      - [chao HACOM]{"entity":"greet"}
-      - [hi hacom]{"entity":"greet"}
-      - [hello hacom]{"entity":"greet"}
-      - [morning hacom]{"entity":"greet"}
-      - [chào hanoi computer]{"entity":"greet"}
-      - [hi hanoi computer]{"entity":"greet"}
-      - [hi hanoicomputer]{"entity":"greet"}
-      - [Xin chào admin]{"entity":"greet"}
-      - [Chào]{"entity":"greet"}
-      - [Cảm ơn]{"entity":"greet"}
-      - [Gửi đơn qua email]{"entity":"greet"}
-      - [Đặt cọc sản phẩm]{"entity":"greet"}
-      - [Để tôi tìm sản phẩm khác]{"entity":"greet"}
-      - [Tư vấn thêm cho tôi.]{"entity":"greet"}
-      - [Shop ơi cho em hỏi]{"entity":"greet"}
-      - [ALO]{"entity":"greet"}
-      - [Tư vấn bán hàng]{"entity":"greet"}
-      - [Còn hàng không]{"entity":"greet"}
-      - [Chào bạn]{"entity":"greet"}
-      - [Dạ mình cảm ơn ạ]{"entity":"greet"}
-      - [Bạn cho mình hỏi chút với]{"entity":"greet"}
-      - [Chào bạn]{"entity":"greet"}
+      - sản phẩm giảm giá
+      - thông tin sp
+      - thông tin sản phẩm mới
+      - sản phẩm xả tồn
+      - hotdeal
+      - flash sale
+      - sp top sale
+      - topsale
+      - bán chạy
+      - bán chạy nhất trong tháng{
+      - xem thông tin sp
+      - chi tiết thông tin sản phẩm
+      - chi tiết cấu hình
+      - sản phẩm hết hàng{"entity":"sanpham"}
+      - sản phẩm còn hàng không
+      - sp này còn không
+      - sp này còn hàng không
+      - sp còn hàng
 
-  - intent: happy
+  - intent: grt.greet
     examples: |
-      - Thật [hạnh phúc]{"entity":"happy"}
-      - [Tuyệt vời]{"entity":"happy"}
-      - [Quá tuyệt]{"entity":"happy"}
+      - hey???
+      - hello
+      - hi
+      - chào
+      - xin chào
+      - chào bot
+      - có ai ở đó không
+      - tôi cần hỗ trợ
+      - Chào bạn
+      - Chào anh
+      - Chào chị
+      - Chào buổi sáng
+      - Có đó không
+      - [Rãnh không
+      - Ê
+      - Hú
+      - chào em
+      - em ơi, cho anh hỏi
+      - bot ơi
+      - cho mình hỏi chút
+      - hacom
+      - chào hacom
+      - Chào Hacom
+      - chao HACOM
+      - hi hacom
+      - hello hacom
+      - morning hacom
+      - chào hanoi computer
+      - hi hanoi computer
+      - hi hanoicomputer
+      - Xin chào admin
+      - Chào
+      - Cảm ơn
+      - Shop ơi cho em hỏi
+      - ALO
+      - Chào bạn
+      - Bạn cho mình hỏi chút với
+      - Chào bạn
 
-  - intent: iamabot
+  - intent: grt.happy
     examples: |
-      - bạn là một con [bot]{"entity":"iamabot"} ?
-      - bạn là [human]{"entity":"iamabot"} ?
-      - bạn là [người]{"entity":"iamabot"}
-      - [người] chat{"entity":"iamabot"}
-      - [bot] chat{"entity":"iamabot"}
-      - am I talking to a [bot]{"entity":"iamabot"}
-      - am I talking to a [human]{"entity":"iamabot"}
-      - ai đang [nói chuyện]{"entity":"iamabot"}
-      - ai đang [chat]{"entity":"iamabot"}
-      - [bạn là ai]{"entity":"iamabot"}
-      - [có phải nhân viên không]{"entity":"iamabot"}
-      - [có phải nhân viên chăm sóc khách hàng không]{"entity":"iamabot"}
-      - [có phải nhân viên]{"entity":"iamabot"}
+      - Thật hạnh phúc
+      - Tuyệt vời
+      - Quá tuyệt
 
-  - intent: bao_loi
+  - intent: grt.iamabot
     examples: |
-      - Máy tính của tôi bị [lỗi] tôi phải làm gì{"entity":"baoloi"}
-      - máy tôi lại [bị treo] r{"entity":"baoloi"}
-      - làm sao đây máy tôi [không khởi động được]{"entity":"baoloi"}
-      - tai nghe tôi [bị rè]{"entity":"baoloi"}
-      - [lỗi]{"entity":"baoloi"}
-      - [báo lỗi]{"entity":"baoloi"}
-      - [lỗi màn hình]{"entity":"baoloi"}
-      - [màn hình bị lỗi]{"entity":"baoloi"}
+      - bạn là một con bot ?
+      - bot chat
+      - am I talking to a bot
+      - am I talking to a human
+      - ai đang nói chuyện
+      - ai đang chat
+      - bạn là ai
+      - có phải nhân viên không
+      - có phải nhân viên chăm sóc khách hàng không
+      - có phải nhân viên
 
-  - intent: mua_lai_ssd_cu 
+  - intent: kt.bao_loi
     examples: |
-      - Dịch vụ [nâng cấp ssd]{"entity":"mualaissdcu"}
-      - Hacom sẽ thu lại [ssd] của tôi và lắp một chiếc ssd khác tốt hơn phải không{"entity":"mualaissdcu"}
-      - [mua lại ssd cu]{"entity":"mualaissdcu"}
-      - [mua lại ssd]{"entity":"mualaissdcu"}
-      - [ssd]{"entity":"mualaissdcu"}
-      - [mua ssd]{"entity":"mualaissdcu"}
+      - Máy tính của tôi bị lỗi tôi phải làm gì
+      - máy tôi lại bị treo r
+      - làm sao đây máy tôi không [khởi động] được
+      - tai nghe tôi bị rè
+      - lỗi
+      - báo lỗi
+      - lỗi màn hình
+      - màn hình bị lỗi
 
-  - intent: lay_hoa_don
+  - intent: dv.mua_lai_ssd_cu 
     examples: |
-      - Tôi muốn lấy [hóa đơn mua hàng]{"entity":"layhoadon"}
-      - [Hóa đơn]{"entity":"lay_hoa_don"}
-      - [hóa đơn]{"entity":"lay_hoa_don"}
-      - [hóa đơn] của tôi{"entity":"lay_hoa_don"}
+      - Dịch vụ nâng cấp ssd
+      - Hacom sẽ thu lại ssd của tôi và lắp một chiếc ssd khác tốt hơn phải không
+      - mua lại ssd cu
+      - mua lại ssd
+      - ssd
+      - mua ssd
 
-  - intent: contact_nvkd
+  - intent: dv.lay_hoa_don
     examples: |
-      - [Nhân viên kinh doanh]{"entity":"contactnvkd"}
-      - Kết nối đến [nhân viên kinh doanh]{"entity":"contactnvkd"}
-      - [kinh doanh]{"entity":"contactnvkd"}
-      - [nvkd]{"entity":"contactnvkd"}
+      - Tôi muốn lấy [hóa đơn]{"entity":"dv.layhoadon"}mua hàng
+      - [Hóa đơn]{"entity":"dv.layhoadon"}
+      - [hóa đơn]{"entity":"dv.layhoadon"}
+      - [hóa đơn]{"entity":"dv.layhoadon"} của tôi
 
-  - intent: dat_lai_mk
+  - intent: grt.contact_nvkd
     examples: |
-      - Tôi muốn đặt lại [mật khẩu]{"entity":"datlaimk"}
-      - [mật khẩu]{"entity":"datlaimk"}
-      - đặt lại [mật khẩu] như thế nào{"entity":"datlaimk"}
-      - [mật khẩu] là gì{"entity":"datlaimk"}                                   
-      - [mật khẩu] đặt lại{"entity":"datlaimk"}
+      - [Nhân viên kinh doanh]{"entity":"grt.contactnvkd"}
+      - Kết nối đến [nhân viên kinh doanh]{"entity":"grt.contactnvkd"}
+      - [nv kinh doanh]{"entity":"grt.contactnvkd"}
+      - [nvkd]{"entity":"grt.contactnvkd"}
+      - [nhân viên kd]{"entity":"grt.contactnvkd"}
 
-  - intent: theo_doi_don
+  - intent: dv.dat_lai_mat_khau
     examples: |
-      - [theo dõi đơn]{"entity":"theodoidon"}
-      - [đơn hàng] của tôi{"entity":"theodoidon"}
-      - theo dõi [đơn hàng]{"entity":"theodoidon"} của tôi
-      - đơn hàng cần [theo dõi]{"entity":"theodoidon"}
+      - Tôi muốn đặt lại [mật khẩu]{"entity":"dv.datlaimatkhau"}
+      - [mật khẩu]{"entity":"dv.datlaimatkhau"}
+      - đặt lại [mật khẩu]{"entity":"dv.datlaimatkhau"} như thế nào
+      - [mật khẩu]{"entity":"dv.datlaimatkhau"} là gì                                   
+      - [mật khẩu]{"entity":"dv.datlaimatkhau"} đặt lại
 
-  - intent: gioi_thieu
+  - intent: dv.theo_doi_don
     examples: |
-      - [giới thiệu] HACOM{"entity":"gioithieu"}
-      - [hacom]{"entity":"gioithieu"} là gì
-      - [giới thiệu]{"entity":"gioithieu"}
-      - Hacom [thành lập]{"entity":"gioithieu"} như thế nào
+      - theo dõi đơn
+      - đơn hàng của tôi
+      - theo dõi đơn hàng của tôi
+      - đơn hàng cần theo dõi
 
-  - intent: tong_dai
+  - intent: grt.gioi_thieu
     examples: |
-      - [tổng đài]{"entity":"tongdai"}
-      - liên hệ [tổng đài]{"entity":"tongdai"}
-      - số điện thoại [tổng đài]{"entity":"tongdai"}
-      - gọi [tổng đài]{"entity":"tongdai"} hộ tôi
-      - [liên hệ]{"entity":"tongdai"}
-      - xin [sdt]{"entity":"tongdai"}
-      - [số điện thoại] là gì{"entity":"tongdai"}
-      - [sdt] là gì{"entity":"tongdai"}
+      - giới thiệu HACOM
+      - hacom là gì
+      - giới thiệu
+      - Hacom thành lập như thế nào
+      - giới thiệu về hacom đi
+      - giới thiệu hacom
+      - hacom thành lập
+      - ngày thành lập hacom
+      - hacom là công ty gì
+      - hacom có tác dụng gì
+      - hacom thành lập như thế nào
+
+  - intent: grt.tong_dai
+    examples: |
+      - [tổng đài]{"entity":"grt.tongdai"}
+      - liên hệ [tổng đài]{"entity":"grt.tongdai"}
+      - số điện thoại [tổng đài]{"entity":"grt.tongdai"}
+      - gọi [tổng đài]{"entity":"grt.tongdai"} hộ tôi
+      - [liên hệ]{"entity":"grt.tongdai"}
+      - xin [sdt]{"entity":"grt.tongdai"}
+      - [số điện thoại]{"entity":"grt.tongdai"} là gì
+      - [sdt]{"entity":"grt.tongdai"} là gì
 
   - intent: product_code
     examples: |
@@ -536,112 +569,164 @@ nlu:
       - [INBR082](productcode)
       - [INHP280](productcode)
       - [WSDE144](productcode)
+      - [WSDE145](productcode)
+      - [WSDE234](productcode)
+      - [WSFE432](productcode)
+      - [FAND509](productcode)
+      - [FAND507](productcode)
+      - [FANC739](productcode)
+      - [FAND020](productcode)
+      - [FAND350](productcode)
+      - [FAND351](productcode)
+      - [FAND501](productcode)
+      - [MOMS044](productcode)
+      - [MOMS088](productcode)
+      - [MOMS086](productcode)
+      - [MOMS087](productcode)
+      - [MOMS094](productcode)
+      - [MOMS052](productcode)
+      - [DIAD284](productcode)
+      - [DIAD285](productcode)
+      - [DIAD235](productcode)
+      - [DIAD267](productcode)
+      - [DIAD421](productcode)
+      - [DIAD386](productcode)
+      - [DIAD413](productcode)
+      - [PCLE270](productcode)
+      - [PCDE895](productcode)
+      - [PCDE888](productcode)
+      - [PCDE878](productcode)
+      - [PCHP769](productcode)
+      - [PCLE279](productcode)
+      - [PCLE269](productcode)
+      - [PCLE276](productcode)
+      - [PCLE267](productcode)
+      - [PCLE272](productcode)
+      - [PCLE266](productcode)
+      - [DWAS034](productcode)
+      - [DWAS003](productcode)
+      - [DWAS030](productcode)
+      - [MBAS597](productcode)
+      - [PWAS012](productcode)
+      - [PWAS015](productcode)
+      - [PWAS004](productcode)
+      - [MBAS740](productcode)
+      - [MBAS761](productcode)
+      - [CSSA106](productcode)
+      - [RAGS502](productcode)
+      - [RAGS490](productcode)
+      - [RAGS507](productcode)
+      - [RAGS451](productcode)
+      - [RAGS504](productcode)
+      - [RAGS506](productcode)
+      - [RAGS493](productcode)
+      - [PCCU001](productcode)
 
   # Update 4/11/2023
-  - intent: bao_hanh_tai_nha
+  - intent: dv.bao_hanh_tai_nha
     examples: |
-      - Kiểm tra lỗi [tại nhà]{"entity": "baohanhtainha"}
-      - Tiếp nhận [tại nơi sử dụng]{"entity": "baohanhtainha"}
-      - Xử lý [tại nhà]{"entity": "baohanhtainha"}
-      - dịch vụ [tại nhà]{"entity": "baohanhtainha"}
-      - sửa chữa [tại nhà]{"entity": "baohanhtainha"}
-      - cài đặt [tại nhà]{"entity": "baohanhtainha"}
-      - bảo hành [tại nhà]{"entity": "baohanhtainha"}
-      - kiểm tra [tại nhà]{"entity": "baohanhtainha"}
-      - xem trước [tại nhà]{"entity": "baohanhtainha"}
-      - thay thế [tại nhà]{"entity": "baohanhtainha"}
+      - Kiểm tra lỗi [tại nhà]{"entity": "dv.baohanhtainha"}
+      - Tiếp nhận [tại nơi sử dụng]{"entity": "dv.baohanhtainha"}
+      - Xử lý [tại nhà]{"entity": "dv.baohanhtainha"}
+      - dịch vụ [tại nhà]{"entity": "dv.baohanhtainha"}
+      - sửa chữa [tại nhà]{"entity": "dv.baohanhtainha"}
+      - cài đặt [tại nhà]{"entity": "dv.baohanhtainha"}
+      - bảo hành [tại nhà]{"entity": "dv.baohanhtainha"}
+      - kiểm tra [tại nhà]{"entity": "dv.baohanhtainha"}
+      - xem trước [tại nhà]{"entity": "dv.baohanhtainha"}
+      - thay thế [tại nhà]{"entity": "dv.baohanhtainha"}
 
-  - intent: cai_dat_may_in
+  - intent: kt.cai_dat_may_in
     examples: |
-      - cài đặt [máy in]{"entity": "caidatmayin"}
-      - [máy in]{"entity": "caidatmayin"} lỗi kết nối
-      - không [in]{"entity": "caidatmayin"} được
-      - [máy in]{"entity": "caidatmayin"} báo lỗi
-      - [máy in]{"entity": "caidatmayin"} không in được
-      - [máy in]{"entity": "caidatmayin"} không in được
-      - không kết nối [máy in]{"entity": "caidatmayin"} được với laptop
-      - không kết nối [máy in]{"entity": "caidatmayin"} được với pc
-      - lỗi kết nối [máy in]{"entity": "caidatmayin"}
-      - kết nối [máy in]{"entity": "caidatmayin"}
-      - không kết nối được [máy in]{"entity": "caidatmayin"}
+      - cài đặt máy in
+      - máy in lỗi kết nối
+      - không in được
+      - máy in báo lỗi
+      - máy in không in được
+      - máy in không in được
+      - không kết nối máy in được với laptop
+      - không kết nối máy in được với pc
+      - lỗi kết nối máy in
+      - kết nối máy in
+      - không kết nối được máy in
 
-  - intent: dia_chi_bac_giang
+  - intent: vt.bac_giang
     examples: |
-      - bên mình có chi nhánh ở [Bắc Giang]{"entity": "diachibacgiang"} không 
-      - dc chi nhanh [Bắc Giang]{"entity": "diachibacgiang"}
-      - Hacom [bac giang]{"entity": "diachibacgiang"} ở đâu
-      - hacom [bắc giang]{"entity": "diachibacgiang"}
-      - cn [Bắc Giang]{"entity": "diachibacgiang"}
-      - hacom có chi nhánh ở [Bắc Giang]{"entity": "diachibacgiang"} không
-      - Hacom [bắc giang]{"entity": "diachibacgiang"} ở chỗ nào 
-      - địa chỉ chi nhánh [Bắc Giang]{"entity": "diachibacgiang"}
-      - cho mình hỏi địa chỉ Hacom [Bắc Giang]{"entity": "diachibacgiang"}
-      - chi nhanh hung vuong [bắc giang]{"entity": "diachibacgiang"}
-      - chi nhanh [bac giang]{"entity": "diachibacgiang"}
-      - Địa chỉ chi nhánh [bac giang]{"entity": "diachibacgiang"}
-      - địa chỉ Hacom [Bắc Giang]{"entity": "diachibacgiang"}
-      - chi nhánh [Bắc Giang]{"entity": "diachibacgiang"}
-      - hacom [Bắc Giang]{"entity": "diachibacgiang"}
-      - dc [bac giang]{"entity": "diachibacgiang"}
-      - cn [bac giang]{"entity": "diachibacgiang"}
-      - cn hùng vương [bac giang]{"entity": "diachibacgiang"}
-      - ben minh co chi nhanh o [Bắc Giang]{"entity": "diachibacgiang"} khong 
-      - Hacom hùng vương [Bắc Giang]{"entity": "diachibacgiang"}
-      - cho mình hỏi địa chỉ chi nhánh [Bắc Giang]{"entity": "diachibacgiang"}
-      - chi nhánh hùng vương [Bắc Giang]{"entity": "diachibacgiang"}
-      - chi nhánh [Bắc Giang]{"entity": "diachibacgiang"} ở đâu 
-      - cho xin địa chỉ hacom [Bắc Giang]{"entity": "diachibacgiang"}
+      - bên mình có chi nhánh ở [Bắc Giang]{"entity": "vt.bacgiang"} không 
+      - dc chi nhanh [Bắc Giang]{"entity": "vt.bacgiang"}
+      - Hacom [bac giang]{"entity": "vt.bacgiang"} ở đâu
+      - hacom [bắc giang]{"entity": "vt.bacgiang"}
+      - cn [Bắc Giang]{"entity": "vt.bacgiang"}
+      - hacom có chi nhánh ở [Bắc Giang]{"entity": "vt.bacgiang"} không
+      - Hacom [bắc giang]{"entity": "vt.bacgiang"} ở chỗ nào 
+      - địa chỉ chi nhánh [Bắc Giang]{"entity": "vt.bacgiang"}
+      - cho mình hỏi địa chỉ Hacom [Bắc Giang]{"entity": "vt.bacgiang"}
+      - chi nhanh hung vuong [bắc giang]{"entity": "vt.bacgiang"}
+      - chi nhanh [bac giang]{"entity": "vt.bacgiang"}
+      - Địa chỉ chi nhánh [bac giang]{"entity": "vt.bacgiang"}
+      - địa chỉ Hacom [Bắc Giang]{"entity": "vt.bacgiang"}
+      - chi nhánh [Bắc Giang]{"entity": "vt.bacgiang"}
+      - hacom [Bắc Giang]{"entity": "vt.bacgiang"}
+      - dc [bac giang]{"entity": "vt.bacgiang"}
+      - cn [bac giang]{"entity": "vt.bacgiang"}
+      - cn hùng vương [bac giang]{"entity": "vt.bacgiang"}
+      - ben minh co chi nhanh o [Bắc Giang]{"entity": "vt.bacgiang"} khong 
+      - Hacom hùng vương [Bắc Giang]{"entity": "vt.bacgiang"}
+      - cho mình hỏi địa chỉ chi nhánh [Bắc Giang]{"entity": "vt.bacgiang"}
+      - chi nhánh hùng vương [Bắc Giang]{"entity": "vt.bacgiang"}
+      - chi nhánh [Bắc Giang]{"entity": "vt.bacgiang"} ở đâu 
+      - cho xin địa chỉ hacom [Bắc Giang]{"entity": "vt.bacgiang"}
 
-  - intent: dia_chi_cau_giay
+  - intent: vt.cau_giay
     examples: |
-      - địa chỉ [cầu giấy]{"entity": "diachicaugiay"}
-      - chi nhánh [cầu giấy]{"entity": "diachicaugiay"}
-      - địa chỉ [cầu giấy]{"entity": "diachicaugiay"}
-      - Hacom [cau giay]{"entity": "diachicaugiay"} o cho nao 
-      - Hacom [cau giay]{"entity": "diachicaugiay"}
-      - cho xin dc hacom nguyễn văn huyên [cầu giấy]{"entity": "diachicaugiay"}
-      - ben minh co chi nhanh o [Cau giay]{"entity": "diachicaugiay"} khong 
-      - cho mình hỏi địa chỉ chi nhánh nguyễn văn huyên [cầu giấy]{"entity": "diachicaugiay"}
-      - Địa chỉ chi nhánh [Cầu Giấy]{"entity": "diachicaugiay"}
-      - chi nhánh [nguyễn văn huyên]{"entity": "diachicaugiay"} ở đâu 
-      - cho xin dc hacom [cầu giấy]{"entity": "diachicaugiay"}
-      - Địa chỉ chi nhánh [Nguyễn Văn Huyên]{"entity": "diachicaugiay"}
-      - cho mình hỏi địa chỉ chi nhánh [cầu giấy]{"entity": "diachicaugiay"}
-      - dc chi nhanh [cầu giấy]{"entity": "diachicaugiay"}
-      - dc chi nhanh [nguyen van huyen]{"entity": "diachicaugiay"}
-      - hacom có chi nhánh ở [cầu giấy]{"entity": "diachicaugiay"} không
-      - Hacom [cầu giấy]{"entity": "diachicaugiay"}
-      - bên mình có chi nhánh ở [Nguyễn Văn Huyên]{"entity": "diachicaugiay"} không
-      - địa chỉ Hacom [cầu giấy]{"entity": "diachicaugiay"}
-      - ben minh co chi nhanh o [Nguyen van huyen]{"entity": "diachicaugiay"} khong 
-      - bên mình có chi nhánh ở [cầu giấy]{"entity": "diachicaugiay"} không 
-      - Hacom [cầu giấy]{"entity": "diachicaugiay"} ở đâu
-      - chi nhánh [cầu giấy]{"entity": "diachicaugiay"} ở đâu 
-      - Hacom [Cầu Giấy]{"entity": "diachicaugiay"} ở chỗ nào 
+      - địa chỉ [cầu giấy]{"entity": "vt.caugiay"}
+      - chi nhánh [cầu giấy]{"entity": "vt.caugiay"}
+      - địa chỉ [cầu giấy]{"entity": "vt.caugiay"}
+      - Hacom [cau giay]{"entity": "vt.caugiay"} o cho nao 
+      - Hacom [cau giay]{"entity": "vt.caugiay"}
+      - cho xin dc hacom nguyễn văn huyên [cầu giấy]{"entity": "vt.caugiay"}
+      - ben minh co chi nhanh o [Cau giay]{"entity": "vt.caugiay"} khong 
+      - cho mình hỏi địa chỉ chi nhánh nguyễn văn huyên [cầu giấy]{"entity": "vt.caugiay"}
+      - Địa chỉ chi nhánh [Cầu Giấy]{"entity": "vt.caugiay"}
+      - chi nhánh [nguyễn văn huyên]{"entity": "vt.caugiay"} ở đâu 
+      - cho xin dc hacom [cầu giấy]{"entity": "vt.caugiay"}
+      - Địa chỉ chi nhánh [Nguyễn Văn Huyên]{"entity": "vt.caugiay"}
+      - cho mình hỏi địa chỉ chi nhánh [cầu giấy]{"entity": "vt.caugiay"}
+      - dc chi nhanh [cầu giấy]{"entity": "vt.caugiay"}
+      - dc chi nhanh [nguyen van huyen]{"entity": "vt.caugiay"}
+      - hacom có chi nhánh ở [cầu giấy]{"entity": "vt.caugiay"} không
+      - Hacom [cầu giấy]{"entity": "vt.caugiay"}
+      - bên mình có chi nhánh ở [Nguyễn Văn Huyên]{"entity": "vt.caugiay"} không
+      - địa chỉ Hacom [cầu giấy]{"entity": "vt.caugiay"}
+      - ben minh co chi nhanh o [Nguyen van huyen]{"entity": "vt.caugiay"} khong 
+      - bên mình có chi nhánh ở [cầu giấy]{"entity": "vt.caugiay"} không 
+      - Hacom [cầu giấy]{"entity": "vt.caugiay"} ở đâu
+      - chi nhánh [cầu giấy]{"entity": "vt.caugiay"} ở đâu 
+      - Hacom [Cầu Giấy]{"entity": "vt.caugiay"} ở chỗ nào 
   
-  - intent: dia_chi_dong_anh
+  - intent: vt.dong_anh
     examples: |
-      - Hacom [dong anh]{"entity": "diachidonganh"} o cho nao a
-      - cn [đông anh]{"entity": "diachidonganh"}
-      - cho xin dc hacom [dong anh]{"entity": "diachidonganh"} 
-      - ben minh co chi nhanh o [dong anh]{"entity": "diachidonganh"} khong a
-      - Địa chỉ chi nhánh [Đông Anh]{"entity": "diachidonganh"}
-      - dia chi [dong anh]{"entity": "diachidonganh"}
-      - Hacom [đông anh]{"entity": "diachidonganh"}
-      - địa chỉ Hacom [Đông Anh]{"entity": "diachidonganh"}
-      - hacom có chi nhánh ở [Đông Anh]{"entity": "diachidonganh"} ko ạ
-      - chi nhanh [dong anh]{"entity": "diachidonganh"}
-      - Hacom [đông anh]{"entity": "diachidonganh"} ở chỗ nào ạ
-      - hacom [dong anh]{"entity": "diachidonganh"}
-      - địa chỉ [đông anh]{"entity": "diachidonganh"}
-      - dc chi nhanh [dong anh]{"entity": "diachidonganh"}
-      - bên mình có chi nhánh ở [đông anh]{"entity": "diachidonganh"} không ạ
-      - cn [đông anh]{"entity": "diachidonganh"}
-      - chi nhánh [đông anh]{"entity": "diachidonganh"} ở đâu ạ
-      - cho mình hỏi địa chỉ chi nhánh [đông anh]{"entity": "diachidonganh"}
-      - Hacom [đông anh]{"entity": "diachidonganh"} ở đâu 
+      - Hacom [dong anh]{"entity": "vt.donganh"} o cho nao a
+      - cn [đông anh]{"entity": "vt.donganh"}
+      - cho xin dc hacom [dong anh]{"entity": "vt.donganh"} 
+      - ben minh co chi nhanh o [dong anh]{"entity": "vt.donganh"} khong a
+      - Địa chỉ chi nhánh [Đông Anh]{"entity": "vt.donganh"}
+      - dia chi [dong anh]{"entity": "vt.donganh"}
+      - Hacom [đông anh]{"entity": "vt.donganh"}
+      - địa chỉ Hacom [Đông Anh]{"entity": "vt.donganh"}
+      - hacom có chi nhánh ở [Đông Anh]{"entity": "vt.donganh"} ko ạ
+      - chi nhanh [dong anh]{"entity": "vt.donganh"}
+      - Hacom [đông anh]{"entity": "vt.donganh"} ở chỗ nào ạ
+      - hacom [dong anh]{"entity": "vt.donganh"}
+      - địa chỉ [đông anh]{"entity": "vt.donganh"}
+      - dc chi nhanh [dong anh]{"entity": "vt.donganh"}
+      - bên mình có chi nhánh ở [đông anh]{"entity": "vt.donganh"} không ạ
+      - cn [đông anh]{"entity": "vt.donganh"}
+      - chi nhánh [đông anh]{"entity": "vt.donganh"} ở đâu ạ
+      - cho mình hỏi địa chỉ chi nhánh [đông anh]{"entity": "vt.donganh"}
+      - Hacom [đông anh]{"entity": "vt.donganh"} ở đâu 
 
-  - intent: dia_chi_gan_nhat
+  - intent: vt.dia_chi_gan_nhat
     examples: |
       - đến chỗ nào
       - đến đâu
@@ -652,990 +737,782 @@ nlu:
       - cửa hàng HACOM ở đâu 
       - địa chỉ Hacom
 
-  - intent: dia_chi_ha_dong_1
+  - intent: vt.ha_dong_1
     examples: |
-      - Hacom [Hà Đông]{"entity": "diachihadong1"} ở đâu
-      - chi nhánh [quang trung]{"entity": "diachihadong1"}
-      - chi nhánh [quang trung]{"entity": "diachihadong1"}
-      - địa chỉ chi nhánh [Hà Đông]{"entity": "diachihadong1"}
-      - [Quang Trung]{"entity": "diachihadong1"}
-      - [hà đông 1]{"entity": "diachihadong1"}
-      - dc [hd1]{"entity": "diachihadong1"}
-      - chi nhánh [hà đông 1]{"entity": "diachihadong1"}
-      - Hacom [Ha dong 1]{"entity": "diachihadong1"} o dau
-      - ben minh co chi nhanh o [Ha Đong 1]{"entity": "diachihadong1"} khong 
-      - ĐC [quang trung]{"entity": "diachihadong1"}
-      - cho mình hỏi địa chỉ Hacom [Hà Đông 1]{"entity": "diachihadong1"}
-      - địa chỉ hacom [hà đông 1]{"entity": "diachihadong1"}
-      - hacom mạn [hà đông 1]{"entity": "diachihadong1"}
-      - hacom ở [hà đông 1]{"entity": "diachihadong1"}
-      - hacom [hà đông 1]{"entity": "diachihadong1"}
+      - Hacom [Hà Đông]{"entity": "vt.hadong1"} ở đâu
+      - chi nhánh [quang trung]{"entity": "vt.hadong1"}
+      - chi nhánh [quang trung]{"entity": "vt.hadong1"}
+      - địa chỉ chi nhánh [Hà Đông]{"entity": "vt.hadong1"}
+      - [Quang Trung]{"entity": "vt.hadong1"}
+      - [hà đông 1]{"entity": "vt.hadong1"}
+      - dc [hd1]{"entity": "vt.hadong1"}
+      - chi nhánh [hà đông 1]{"entity": "vt.hadong1"}
+      - Hacom [Ha dong 1]{"entity": "vt.hadong1"} o dau
+      - ben minh co chi nhanh o [Ha Đong 1]{"entity": "vt.hadong1"} khong 
+      - ĐC [quang trung]{"entity": "vt.hadong1"}
+      - cho mình hỏi địa chỉ Hacom [Hà Đông 1]{"entity": "vt.hadong1"}
+      - địa chỉ hacom [hà đông 1]{"entity": "vt.hadong1"}
+      - hacom mạn [hà đông 1]{"entity": "vt.hadong1"}
+      - hacom ở [hà đông 1]{"entity": "vt.hadong1"}
+      - hacom [hà đông 1]{"entity": "vt.hadong1"}
 
-  - intent: dia_chi_ha_dong_2
+  - intent: vt.ha_dong_2
     examples: |
-      - chi nhanh [ha dong 2]{"entity": "diachihadong2"}
-      - ben minh co chi nhanh o [Ha dong 2]{"entity": "diachihadong2"}không 
-      - gần [Hà Đông 2]{"entity": "diachihadong2"} có chi nhánh nào không
-      - hacom [hà đông 2]{"entity": "diachihadong2"}
-      - bên mình có chi nhánh ở [Hà Đông 2]{"entity": "diachihadong2"} không 
-      - hacom [tran phu]{"entity": "diachihadong2"}
-      - bên mình có chi nhánh ở [Trần Phú Hà Đông]{"entity": "diachihadong2"} không 
-      - Hacom [Trần Phú]{"entity": "diachihadong2"}
-      - chi nhanh [tran phu]{"entity": "diachihadong2"}
-      - hacom [ha dong 2]{"entity": "diachihadong2"}
-      - chi nhánh [trần phú]{"entity": "diachihadong2"}
-      - địa chỉ Hacom [Hà Đông 2]{"entity": "diachihadong2"}
-      - gan [Ha Dong]{"entity": "diachihadong2"} co chi nhanh nao khong
-      - cho minh xin dia chi chi nhanh [ha dong 2]{"entity": "diachihadong2"}
-      - mình có chi nhánh ở [Hà Đông 2]{"entity": "diachihadong2"} không 
-      - địa chỉ chi nhánh [trần phú]{"entity": "diachihadong2"}
-      - chi nhanh [ha dong 2]{"entity": "diachihadong2"}
-      - dc hacom [ha dong 2]{"entity": "diachihadong2"}
-      - dc chi nhanh [ha dong 2]{"entity": "diachihadong2"}
+      - chi nhanh [ha dong 2]{"entity": "vt.hadong2"}
+      - ben minh co chi nhanh o [Ha dong 2]{"entity": "vt.hadong2"}không 
+      - gần [Hà Đông 2]{"entity": "vt.hadong2"} có chi nhánh nào không
+      - hacom [hà đông 2]{"entity": "vt.hadong2"}
+      - bên mình có chi nhánh ở [Hà Đông 2]{"entity": "vt.hadong2"} không 
+      - hacom [tran phu]{"entity": "vt.hadong2"}
+      - bên mình có chi nhánh ở [Trần Phú Hà Đông]{"entity": "vt.hadong2"} không 
+      - Hacom [Trần Phú]{"entity": "vt.hadong2"}
+      - chi nhanh [tran phu]{"entity": "vt.hadong2"}
+      - hacom [ha dong 2]{"entity": "vt.hadong2"}
+      - chi nhánh [trần phú]{"entity": "vt.hadong2"}
+      - địa chỉ Hacom [Hà Đông 2]{"entity": "vt.hadong2"}
+      - gan [Ha Dong]{"entity": "vt.hadong2"} co chi nhanh nao khong
+      - cho minh xin dia chi chi nhanh [ha dong 2]{"entity": "vt.hadong2"}
+      - mình có chi nhánh ở [Hà Đông 2]{"entity": "vt.hadong2"} không 
+      - địa chỉ chi nhánh [trần phú]{"entity": "vt.hadong2"}
+      - chi nhanh [ha dong 2]{"entity": "vt.hadong2"}
+      - dc hacom [ha dong 2]{"entity": "vt.hadong2"}
+      - dc chi nhanh [ha dong 2]{"entity": "vt.hadong2"}
 
-  - intent: dia_chi_ha_nam
+  - intent: vt.ha_nam
     examples: |
-      - bên mình có chi nhánh ở [Hà Nam]{"entity": "diachihanam"} không 
-      - chi nhánh [phu ly]{"entity": "diachihanam"}
-      - Địa chỉ chi nhánh [Hà nam]{"entity": "diachihanam"}
-      - Hacom [phủ lý]{"entity": "diachihanam"} ở đâu
-      - Hacom [Hà Nam]{"entity": "diachihanam"} ở đâu
-      - chi nhánh [Hà Nam]{"entity": "diachihanam"} ở đâu 
-      - cho hỏi địa chỉ [phủ lý]{"entity": "diachihanam"}
-      - ben minh co chi nhanh o [ha nam]{"entity": "diachihanam"} khong 
-      - cho xin dc hacom [ha nam]{"entity": "diachihanam"}
-      - chi nhanh [ha nam]{"entity": "diachihanam"}
-      - Hacom [Hà Nam]{"entity": "diachihanam"} ở chỗ nào 
-      - hacom có chi nhánh ở [Hà Nam]{"entity": "diachihanam"} không
-      - anh ơi cho em hỏi đc CN [Hà nam]{"entity": "diachihanam"}
-      - Hacom [ha nam]{"entity": "diachihanam"} o cho nao 
-      - "địa chỉ Hacom [Hà Nam]{"entity": "diachihanam"}	"
-      - chi nhánh [phủ lý]{"entity": "diachihanam"}
-      - cho hỏi địa chỉ [Phủ Lý]{"entity": "diachihanam"}
-      - dc chi nhanh [ha nam]{"entity": "diachihanam"}
-      - chi nhánh [hà nam]{"entity": "diachihanam"}
-      - cho hỏi địa chỉ cn [Hà nam]{"entity": "diachihanam"}
-      - cho mình hỏi địa chỉ chi nhánh [hà nam]{"entity": "diachihanam"}
-      - Địa chỉ chi nhánh [Hà Nam]{"entity": "diachihanam"}
-      - Hacom [Hà Nam ]{"entity": "diachihanam"}
-      - hacom [ha nam]{"entity": "diachihanam"}
-      - hacom [phu ly]{"entity": "diachihanam"}
+      - bên mình có chi nhánh ở [Hà Nam]{"entity": "vt.hanam"} không 
+      - chi nhánh [phu ly]{"entity": "vt.hanam"}
+      - Địa chỉ chi nhánh [Hà nam]{"entity": "vt.hanam"}
+      - Hacom [phủ lý]{"entity": "vt.hanam"} ở đâu
+      - Hacom [Hà Nam]{"entity": "vt.hanam"} ở đâu
+      - chi nhánh [Hà Nam]{"entity": "vt.hanam"} ở đâu 
+      - cho hỏi địa chỉ [phủ lý]{"entity": "vt.hanam"}
+      - ben minh co chi nhanh o [ha nam]{"entity": "vt.hanam"} khong 
+      - cho xin dc hacom [ha nam]{"entity": "vt.hanam"}
+      - chi nhanh [ha nam]{"entity": "vt.hanam"}
+      - Hacom [Hà Nam]{"entity": "vt.hanam"} ở chỗ nào 
+      - hacom có chi nhánh ở [Hà Nam]{"entity": "vt.hanam"} không
+      - anh ơi cho em hỏi đc CN [Hà nam]{"entity": "vt.hanam"}
+      - Hacom [ha nam]{"entity": "vt.hanam"} o cho nao 
+      - "địa chỉ Hacom [Hà Nam]{"entity": "vt.hanam"}	"
+      - chi nhánh [phủ lý]{"entity": "vt.hanam"}
+      - cho hỏi địa chỉ [Phủ Lý]{"entity": "vt.hanam"}
+      - dc chi nhanh [ha nam]{"entity": "vt.hanam"}
+      - chi nhánh [hà nam]{"entity": "vt.hanam"}
+      - cho hỏi địa chỉ cn [Hà nam]{"entity": "vt.hanam"}
+      - cho mình hỏi địa chỉ chi nhánh [hà nam]{"entity": "vt.hanam"}
+      - Địa chỉ chi nhánh [Hà Nam]{"entity": "vt.hanam"}
+      - Hacom [Hà Nam ]{"entity": "vt.hanam"}
+      - hacom [ha nam]{"entity": "vt.hanam"}
+      - hacom [phu ly]{"entity": "vt.hanam"}
 
-  - intent: dia_chi_dong_da
+  - intent: vt.dong_da
     examples: |
-      - chi nhánh [thái hà]{"entity": "diachidongda"}
-      - Địa chỉ chi nhánh [Thái Hà]{"entity": "diachidongda"}
-      - dc chi nhanh [dong da]{"entity": "diachidongda"}
-      - chi nhanh [dong da]{"entity": "diachidongda"}
-      - cn [thái hà]{"entity": "diachidongda"}
-      - Hacom [thái hà]{"entity": "diachidongda"}
-      - địa chỉ Hacom [Thái Hà]{"entity": "diachidongda"}
-      - cho xin dc hacom [thai ha]{"entity": "diachidongda"}
-      - địa chỉ Hacom [Đống Đa]{"entity": "diachidongda"}
-      - Hacom [thai ha]{"entity": "diachidongda"} o cho nao 
-      - Hacom [dong da]{"entity": "diachidongda"} o cho nao 
-      - hacom [dong da]{"entity": "diachidongda"}
-      - Hacom [thái hà]{"entity": "diachidongda"} ở đâu
-      - Hacom [Đống Đa]{"entity": "diachidongda"} ở chỗ nào
-      - hacom [thai ha]{"entity": "diachidongda"}
-      - chi nhanh [thai ha]{"entity": "diachidongda"}
-      - hacom có chi nhánh ở [Đống Đa]{"entity": "diachidongda"} không
-      - chi nhánh [Đống Đa]{"entity": "diachidongda"} ở đâu 
-      - hacom có chi nhánh ở [Thái Hà]{"entity": "diachidongda"} không
-      - cho xin dc hacom [dong da]{"entity": "diachidongda"}
-      - cho mình hỏi địa chỉ chi nhánh [Thái Hà]{"entity": "diachidongda"}
-      - chi nhánh [đống đa]{"entity": "diachidongda"}
-      - "bên mình có chi nhánh ở [thái hà]{"entity": "diachidongda"} không	"
-      - dc chi nhanh [thai ha]{"entity": "diachidongda"}
-      - cho mình hỏi địa chỉ chi nhánh [Đống Đa]{"entity": "diachidongda"}
-      - Hacom [Đống Đa]{"entity": "diachidongda"} ở đâu
-      - Địa chỉ chi nhánh [Đống Đa]{"entity": "diachidongda"}
-      - chi nhánh [Thái Hà]{"entity": "diachidongda"} ở đâu 
-      - Hacom [Thái Hà]{"entity": "diachidongda"} ở chỗ nào
-      - ben minh co chi nhanh o [Thai ha]{"entity": "diachidongda"} khong 
-      - ben minh co chi nhanh o [dong da]{"entity": "diachidongda"} khong 
-      - hacom [đống đa]{"entity": "diachidongda"}
-      - bên mình có chi nhánh ở [đống đa]{"entity": "diachidongda"} không
-      - cn [thai ha]{"entity": "diachidongda"}
+      - chi nhánh [thái hà]{"entity": "vt.dongda"}
+      - Địa chỉ chi nhánh [Thái Hà]{"entity": "vt.dongda"}
+      - dc chi nhanh [dong da]{"entity": "vt.dongda"}
+      - chi nhanh [dong da]{"entity": "vt.dongda"}
+      - cn [thái hà]{"entity": "vt.dongda"}
+      - Hacom [thái hà]{"entity": "vt.dongda"}
+      - địa chỉ Hacom [Thái Hà]{"entity": "vt.dongda"}
+      - cho xin dc hacom [thai ha]{"entity": "vt.dongda"}
+      - địa chỉ Hacom [Đống Đa]{"entity": "vt.dongda"}
+      - Hacom [thai ha]{"entity": "vt.dongda"} o cho nao 
+      - Hacom [dong da]{"entity": "vt.dongda"} o cho nao 
+      - hacom [dong da]{"entity": "vt.dongda"}
+      - Hacom [thái hà]{"entity": "vt.dongda"} ở đâu
+      - Hacom [Đống Đa]{"entity": "vt.dongda"} ở chỗ nào
+      - hacom [thai ha]{"entity": "vt.dongda"}
+      - chi nhanh [thai ha]{"entity": "vt.dongda"}
+      - hacom có chi nhánh ở [Đống Đa]{"entity": "vt.dongda"} không
+      - chi nhánh [Đống Đa]{"entity": "vt.dongda"} ở đâu 
+      - hacom có chi nhánh ở [Thái Hà]{"entity": "vt.dongda"} không
+      - cho xin dc hacom [dong da]{"entity": "vt.dongda"}
+      - cho mình hỏi địa chỉ chi nhánh [Thái Hà]{"entity": "vt.dongda"}
+      - chi nhánh [đống đa]{"entity": "vt.dongda"}
+      - "bên mình có chi nhánh ở [thái hà]{"entity": "vt.dongda"} không	"
+      - dc chi nhanh [thai ha]{"entity": "vt.dongda"}
+      - cho mình hỏi địa chỉ chi nhánh [Đống Đa]{"entity": "vt.dongda"}
+      - Hacom [Đống Đa]{"entity": "vt.dongda"} ở đâu
+      - Địa chỉ chi nhánh [Đống Đa]{"entity": "vt.dongda"}
+      - chi nhánh [Thái Hà]{"entity": "vt.dongda"} ở đâu 
+      - Hacom [Thái Hà]{"entity": "vt.dongda"} ở chỗ nào
+      - ben minh co chi nhanh o [Thai ha]{"entity": "vt.dongda"} khong 
+      - ben minh co chi nhanh o [dong da]{"entity": "vt.dongda"} khong 
+      - hacom [đống đa]{"entity": "vt.dongda"}
+      - bên mình có chi nhánh ở [đống đa]{"entity": "vt.dongda"} không
+      - cn [thai ha]{"entity": "vt.dongda"}
     
-  - intent: dia_chi_hai_ba_trung
+  - intent: vt.hai_ba_trung
     examples: |
-      - Hacom [Lê thanh nghị]{"entity": "diachihaibatrung"} ở chỗ nào 
-      - cho xin dc hacom [le thanh nghi]{"entity": "diachihaibatrung"}
-      - địa chỉ Hacom [Hai Bà Trưng]{"entity": "diachihaibatrung"}
-      - chi nhánh [Lê Thanh Nghị]{"entity": "diachihaibatrung"} ở đâu 
-      - Hacom [Le Thanh Nghi]{"entity": "diachihaibatrung"}
-      - Hacom [lê thanh nghị]{"entity": "diachihaibatrung"} ở đâu
-      - Địa chỉ chi nhánh [Hai Bà Trưng]{"entity": "diachihaibatrung"}
-      - "bên mình có chi nhánh ở [Hai Bà Trưng]{"entity": "diachihaibatrung"} không	"
-      - Hacom [Hai bà Trưng]{"entity": "diachihaibatrung"}
-      - ben minh co chi nhanh o [le thanh nghi]{"entity": "diachihaibatrung"} khong
-      - Hacom [hai bà trưng]{"entity": "diachihaibatrung"} ở chỗ nào 
-      - Hacom [hai ba trung]{"entity": "diachihaibatrung"} o cho nao 
-      - Hacom [hai bà trưng]{"entity": "diachihaibatrung"} ở đâu
-      - ben minh co chi nhanh o [hai ba trung]{"entity": "diachihaibatrung"} khong
-      - Hacom [Lê Thanh nghị]{"entity": "diachihaibatrung"}
-      - cho mình hỏi địa chỉ chi nhánh [Lê Thanh Nghị]{"entity": "diachihaibatrung"}
-      - dc chi nhanh [le thanh nghi]{"entity": "diachihaibatrung"}
-      - Địa chỉ chi nhánh [Lệ Thanh Nghị]{"entity": "diachihaibatrung"}
-      - dc chi nhanh [hai ba trung]{"entity": "diachihaibatrung"}
-      - cho mình hỏi địa chỉ chi nhánh [Hai Bà Trưng]{"entity": "diachihaibatrung"}
-      - Hacom [Hai ba Trung]{"entity": "diachihaibatrung"}
-      - "bên mình có chi nhánh ở [Lê Thanh Nghị]{"entity": "diachihaibatrung"} không	"
-      - chi nhánh [Hai Bà trưng]{"entity": "diachihaibatrung"} ở đâu 
-      - Hacom [le thanh nghi]{"entity": "diachihaibatrung"} o cho nao 
-      - hacom có chi nhánh ở [Hai Bà Trưng]{"entity": "diachihaibatrung"} không
-      - cho xin dc hacom [hai ba trung]{"entity": "diachihaibatrung"}
-      - địa chỉ Hacom [Lê Thanh Nghị]{"entity": "diachihaibatrung"}
-      - hacom có chi nhánh ở [Lê Thanh Nghị]{"entity": "diachihaibatrung"} không
+      - Hacom [Lê thanh nghị]{"entity": "vt.haibatrung"} ở chỗ nào 
+      - cho xin dc hacom [le thanh nghi]{"entity": "vt.haibatrung"}
+      - địa chỉ Hacom [Hai Bà Trưng]{"entity": "vt.haibatrung"}
+      - chi nhánh [Lê Thanh Nghị]{"entity": "vt.haibatrung"} ở đâu 
+      - Hacom [Le Thanh Nghi]{"entity": "vt.haibatrung"}
+      - Hacom [lê thanh nghị]{"entity": "vt.haibatrung"} ở đâu
+      - Địa chỉ chi nhánh [Hai Bà Trưng]{"entity": "vt.haibatrung"}
+      - "bên mình có chi nhánh ở [Hai Bà Trưng]{"entity": "vt.haibatrung"} không	"
+      - Hacom [Hai bà Trưng]{"entity": "vt.haibatrung"}
+      - ben minh co chi nhanh o [le thanh nghi]{"entity": "vt.haibatrung"} khong
+      - Hacom [hai bà trưng]{"entity": "vt.haibatrung"} ở chỗ nào 
+      - Hacom [hai ba trung]{"entity": "vt.haibatrung"} o cho nao 
+      - Hacom [hai bà trưng]{"entity": "vt.haibatrung"} ở đâu
+      - ben minh co chi nhanh o [hai ba trung]{"entity": "vt.haibatrung"} khong
+      - Hacom [Lê Thanh nghị]{"entity": "vt.haibatrung"}
+      - cho mình hỏi địa chỉ chi nhánh [Lê Thanh Nghị]{"entity": "vt.haibatrung"}
+      - dc chi nhanh [le thanh nghi]{"entity": "vt.haibatrung"}
+      - Địa chỉ chi nhánh [Lệ Thanh Nghị]{"entity": "vt.haibatrung"}
+      - dc chi nhanh [hai ba trung]{"entity": "vt.haibatrung"}
+      - cho mình hỏi địa chỉ chi nhánh [Hai Bà Trưng]{"entity": "vt.haibatrung"}
+      - Hacom [Hai ba Trung]{"entity": "vt.haibatrung"}
+      - bên mình có chi nhánh ở [Lê Thanh Nghị]{"entity": "vt.haibatrung"} không
+      - chi nhánh [Hai Bà trưng]{"entity": "vt.haibatrung"} ở đâu 
+      - Hacom [le thanh nghi]{"entity": "vt.haibatrung"} o cho nao 
+      - hacom có chi nhánh ở [Hai Bà Trưng]{"entity": "vt.haibatrung"} không
+      - cho xin dc hacom [hai ba trung]{"entity": "vt.haibatrung"}
+      - địa chỉ Hacom [Lê Thanh Nghị]{"entity": "vt.haibatrung"}
+      - hacom có chi nhánh ở [Lê Thanh Nghị]{"entity": "vt.haibatrung"} không
 
-  - intent: dia_chi_hai_phong
+  - intent: vt.hai_phong
     examples: |
-      - cn [Hải phòng]{"entity": "diachihaiphong"}
-      - Hacom [hải phòng]{"entity": "diachihaiphong"} ở đâu
-      - Địa chỉ chi nhánh [Hải Phòng]{"entity": "diachihaiphong"}
-      - địa chỉ Hacom [Hải Phòng]{"entity": "diachihaiphong"}
-      - chi nhánh [Hải Phòng]{"entity": "diachihaiphong"} ở đâu 
-      - Hacom [Hải Phòng]{"entity": "diachihaiphong"} ở chỗ nào 
-      - chi nhánh [tô hiệu]{"entity": "diachihaiphong"}
-      - cho xin dc hacom [hai phong]{"entity": "diachihaiphong"}
-      - chi nhánh [Hải Phòng]{"entity": "diachihaiphong"}
-      - "cho mình hỏi địa chỉ chi nhánh [hải phòng]{"entity": "diachihaiphong"}	"
-      - chi nhánh [Hai Phong]{"entity": "diachihaiphong"}
-      - Hacom [Hai phong]{"entity": "diachihaiphong"}
-      - Hacom [Hải phòng]{"entity": "diachihaiphong"}
-      - ben minh co chi nhanh o [Hai Phong]{"entity": "diachihaiphong"} khong 
-      - Hacom [to hieu]{"entity": "diachihaiphong"}
-      - cn [Hai phong]{"entity": "diachihaiphong"}
-      - chi nhanh [to hieu]{"entity": "diachihaiphong"}
-      - Hacom [tô hiệu]{"entity": "diachihaiphong"}
-      - bên mình có chi nhánh ở [Hải Phòng]{"entity": "diachihaiphong"} không
-      - Hacom [hai phong]{"entity": "diachihaiphong"} o cho nao 
-      - hacom có chi nhánh ở [Hải Phòng]{"entity": "diachihaiphong"} không
+      - cn [Hải phòng]{"entity": "vt.haiphong"}
+      - Hacom [hải phòng]{"entity": "vt.haiphong"} ở đâu
+      - Địa chỉ chi nhánh [Hải Phòng]{"entity": "vt.haiphong"}
+      - địa chỉ Hacom [Hải Phòng]{"entity": "vt.haiphong"}
+      - chi nhánh [Hải Phòng]{"entity": "vt.haiphong"} ở đâu 
+      - Hacom [Hải Phòng]{"entity": "vt.haiphong"} ở chỗ nào 
+      - chi nhánh [tô hiệu]{"entity": "vt.haiphong"}
+      - cho xin dc hacom [hai phong]{"entity": "vt.haiphong"}
+      - chi nhánh [Hải Phòng]{"entity": "vt.haiphong"}
+      - "cho mình hỏi địa chỉ chi nhánh [hải phòng]{"entity": "vt.haiphong"}	"
+      - chi nhánh [Hai Phong]{"entity": "vt.haiphong"}
+      - Hacom [Hai phong]{"entity": "vt.haiphong"}
+      - Hacom [Hải phòng]{"entity": "vt.haiphong"}
+      - ben minh co chi nhanh o [Hai Phong]{"entity": "vt.haiphong"} khong 
+      - Hacom [to hieu]{"entity": "vt.haiphong"}
+      - cn [Hai phong]{"entity": "vt.haiphong"}
+      - chi nhanh [to hieu]{"entity": "vt.haiphong"}
+      - Hacom [tô hiệu]{"entity": "vt.haiphong"}
+      - bên mình có chi nhánh ở [Hải Phòng]{"entity": "vt.haiphong"} không
+      - Hacom [hai phong]{"entity": "vt.haiphong"} o cho nao 
+      - hacom có chi nhánh ở [Hải Phòng]{"entity": "vt.haiphong"} không
     
-  - intent: dia_chi_linh_dam
+  - intent: vt.linh_dam
     examples: |
-      - Hacom [Linh Đam]{"entity": "diachilinhdam"} o cho nao 
-      - địa chỉ Hacom [Linh Đàm]{"entity": "diachilinhdam"}
-      - Hacom [Linh Đàm]{"entity": "diachilinhdam"} ở chỗ nào 
-      - Hacom [Thanh trì]{"entity": "diachilinhdam"} ở đâu
-      - "bên mình có chi nhánh ở [Thanh Trì]{"entity": "diachilinhdam"} không	"
-      - chi nhánh [linh đàm]{"entity": "diachilinhdam"}
-      - hacom [linh đàm]{"entity": "diachilinhdam"}
-      - hacom [thanh trì]{"entity": "diachilinhdam"}
-      - địa chỉ chi nhánh [linh đàm]{"entity": "diachilinhdam"}
-      - cho mình hỏi địa chỉ chi nhánh [linh đàm]{"entity": "diachilinhdam"}
-      - Hacom [Linh Đàm]{"entity": "diachilinhdam"} ở đâu
-      - ben minh co chi nhanh o [thanh tri]{"entity": "diachilinhdam"} khong 
-      - dc chi nhanh [thanh tri]{"entity": "diachilinhdam"}
-      - Địa chỉ chi nhánh [Linh Đàm]{"entity": "diachilinhdam"}
-      - Hacom [Linh Đàm]{"entity": "diachilinhdam"}
-      - địa chỉ [thanh trì]{"entity": "diachilinhdam"}
-      - hacom có chi nhánh ở [Thanh trì]{"entity": "diachilinhdam"} không
-      - ben minh co chi nhanh o [linh dam]{"entity": "diachilinhdam"} khong 
-      - Hacom [Thanh tri]{"entity": "diachilinhdam"} o cho nao 
-      - Hacom [thanh tri]{"entity": "diachilinhdam"}
-      - chi nhánh [linh đàm]{"entity": "diachilinhdam"} ở đâu
-      - địa chỉ chi nhánh [thanh trì]{"entity": "diachilinhdam"}
-      - hacom có chi nhánh ở [Linh Đàm]{"entity": "diachilinhdam"} không
-      - Hacom [linh dam]{"entity": "diachilinhdam"}
-      - Hacom [Thanh trì]{"entity": "diachilinhdam"}
-      - Địa chỉ chi nhánh [Thanh Trì]{"entity": "diachilinhdam"}
-      - địa chỉ hacom [linh đàm]{"entity": "diachilinhdam"}
-      - "địa chỉ Hacom [Thanh trì]{"entity": "diachilinhdam"}"
-      - dc chi nhanh [linh dam]{"entity": "diachilinhdam"}
-      - cho mình hỏi địa chỉ chi nhánh [thanh trì]{"entity": "diachilinhdam"}
-      - cho xin dc hacom [thanh tri]{"entity": "diachilinhdam"}
-      - "bên mình có chi nhánh ở [Linh Đàm]{"entity": "diachilinhdam"} không	"
-      - chi nhánh [thanh trì]{"entity": "diachilinhdam"} ở đâu
-      - cho xin dc hacom [linh dam]{"entity": "diachilinhdam"}
-      - địa chỉ hacom [thanh trì]{"entity": "diachilinhdam"}
-      - Hacom [Thanh Trì]{"entity": "diachilinhdam"} ở chỗ nào 
+      - Hacom [Linh Đam]{"entity": "vt.linhdam"} o cho nao 
+      - địa chỉ Hacom [Linh Đàm]{"entity": "vt.linhdam"}
+      - Hacom [Linh Đàm]{"entity": "vt.linhdam"} ở chỗ nào 
+      - Hacom [Thanh trì]{"entity": "vt.linhdam"} ở đâu
+      - "bên mình có chi nhánh ở [Thanh Trì]{"entity": "vt.linhdam"} không	"
+      - chi nhánh [linh đàm]{"entity": "vt.linhdam"}
+      - hacom [linh đàm]{"entity": "vt.linhdam"}
+      - hacom [thanh trì]{"entity": "vt.linhdam"}
+      - địa chỉ chi nhánh [linh đàm]{"entity": "vt.linhdam"}
+      - cho mình hỏi địa chỉ chi nhánh [linh đàm]{"entity": "vt.linhdam"}
+      - Hacom [Linh Đàm]{"entity": "vt.linhdam"} ở đâu
+      - ben minh co chi nhanh o [thanh tri]{"entity": "vt.linhdam"} khong 
+      - dc chi nhanh [thanh tri]{"entity": "vt.linhdam"}
+      - Địa chỉ chi nhánh [Linh Đàm]{"entity": "vt.linhdam"}
+      - Hacom [Linh Đàm]{"entity": "vt.linhdam"}
+      - địa chỉ [thanh trì]{"entity": "vt.linhdam"}
+      - hacom có chi nhánh ở [Thanh trì]{"entity": "vt.linhdam"} không
+      - ben minh co chi nhanh o [linh dam]{"entity": "vt.linhdam"} khong 
+      - Hacom [Thanh tri]{"entity": "vt.linhdam"} o cho nao 
+      - Hacom [thanh tri]{"entity": "vt.linhdam"}
+      - chi nhánh [linh đàm]{"entity": "vt.linhdam"} ở đâu
+      - địa chỉ chi nhánh [thanh trì]{"entity": "vt.linhdam"}
+      - hacom có chi nhánh ở [Linh Đàm]{"entity": "vt.linhdam"} không
+      - Hacom [linh dam]{"entity": "vt.linhdam"}
+      - Hacom [Thanh trì]{"entity": "vt.linhdam"}
+      - Địa chỉ chi nhánh [Thanh Trì]{"entity": "vt.linhdam"}
+      - địa chỉ hacom [linh đàm]{"entity": "vt.linhdam"}
+      - "địa chỉ Hacom [Thanh trì]{"entity": "vt.linhdam"}"
+      - dc chi nhanh [linh dam]{"entity": "vt.linhdam"}
+      - cho mình hỏi địa chỉ chi nhánh [thanh trì]{"entity": "vt.linhdam"}
+      - cho xin dc hacom [thanh tri]{"entity": "vt.linhdam"}
+      - bên mình có chi nhánh ở [Linh Đàm]{"entity": "vt.linhdam"} không
+      - chi nhánh [thanh trì]{"entity": "vt.linhdam"} ở đâu
+      - cho xin dc hacom [linh dam]{"entity": "vt.linhdam"}
+      - địa chỉ hacom [thanh trì]{"entity": "vt.linhdam"}
+      - Hacom [Thanh Trì]{"entity": "vt.linhdam"} ở chỗ nào 
 
-  - intent: dia_chi_long_bien
+  - intent: vt.long_bien
     examples: |
-      - Hacom [long bien]{"entity": "diachilongbien"} o cho nao
-      - dc chi nhanh [nguyen van cu]{"entity": "diachilongbien"}
-      - dc chi nhanh [long bien]{"entity": "diachilongbien"}
-      - Hacom [Nguyễn Văn Cừ]{"entity": "diachilongbien"} ở đâu
-      - dc [long biên]{"entity": "diachilongbien"}
-      - "bên mình có chi nhánh ở [Long Biên]{"entity": "diachilongbien"} không	"
-      - địa chỉ chi nhánh [nguyễn văn cừ]{"entity": "diachilongbien"}
-      - địa chỉ chi nhanh [long biên]{"entity": "diachilongbien"}
-      - Hacom [Nguyễn Văn Cừ]{"entity": "diachilongbien"}
-      - ben minh co chi nhanh o [Long Bien]{"entity": "diachilongbien"} khong 
-      - Hacom [long biên]{"entity": "diachilongbien"} ở chỗ nào
-      - cho mình hỏi địa chỉ chi nhánh [long biên]{"entity": "diachilongbien"}
-      - chi nhánh [nguyễn văn cừ]{"entity": "diachilongbien"}
-      - hacom có chi nhánh ở [Long Biên]{"entity": "diachilongbien"} không
-      - địa chỉ Hacom [Nguyễn Văn Cừ]{"entity": "diachilongbien"}
-      - cho xin dc hacom [nguyen van cu]{"entity": "diachilongbien"}
-      - Hacom [Nguyen van Cu]{"entity": "diachilongbien"}
-      - cho xin dc hacom [long bien]{"entity": "diachilongbien"}
-      - địa chỉ Hacom [Long Biên]{"entity": "diachilongbien"}
-      - Hacom [Long Bien]{"entity": "diachilongbien"}
-      - Địa chỉ chi nhánh [Nguyễn Văn Cừ]{"entity": "diachilongbien"}
-      - Hacom [nguyen van cu]{"entity": "diachilongbien"} o cho nao
-      - Hacom [nguyễn văn cừ]{"entity": "diachilongbien"} ở chỗ nào
-      - Hacom [Long Biên]{"entity": "diachilongbien"}
-      - địa chỉ hacom [long biên]{"entity": "diachilongbien"}
-      - Hacom [Long Biên]{"entity": "diachilongbien"} ở đâu
-      - chi nhánh [Nguyễn Văn Cừ]{"entity": "diachilongbien"} ở đâu 
-      - chi nhánh [long biên]{"entity": "diachilongbien"}
-      - hacom có chi nhánh ở [Nguyễn Văn Cừ]{"entity": "diachilongbien"} không
-      - chi nhánh [long biên]{"entity": "diachilongbien"} ở đâu 
-      - cho mình hỏi địa chỉ chi nhánh [nguyễn văn cừ]{"entity": "diachilongbien"}
-      - "bên mình có chi nhánh ở [Nguyễn Văn Cừ]{"entity": "diachilongbien"} không	"
-      - Địa chỉ chi nhánh [Long Biên]{"entity": "diachilongbien"}
-      - ben minh co chi nhanh o [nguyen van cu]{"entity": "diachilongbien"} khong 
+      - Hacom [long bien]{"entity": "vt.longbien"} o cho nao
+      - dc chi nhanh [nguyen van cu]{"entity": "vt.longbien"}
+      - dc chi nhanh [long bien]{"entity": "vt.longbien"}
+      - Hacom [Nguyễn Văn Cừ]{"entity": "vt.longbien"} ở đâu
+      - dc [long biên]{"entity": "vt.longbien"}
+      - "bên mình có chi nhánh ở [Long Biên]{"entity": "vt.longbien"} không	"
+      - địa chỉ chi nhánh [nguyễn văn cừ]{"entity": "vt.longbien"}
+      - địa chỉ chi nhanh [long biên]{"entity": "vt.longbien"}
+      - Hacom [Nguyễn Văn Cừ]{"entity": "vt.longbien"}
+      - ben minh co chi nhanh o [Long Bien]{"entity": "vt.longbien"} khong 
+      - Hacom [long biên]{"entity": "vt.longbien"} ở chỗ nào
+      - cho mình hỏi địa chỉ chi nhánh [long biên]{"entity": "vt.longbien"}
+      - chi nhánh [nguyễn văn cừ]{"entity": "vt.longbien"}
+      - hacom có chi nhánh ở [Long Biên]{"entity": "vt.longbien"} không
+      - địa chỉ Hacom [Nguyễn Văn Cừ]{"entity": "vt.longbien"}
+      - cho xin dc hacom [nguyen van cu]{"entity": "vt.longbien"}
+      - Hacom [Nguyen van Cu]{"entity": "vt.longbien"}
+      - cho xin dc hacom [long bien]{"entity": "vt.longbien"}
+      - địa chỉ Hacom [Long Biên]{"entity": "vt.longbien"}
+      - Hacom [Long Bien]{"entity": "vt.longbien"}
+      - Địa chỉ chi nhánh [Nguyễn Văn Cừ]{"entity": "vt.longbien"}
+      - Hacom [nguyen van cu]{"entity": "vt.longbien"} o cho nao
+      - Hacom [nguyễn văn cừ]{"entity": "vt.longbien"} ở chỗ nào
+      - Hacom [Long Biên]{"entity": "vt.longbien"}
+      - địa chỉ hacom [long biên]{"entity": "vt.longbien"}
+      - Hacom [Long Biên]{"entity": "vt.longbien"} ở đâu
+      - chi nhánh [Nguyễn Văn Cừ]{"entity": "vt.longbien"} ở đâu 
+      - chi nhánh [long biên]{"entity": "vt.longbien"}
+      - hacom có chi nhánh ở [Nguyễn Văn Cừ]{"entity": "vt.longbien"} không
+      - chi nhánh [long biên]{"entity": "vt.longbien"} ở đâu 
+      - cho mình hỏi địa chỉ chi nhánh [nguyễn văn cừ]{"entity": "vt.longbien"}
+      - bên mình có chi nhánh ở [Nguyễn Văn Cừ]{"entity": "vt.longbien"} không
+      - Địa chỉ chi nhánh [Long Biên]{"entity": "vt.longbien"}
+      - ben minh co chi nhanh o [nguyen van cu]{"entity": "vt.longbien"} khong 
 
-  - intent: dia_chi_quan_3
+  - intent: vt.quan_3
     examples: |
-      - Hacom [Cách mạng tháng 8]{"entity": "diachiquan3"}
-      - [cmt 8]{"entity": "diachiquan3"}
-      - cho xin dc hacom [Quận 3]{"entity": "diachiquan3"}
-      - Hacom [Quan 3]{"entity": "diachiquan3"} o cho nao 
-      - địa chỉ Hacom [CMT8]{"entity": "diachiquan3"}
-      - địa chỉ Hacom [Quận 3]{"entity": "diachiquan3"}
-      - ben minh co chi nhanh o [cmt 8]{"entity": "diachiquan3"} khong 
-      - hacom có chi nhánh ở [Q3]{"entity": "diachiquan3"} không
-      - hacom có chi nhánh ở [Sài GÒn]{"entity": "diachiquan3"} không
-      - "cho mình hỏi địa chỉ chi nhánh [Q3]{"entity": "diachiquan3"}"
-      - dc chi nhanh [q3]{"entity": "diachiquan3"}
-      - "bên mình có chi nhánh ở [TP HCM ]{"entity": "diachiquan3"} không	"
-      - ben minh co chi nhanh o [sai gon]{"entity": "diachiquan3"} khong 
-      - dc chi nhanh [Sai Gon]{"entity": "diachiquan3"}
-      - Hacom [sài gòn]{"entity": "diachiquan3"} ở đâu
-      - chi nhánh [Quận 3]{"entity": "diachiquan3"} ở đâu 
-      - cn [Q3]{"entity": "diachiquan3"}
-      - Hacom [Hồ Chí Minh]{"entity": "diachiquan3"}
-      - địa chỉ Hacom [Q3]{"entity": "diachiquan3"}
-      - Hacom [CMT8]{"entity": "diachiquan3"}
-      - dc chi nhanh [cmt 8]{"entity": "diachiquan3"}
-      - dc chi nhanh [quan 3]{"entity": "diachiquan3"}
-      - ben minh co chi nhanh o [Quan 3]{"entity": "diachiquan3"} khong 
-      - Hacom [Q3]{"entity": "diachiquan3"} o cho nao 
-      - cho xin dc hacom [TP HCM]{"entity": "diachiquan3"}
-      - "bên mình có chi nhánh ở [Quận 3]{"entity": "diachiquan3"} không	"
-      - chi nhánh [Hồ Chí Minh]{"entity": "diachiquan3"}
-      - Địa chỉ chi nhánh [Q3]{"entity": "diachiquan3"}
-      - chi nhánh [Q3]{"entity": "diachiquan3"} ở đâu 
-      - dc chi nhanh [tp hcm]{"entity": "diachiquan3"}
-      - cho xin dc hacom [cmt8]{"entity": "diachiquan3"}
-      - "bên mình có chi nhánh ở [Q3]{"entity": "diachiquan3"} không	"
-      - Địa chỉ chi nhánh [Sài Gòn]{"entity": "diachiquan3"}
-      - Hacom [sai gon]{"entity": "diachiquan3"} o cho nao 
-      - Hacom [q3]{"entity": "diachiquan3"} ở đâu
-      - Hacom [tp hcm]{"entity": "diachiquan3"} ở đâu
-      - hacom có chi nhánh ở [Quận 3]{"entity": "diachiquan3"} không
-      - Hacom [cmt 8]{"entity": "diachiquan3"} ở chỗ nào 
-      - Hacom [Quận 3]{"entity": "diachiquan3"}
-      - "bên mình có chi nhánh ở [Sài Gòn]{"entity": "diachiquan3"} không	"
-      - Hacom [cach mang thang 8]{"entity": "diachiquan3"}
-      - chi nhánh [Cách mạng Tháng 8]{"entity": "diachiquan3"}
-      - địa chỉ Hacom [Sài Gòn]{"entity": "diachiquan3"}
-      - [cách mạng tháng 8]{"entity": "diachiquan3"}
-      - "bên mình có chi nhánh ở [cmt 8]{"entity": "diachiquan3"} không	"
-      - Hacom tp [hcm]{"entity": "diachiquan3"} o cho nao 
-      - Hacom [cmt 8]{"entity": "diachiquan3"} ở đâu
-      - Hacom [HCM]{"entity": "diachiquan3"}
-      - chi nhánh [CMT 8]{"entity": "diachiquan3"} ở đâu 
-      - chi nhánh [Q3]{"entity": "diachiquan3"}
-      - hacom có chi nhánh ở [cmt 8]{"entity": "diachiquan3"} không
-      - cho xin dc hacom [Sài Gòn]{"entity": "diachiquan3"}
-      - [cach mang thang 8]{"entity": "diachiquan3"}
-      - Địa chỉ chi nhánh [CMT8]{"entity": "diachiquan3"}
-      - Địa chỉ chi nhánh [TP HCM]{"entity": "diachiquan3"}
-      - Hacom [Quan 3]{"entity": "diachiquan3"}
-      - chi nhánh [Sài gòn]{"entity": "diachiquan3"} ở đâu 
-      - cho mình hỏi địa chỉ chi nhánh [TP HCM]{"entity": "diachiquan3"}
-      - Hacom [TP HCM]{"entity": "diachiquan3"}
-      - hacom có chi nhánh ở [tp hcm]{"entity": "diachiquan3"} không
-      - Hacom [Q3]{"entity": "diachiquan3"}
-      - Địa chỉ chi nhánh [Quận 3]{"entity": "diachiquan3"}
+      - Hacom [Cách mạng tháng 8]{"entity": "vt.quan3"}
+      - [cmt 8]{"entity": "vt.quan3"}
+      - cho xin dc hacom [Quận 3]{"entity": "vt.quan3"}
+      - Hacom [Quan 3]{"entity": "vt.quan3"} o cho nao 
+      - địa chỉ Hacom [CMT8]{"entity": "vt.quan3"}
+      - địa chỉ Hacom [Quận 3]{"entity": "vt.quan3"}
+      - ben minh co chi nhanh o [cmt 8]{"entity": "vt.quan3"} khong 
+      - hacom có chi nhánh ở [Q3]{"entity": "vt.quan3"} không
+      - hacom có chi nhánh ở [Sài GÒn]{"entity": "vt.quan3"} không
+      - "cho mình hỏi địa chỉ chi nhánh [Q3]{"entity": "vt.quan3"}"
+      - dc chi nhanh [q3]{"entity": "vt.quan3"}
+      - "bên mình có chi nhánh ở [TP HCM ]{"entity": "vt.quan3"} không	"
+      - ben minh co chi nhanh o [sai gon]{"entity": "vt.quan3"} khong 
+      - dc chi nhanh [Sai Gon]{"entity": "vt.quan3"}
+      - Hacom [sài gòn]{"entity": "vt.quan3"} ở đâu
+      - chi nhánh [Quận 3]{"entity": "vt.quan3"} ở đâu 
+      - cn [Q3]{"entity": "vt.quan3"}
+      - Hacom [Hồ Chí Minh]{"entity": "vt.quan3"}
+      - địa chỉ Hacom [Q3]{"entity": "vt.quan3"}
+      - Hacom [CMT8]{"entity": "vt.quan3"}
+      - dc chi nhanh [cmt 8]{"entity": "vt.quan3"}
+      - dc chi nhanh [quan 3]{"entity": "vt.quan3"}
+      - ben minh co chi nhanh o [Quan 3]{"entity": "vt.quan3"} khong 
+      - Hacom [Q3]{"entity": "vt.quan3"} o cho nao 
+      - cho xin dc hacom [TP HCM]{"entity": "vt.quan3"}
+      - bên mình có chi nhánh ở [Quận 3]{"entity": "vt.quan3"} không
+      - chi nhánh [Hồ Chí Minh]{"entity": "vt.quan3"}
+      - Địa chỉ chi nhánh [Q3]{"entity": "vt.quan3"}
+      - chi nhánh [Q3]{"entity": "vt.quan3"} ở đâu 
+      - dc chi nhanh [tp hcm]{"entity": "vt.quan3"}
+      - cho xin dc hacom [cmt8]{"entity": "vt.quan3"}
+      - bên mình có chi nhánh ở [Q3]{"entity": "vt.quan3"} không
+      - Địa chỉ chi nhánh [Sài Gòn]{"entity": "vt.quan3"}
+      - Hacom [sai gon]{"entity": "vt.quan3"} o cho nao 
+      - Hacom [q3]{"entity": "vt.quan3"} ở đâu
+      - Hacom [tp hcm]{"entity": "vt.quan3"} ở đâu
+      - hacom có chi nhánh ở [Quận 3]{"entity": "vt.quan3"} không
+      - Hacom [cmt 8]{"entity": "vt.quan3"} ở chỗ nào 
+      - Hacom [Quận 3]{"entity": "vt.quan3"}
+      - bên mình có chi nhánh ở [Sài Gòn]{"entity": "vt.quan3"} không
+      - Hacom [cach mang thang 8]{"entity": "vt.quan3"}
+      - chi nhánh [Cách mạng Tháng 8]{"entity": "vt.quan3"}
+      - địa chỉ Hacom [Sài Gòn]{"entity": "vt.quan3"}
+      - [cách mạng tháng 8]{"entity": "vt.quan3"}
+      - bên mình có chi nhánh ở [cmt 8]{"entity": "vt.quan3"} không
+      - Hacom tp [hcm]{"entity": "vt.quan3"} o cho nao 
+      - Hacom [cmt 8]{"entity": "vt.quan3"} ở đâu
+      - Hacom [HCM]{"entity": "vt.quan3"}
+      - chi nhánh [CMT 8]{"entity": "vt.quan3"} ở đâu 
+      - chi nhánh [Q3]{"entity": "vt.quan3"}
+      - hacom có chi nhánh ở [cmt 8]{"entity": "vt.quan3"} không
+      - cho xin dc hacom [Sài Gòn]{"entity": "vt.quan3"}
+      - [cach mang thang 8]{"entity": "vt.quan3"}
+      - Địa chỉ chi nhánh [CMT8]{"entity": "vt.quan3"}
+      - Địa chỉ chi nhánh [TP HCM]{"entity": "vt.quan3"}
+      - Hacom [Quan 3]{"entity": "vt.quan3"}
+      - chi nhánh [Sài gòn]{"entity": "vt.quan3"} ở đâu 
+      - cho mình hỏi địa chỉ chi nhánh [TP HCM]{"entity": "vt.quan3"}
+      - Hacom [TP HCM]{"entity": "vt.quan3"}
+      - hacom có chi nhánh ở [tp hcm]{"entity": "vt.quan3"} không
+      - Hacom [Q3]{"entity": "vt.quan3"}
+      - Địa chỉ chi nhánh [Quận 3]{"entity": "vt.quan3"}
 
-  - intent: dia_chi_quan_7
+  - intent: vt.quan_7
     examples: |
-      - cho xin dc hacom [nguyen thi thap]{"entity": "diachiquan7"}
-      - Hacom [Q7]{"entity": "diachiquan7"}
-      - ben minh co chi nhanh o [Quan 7]{"entity": "diachiquan7"} khong 
-      - cho xin dc hacom [quan 7]{"entity": "diachiquan7"}
-      - Địa chỉ chi nhánh [Quận 7]{"entity": "diachiquan7"}
-      - dc chi nhanh [quan 7]{"entity": "diachiquan7"}
-      - Hacom [Quan 7]{"entity": "diachiquan7"}
-      - chi nhánh [Quận 7]{"entity": "diachiquan7"} ở đâu
-      - Hacom [Nguyễn Thị Thập]{"entity": "diachiquan7"}
-      - Hacom [nguyen thi thap]{"entity": "diachiquan7"}
-      - cn [Q7]{"entity": "diachiquan7"}
-      - địa chỉ Hacom [Quận 7]{"entity": "diachiquan7"}
-      - chi nhánh [q7]{"entity": "diachiquan7"}
-      - địa chỉ Hacom [Nguyễn Thị Thập]{"entity": "diachiquan7"}
-      - dc chi nhanh [nguyen thi thap]{"entity": "diachiquan7"}
-      - "bên mình có chi nhánh ở [Quận 7]{"entity": "diachiquan7"} không	"
-      - cho mình hỏi địa chỉ chi nhánh [Nguyễn Thị Thập]{"entity": "diachiquan7"}
-      - cho mình hỏi địa chỉ chi nhánh [Quận 7]{"entity": "diachiquan7"}
-      - Địa chỉ chi nhánh [Nguyễn Thị Thập]{"entity": "diachiquan7"}
-      - Hacom [Quận 7]{"entity": "diachiquan7"}
-      - chi nhánh [quận 7]{"entity": "diachiquan7"}
+      - cho xin dc hacom [nguyen thi thap]{"entity": "vt.quan7"}
+      - Hacom [Q7]{"entity": "vt.quan7"}
+      - ben minh co chi nhanh o [Quan 7]{"entity": "vt.quan7"} khong 
+      - cho xin dc hacom [quan 7]{"entity": "vt.quan7"}
+      - Địa chỉ chi nhánh [Quận 7]{"entity": "vt.quan7"}
+      - dc chi nhanh [quan 7]{"entity": "vt.quan7"}
+      - Hacom [Quan 7]{"entity": "vt.quan7"}
+      - chi nhánh [Quận 7]{"entity": "vt.quan7"} ở đâu
+      - Hacom [Nguyễn Thị Thập]{"entity": "vt.quan7"}
+      - Hacom [nguyen thi thap]{"entity": "vt.quan7"}
+      - cn [Q7]{"entity": "vt.quan7"}
+      - địa chỉ Hacom [Quận 7]{"entity": "vt.quan7"}
+      - chi nhánh [q7]{"entity": "vt.quan7"}
+      - địa chỉ Hacom [Nguyễn Thị Thập]{"entity": "vt.quan7"}
+      - dc chi nhanh [nguyen thi thap]{"entity": "vt.quan7"}
+      - "bên mình có chi nhánh ở [Quận 7]{"entity": "vt.quan7"} không	"
+      - cho mình hỏi địa chỉ chi nhánh [Nguyễn Thị Thập]{"entity": "vt.quan7"}
+      - cho mình hỏi địa chỉ chi nhánh [Quận 7]{"entity": "vt.quan7"}
+      - Địa chỉ chi nhánh [Nguyễn Thị Thập]{"entity": "vt.quan7"}
+      - Hacom [Quận 7]{"entity": "vt.quan7"}
+      - chi nhánh [quận 7]{"entity": "vt.quan7"}
     
-  - intent: dia_chi_tu_son
+  - intent: vt.tu_son
     examples: |
-      - Địa Chỉ [Bắc Ninh]{"entity": "diachituson"}
-      - chi nhánh [Từ sơn]{"entity": "diachituson"}
-      - "cho mình hỏi địa chỉ chi nhánh [Bắc Ninh]{"entity": "diachituson"}	"
-      - ben minh co chi nhanh o [bac ninh]{"entity": "diachituson"} khong 
-      - hacom [tu son]{"entity": "diachituson"}
-      - Hacom [Từ Sơn]{"entity": "diachituson"}
-      - Hacom [bắc ninh]{"entity": "diachituson"} ở đâu
-      - Địa chỉ chi nhánh [Bắc Ninh]{"entity": "diachituson"}
-      - Hacom [Bắc Ninh]{"entity": "diachituson"}
-      - Địa chỉ [Từ sơn]{"entity": "diachituson"}
-      - Hacom [bắc ninh]{"entity": "diachituson"} ở chỗ nào 
-      - chi nhanh [bac ninh]{"entity": "diachituson"}
-      - Chi nhánh [Bắc Ninh]{"entity": "diachituson"}
-      - chi nhánh [bắc ninh]{"entity": "diachituson"} ở đâu 
-      - địa chỉ Hacom [Bắc Ninh]{"entity": "diachituson"}
-      - hacom có chi nhánh ở [Bắc Ninh]{"entity": "diachituson"} không
-      - Hacom [bac ninh]{"entity": "diachituson"} o cho nao 
-      - chi nhanh [tu son]{"entity": "diachituson"}
-      - hacom [bac ninh]{"entity": "diachituson"}
-      - dc chi nhanh [bac ninh]{"entity": "diachituson"}
-      - cho xin dc hacom [bac ninh]{"entity": "diachituson"}
-      - "bên mình có chi nhánh ở [bắc ninh]{"entity": "diachituson"} không	"
+      - Địa Chỉ [Bắc Ninh]{"entity": "vt.tuson"}
+      - chi nhánh [Từ sơn]{"entity": "vt.tuson"}
+      - "cho mình hỏi địa chỉ chi nhánh [Bắc Ninh]{"entity": "vt.tuson"}	"
+      - ben minh co chi nhanh o [bac ninh]{"entity": "vt.tuson"} khong 
+      - hacom [tu son]{"entity": "vt.tuson"}
+      - Hacom [Từ Sơn]{"entity": "vt.tuson"}
+      - Hacom [bắc ninh]{"entity": "vt.tuson"} ở đâu
+      - Địa chỉ chi nhánh [Bắc Ninh]{"entity": "vt.tuson"}
+      - Hacom [Bắc Ninh]{"entity": "vt.tuson"}
+      - Địa chỉ [Từ sơn]{"entity": "vt.tuson"}
+      - Hacom [bắc ninh]{"entity": "vt.tuson"} ở chỗ nào 
+      - chi nhanh [bac ninh]{"entity": "vt.tuson"}
+      - Chi nhánh [Bắc Ninh]{"entity": "vt.tuson"}
+      - chi nhánh [bắc ninh]{"entity": "vt.tuson"} ở đâu 
+      - địa chỉ Hacom [Bắc Ninh]{"entity": "vt.tuson"}
+      - hacom có chi nhánh ở [Bắc Ninh]{"entity": "vt.tuson"} không
+      - Hacom [bac ninh]{"entity": "vt.tuson"} o cho nao 
+      - chi nhanh [tu son]{"entity": "vt.tuson"}
+      - hacom [bac ninh]{"entity": "vt.tuson"}
+      - dc chi nhanh [bac ninh]{"entity": "vt.tuson"}
+      - cho xin dc hacom [bac ninh]{"entity": "vt.tuson"}
+      - "bên mình có chi nhánh ở [bắc ninh]{"entity": "vt.tuson"} không	"
 
-  - intent: dia_chi_thai_nguyen
+  - intent: vt.thai_nguyen
     examples: |
-      - Hacom [Thái Nguyên]{"entity": "diachithainguyen"} ở chỗ nào 
-      - cn [thái nguyên]{"entity": "diachithainguyen"}
-      - Hacom [thái nguyên]{"entity": "diachithainguyen"}
-      - Chi nhánh [Lương Ngọc Quyến]{"entity": "diachithainguyen"}
-      - "cho mình hỏi địa chỉ chi nhánh [Thái Nguyên]{"entity": "diachithainguyen"}	"
-      - ben minh co chi nhanh o [Thai Nguyen]{"entity": "diachithainguyen"} khong 
-      - "địa chỉ Hacom [Thái Nguyên]{"entity": "diachithainguyen"}	"
-      - chi nhánh [Thái Nguyên]{"entity": "diachithainguyen"}
-      - dc chi nhanh [thai nguyen]{"entity": "diachithainguyen"}
-      - chi nhánh T[hái Nguyên]{"entity": "diachithainguyen"} ở đâu 
-      - địa chỉ [thái nguyên]{"entity": "diachithainguyen"}
-      - hacom [thai nguyen]{"entity": "diachithainguyen"}
-      - hacom có chi nhánh ở [Thái Nguyên]{"entity": "diachithainguyen"} không
-      - chi nhanh [thai nguyen]{"entity": "diachithainguyen"}
-      - Địa chỉ chi nhánh [Thái Nguyên]{"entity": "diachithainguyen"}
-      - Hacom [thai nguyen]{"entity": "diachithainguyen"} o cho nao 
-      - Hacom [Thái Nguyên]{"entity": "diachithainguyen"} ở đâu
-      - cn [thai nguyen]{"entity": "diachithainguyen"}
-      - bên mình có chi nhánh ở [Thái Nguyên]{"entity": "diachithainguyen"} không
-      - "cho xin dc hacom [thai nguyen]{"entity": "diachithainguyen"}	"
-      - dia chi [thai nguyen]{"entity": "diachithainguyen"}
+      - Hacom [Thái Nguyên]{"entity": "vt.thainguyen"} ở chỗ nào 
+      - cn [thái nguyên]{"entity": "vt.thainguyen"}
+      - Hacom [thái nguyên]{"entity": "vt.thainguyen"}
+      - Chi nhánh [Lương Ngọc Quyến]{"entity": "vt.thainguyen"}
+      - "cho mình hỏi địa chỉ chi nhánh [Thái Nguyên]{"entity": "vt.thainguyen"}	"
+      - ben minh co chi nhanh o [Thai Nguyen]{"entity": "vt.thainguyen"} khong 
+      - "địa chỉ Hacom [Thái Nguyên]{"entity": "vt.thainguyen"}	"
+      - chi nhánh [Thái Nguyên]{"entity": "vt.thainguyen"}
+      - dc chi nhanh [thai nguyen]{"entity": "vt.thainguyen"}
+      - chi nhánh T[hái Nguyên]{"entity": "vt.thainguyen"} ở đâu 
+      - địa chỉ [thái nguyên]{"entity": "vt.thainguyen"}
+      - hacom [thai nguyen]{"entity": "vt.thainguyen"}
+      - hacom có chi nhánh ở [Thái Nguyên]{"entity": "vt.thainguyen"} không
+      - chi nhanh [thai nguyen]{"entity": "vt.thainguyen"}
+      - Địa chỉ chi nhánh [Thái Nguyên]{"entity": "vt.thainguyen"}
+      - Hacom [thai nguyen]{"entity": "vt.thainguyen"} o cho nao 
+      - Hacom [Thái Nguyên]{"entity": "vt.thainguyen"} ở đâu
+      - cn [thai nguyen]{"entity": "vt.thainguyen"}
+      - bên mình có chi nhánh ở [Thái Nguyên]{"entity": "vt.thainguyen"} không
+      - "cho xin dc hacom [thai nguyen]{"entity": "vt.thainguyen"}	"
+      - dia chi [thai nguyen]{"entity": "vt.thainguyen"}
     
-  - intent: dia_chi_thanh_hoa
+  - intent: vt.thanh_hoa
     examples: |
-      - Hacom [thanh hóa]{"entity": "diachithanhhoa"} ở chỗ nào 
-      - chi nhánh [Thanh Hóa]{"entity": "diachithanhhoa"} ở đâu 
-      - hacom [thanh hoa]{"entity": "diachithanhhoa"}
-      - ben minh co chi nhanh o [thanh hoa]{"entity": "diachithanhhoa"} khong 
-      - "bên mình có chi nhánh ở [Thanh Hóa]{"entity": "diachithanhhoa"} không	"
-      - cho xin dc hacom [thanh hoa]{"entity": "diachithanhhoa"}
-      - Hacom [thanh hóa]{"entity": "diachithanhhoa"} ở đâu
-      - hacom [thanh hóa]{"entity": "diachithanhhoa"}
-      - cn [thanh hoa]{"entity": "diachithanhhoa"}
-      - Hacom [thanh hoa]{"entity": "diachithanhhoa"} o cho nao 
-      - hacom có chi nhánh ở [Thanh Hóa]{"entity": "diachithanhhoa"} không
-      - dc chi nhanh [thanh hoa]{"entity": "diachithanhhoa"}
-      - địa chỉ [Thanh hóa]{"entity": "diachithanhhoa"}
-      - địa chỉ Hacom [Thanh Hóa]{"entity": "diachithanhhoa"}
-      - Địa chỉ chi nhánh [Thanh Hóa]{"entity": "diachithanhhoa"}
-      - cho mình hỏi địa chỉ chi nhánh [Thanh Hóa]{"entity": "diachithanhhoa"}
-      - cn [thanh hóa]{"entity": "diachithanhhoa"}
-      - chi nhánh [Thanh Hóa]{"entity": "diachithanhhoa"}
+      - Hacom [thanh hóa]{"entity": "vt.thanhhoa"} ở chỗ nào 
+      - chi nhánh [Thanh Hóa]{"entity": "vt.thanhhoa"} ở đâu 
+      - hacom [thanh hoa]{"entity": "vt.thanhhoa"}
+      - ben minh co chi nhanh o [thanh hoa]{"entity": "vt.thanhhoa"} khong 
+      - "bên mình có chi nhánh ở [Thanh Hóa]{"entity": "vt.thanhhoa"} không	"
+      - cho xin dc hacom [thanh hoa]{"entity": "vt.thanhhoa"}
+      - Hacom [thanh hóa]{"entity": "vt.thanhhoa"} ở đâu
+      - hacom [thanh hóa]{"entity": "vt.thanhhoa"}
+      - cn [thanh hoa]{"entity": "vt.thanhhoa"}
+      - Hacom [thanh hoa]{"entity": "vt.thanhhoa"} o cho nao 
+      - hacom có chi nhánh ở [Thanh Hóa]{"entity": "vt.thanhhoa"} không
+      - dc chi nhanh [thanh hoa]{"entity": "vt.thanhhoa"}
+      - địa chỉ [Thanh hóa]{"entity": "vt.thanhhoa"}
+      - địa chỉ Hacom [Thanh Hóa]{"entity": "vt.thanhhoa"}
+      - Địa chỉ chi nhánh [Thanh Hóa]{"entity": "vt.thanhhoa"}
+      - cho mình hỏi địa chỉ chi nhánh [Thanh Hóa]{"entity": "vt.thanhhoa"}
+      - cn [thanh hóa]{"entity": "vt.thanhhoa"}
+      - chi nhánh [Thanh Hóa]{"entity": "vt.thanhhoa"}
     
-  - intent: dia_chi_vinh
+  - intent: vt.vinh
     examples: |
-      - dc chi nhanh [vinh]{"entity": "diachivinh"}
-      - chi nhánh [nghệ an]{"entity": "diachivinh"} ở đâu 
-      - hacom [vinh]{"entity": "diachivinh"}
-      - địa chỉ [vinh]{"entity": "diachivinh"}
-      - "bên mình có chi nhánh ở [nghệ an]{"entity": "diachivinh"} không	"
-      - Chi nhánh [Nghệ An]{"entity": "diachivinh"}
-      - địa chỉ chi nhánh [vinh]{"entity": "diachivinh"}
-      - địa chỉ Hacom [Vinh]{"entity": "diachivinh"}
-      - dc hacom [vinh]{"entity": "diachivinh"}
-      - ĐC [Vinh]{"entity": "diachivinh"}
-      - cho xin dc hacom [vinh]{"entity": "diachivinh"}
-      - địa chi chi hacom [vinh]{"entity": "diachivinh"}
-      - ben minh co chi nhanh o [nghe an]{"entity": "diachivinh"} khong 
-      - chi nhanh [nghe an]{"entity": "diachivinh"}
-      - "bên mình có chi nhánh ở [vinh]{"entity": "diachivinh"} không	"
-      - hacom có chi nhánh ở [Nghệ An]{"entity": "diachivinh"} không
-      - chi nhánh [vinh]{"entity": "diachivinh"} ở đâu 
-      - Địa chỉ chi nhánh [vinh]{"entity": "diachivinh"}
-      - hacom có chi nhánh ở [Vinh]{"entity": "diachivinh"} không
-      - chi nhánh [vinh]{"entity": "diachivinh"}
-      - Hacom [nghe an]{"entity": "diachivinh"}
-      - Địa chỉ chi nhánh [Nghệ An]{"entity": "diachivinh"}
-      - "cho mình hỏi địa chỉ chi nhánh [vinh]{"entity": "diachivinh"}	"
-      - dc chi nhanh [nghe an]{"entity": "diachivinh"}
-      - cho mình hỏi địa chỉ chi nhánh [nghệ an]{"entity": "diachivinh"}
-      - cho xin dc hacom [nghe an]{"entity": "diachivinh"}
-      - ben minh co chi nhanh o [vinh]{"entity": "diachivinh"} khong 
-      - địa chỉ Hacom [Nghệ An]{"entity": "diachivinh"}
-      - Hacom [Nghệ An]{"entity": "diachivinh"}
+      - dc chi nhanh [vinh]{"entity": "vt.vinh"}
+      - chi nhánh [nghệ an]{"entity": "vt.vinh"} ở đâu 
+      - hacom [vinh]{"entity": "vt.vinh"}
+      - địa chỉ [vinh]{"entity": "vt.vinh"}
+      - "bên mình có chi nhánh ở [nghệ an]{"entity": "vt.vinh"} không	"
+      - Chi nhánh [Nghệ An]{"entity": "vt.vinh"}
+      - địa chỉ chi nhánh [vinh]{"entity": "vt.vinh"}
+      - địa chỉ Hacom [Vinh]{"entity": "vt.vinh"}
+      - dc hacom [vinh]{"entity": "vt.vinh"}
+      - ĐC [Vinh]{"entity": "vt.vinh"}
+      - cho xin dc hacom [vinh]{"entity": "vt.vinh"}
+      - địa chi chi hacom [vinh]{"entity": "vt.vinh"}
+      - ben minh co chi nhanh o [nghe an]{"entity": "vt.vinh"} khong 
+      - chi nhanh [nghe an]{"entity": "vt.vinh"}
+      - "bên mình có chi nhánh ở [vinh]{"entity": "vt.vinh"} không	"
+      - hacom có chi nhánh ở [Nghệ An]{"entity": "vt.vinh"} không
+      - chi nhánh [vinh]{"entity":"vt.vinh"} ở đâu 
+      - Địa chỉ chi nhánh [vinh]{"entity":"vt.vinh"}
+      - hacom có chi nhánh ở [Vinh]{"entity":"vt.vinh"} không
+      - chi nhánh [vinh]{"entity":"vt.vinh"}
+      - Hacom [nghe an]{"entity":"vt.vinh"}
+      - Địa chỉ chi nhánh [Nghệ An]{"entity":"vt.vinh"}
+      - cho mình hỏi địa chỉ chi nhánh [vinh]{"entity":"vt.vinh"}
+      - dc chi nhanh [nghe an]{"entity":"vt.vinh"}
+      - cho mình hỏi địa chỉ chi nhánh [nghệ an]{"entity":"vt.vinh"}
+      - cho xin dc hacom [nghe an]{"entity":"vt.vinh"}
+      - ben minh co chi nhanh o [vinh]{"entity":"vt.vinh"} khong 
+      - địa chỉ Hacom [Nghệ An]{"entity":"vt.vinh"}
+      - Hacom [Nghệ An]{"entity":"vt.vinh"}
 
   # Update 5/11/2023
-  # - intent: KT_cai_dat_may_in_may_scan
-  #   examples: |
-  #     - cai lai [may in]{"entity": "KTcaidatmayinmayscan"} 
-  #     - cài lại [máy in]{"entity": "KTcaidatmayinmayscan"} 
-  #     - cai lai may [scan]{"entity": "KTcaidatmayinmayscan"} 
-  #     - cài đặt [máy in]{"entity": "KTcaidatmayinmayscan"} 
+
+  - intent: kt.do_muc
+    examples: |
+      - do muc may in
+      - dịch vụ đổ mực may in
+      - may in het muc
+      - dich vu do muc may in
+
+  - intent: kt.macbook
+    examples: |
+      - imac bị lỗi
+      - sửa macbook may i
+      - mac mini bị lỗi
+
+  - intent: kt.huong_dan_su_dung
+    examples: |
+      - hướng dẫn sử dụng
+      - cách sd
+      - huong dan sd
+      - sử dụng thế nào
+      - cách sd
+
+  - intent: dv.thoi_gian_lam_viec
+    examples: |
+      - mấy giờ hacom đóng cửa
+      - cuối tuần có mở cửa không
+      - thời gian mở cửa
+      - thời gian mở cửa thế nào
+      - Hacom có mở cửa dịp Tết không
+      - hacom hoạt động vào thời gian nào trong ngày.
+      - cho mình hỏi giờ đóng cửa của shop ạ.
+      - thời gian làm việc của shop là như nào ạ.
+      - Thời gian đóng cửa.
+      - bên shop làm đến mấy giờ.
+
+  - intent: dv.tam_nghi
+    examples: |
+      - hỗ trợ kỹ thuật ngoài giờ làm
+      - hỗ trợ kỹ thuật ngoài giờ làm
+      - HTKT ngoài giờ làm
+
+  - intent: kd.san_pham_may_cham_cong
+    examples: |
+      - Cần mua [máy chấm công]{"entity": "kd.sanphammaychamcong"}
+      - Mua máy [chấm công]{"entity": "kd.sanphammaychamcong"}
+      - Đặt hàng [máy chấm công]{"entity": "kd.sanphammaychamcong"} giùm tôi
+      - Tôi cần tìm [máy chấm công]{"entity": "kd.sanphammaychamcong"}
+      - Cho tôi xin thông tin về [máy chấm công]{"entity": "kd.sanphammaychamcong"}
+      - Máy [chấm công]{"entity": "kd.sanphammaychamcong"} có sẵn không?
+      - Cần tìm [thiết bị chấm công]{"entity": "kd.sanphammaychamcong"}
+
+  - intent: kd.code
+    examples: |
+      - XIN [CODE]{"entity": "kd.code"} GAME
+      - Cho tôi [mã code]{"entity": "kd.code"} để chơi game
+      - Có thể gửi cho tôi [mã kích hoạt]{"entity": "kd.code"} của game được không?
+      - Tôi cần [mã game]{"entity": "kd.code"} để bắt đầu chơi
+      - Xin vui lòng cung cấp [mã ghi]{"entity": "kd.code"} game
+
+  - intent: dv.doi_moi
+    examples: |
+      - sản phẩm lỗi thì được [đổi mới]{"entity":"dv.doimoi"} hay chỉ bảo hành
+      - Bên shop [đổi mới]{"entity":"dv.doimoi"} sản phẩm trong bao lâu
+      - chính sách bảo hành [đổi mới]{"entity":"dv.doimoi"} như nào nhỉ
+      - lưu ý gì khi [đổi mới]{"entity":"dv.doimoi"} sản phẩm ạ
+
+  - intent: dv.giao_hang_xe_khach
+    examples: |
+      - Cần gửi hàng [xe khách]{"entity": "dv.giaohangxekhach"} đi tỉnh
+      - Gửi đơn hàng [xe khách]{"entity": "dv.giaohangxekhach"} đến tỉnh
+      - Tôi muốn vận chuyển hàng [xe khách]{"entity": "dv.giaohangxekhach"} đến tỉnh
+      - Đặt dịch vụ giao nhận [xe khách]{"entity": "dv.giaohangxekhach"} đi tỉnh
+      - Có dịch vụ vận tải [xe khách]{"entity": "dv.giaohangxekhach"} không?
+      - Xin thông tin về việc gửi [xe]{"entity": "dv.giaohangxekhach"}đến tỉnh
+      - Tôi cần vận chuyển [xe]{"entity": "dv.giaohangxekhach"}đến tỉnh
+
+  - intent: dv.giao_hang_tinh
+    examples: |
+      - Cần gửi hàng [đi tỉnh]{"entity": "dv.giaohangtinh"}.
+      - Chuyển phát hàng [đến tỉnh]{"entity": "dv.giaohangtinh"}.
+      - Tôi muốn gửi hàng [đi tỉnh]{"entity": "dv.giaohangtinh"}.
+      - Có dịch vụ gửi hàng [đi tỉnh]{"entity": "dv.giaohangtinh"} không?
+      - Gửi hàng đi đến các tỉnh.
+      - Thông tin về dịch vụ gửi hàng tới tỉnh
+      - Làm thế nào để chuyển hàng [đi tỉnh]{"entity": "dv.giaohangtinh"}
+      - Dịch vụ gửi hàng đến tỉnh.
+      - Gửi hàng qua dịch vụ gửi hàng [tới tỉnh]{"entity": "dv.giaohangtinh"}
+
+  - intent: kt.ho_tro
+    examples: |
+      - hỗ trợ bảo hành
+      - sản phẩm này dùng như nào hả shop
+      - sản phẩm này mình cần hướng dẫn sử dụng
+      - sp có dễ dùng không ạ
+      - cho mình gặp bộ phận kỹ thuật
+      - hỗ trợ kỹ thuật
+
+  - intent: kd.san_pham_build
+    examples: |
+      - anh muốn build bộ pc gaming
+      - anh muốn build bộ pc văn phòng
+      - anh muốn build bộ pc đồ họa
+      - anh muốn build pc
+
+  - intent: dv.phan_hoi
+    examples: |
+      - có ai không
+      - sao lâu thế
+      - không tư vấn tiếp hả shop
+      - có [kết quả]{"entity" : "dv.phanhoi"} chưa bạn
+      - bạn [check]{"entity" : "dv.phanhoi"} giúp mình chưa
+      - có [phản hồi]{"entity" : "dv.phanhoi"} chưa bạn
+
+  - intent: dv.giao_hang_cod
+    examples: |
+      - Có dịch vụ gửi [COD]{"entity": "dv.giaohangcod"} không?
+      - [COD]{"entity": "dv.giaohangcod"} là gì?
+      - Tôi muốn biết về gửi [COD]{"entity": "dv.giaohangcod"}.
+      - Hacom có dịch vụ thu hộ [COD]{"entity": "dv.giaohangcod"} không?
+      - [COD]{"entity": "dv.giaohangcod"} có sẵn tại Hacom không?
+      - Làm thế nào để gửi hàng thu hộ [COD]{"entity": "dv.giaohangcod"} tại Hacom?
+      - Có hỗ trợ gửi [COD]{"entity": "dv.giaohangcod"} cho khách hàng không?
+      - Thông tin về dịch vụ gửi [COD]{"entity": "dv.giaohangcod"} tại Hacom.
+      - Gửi hàng với dịch vụ [COD]{"entity": "dv.giaohangcod"} tại Hacom.
+      - Gửi hàng thu hộ [COD]{"entity": "dv.giaohangcod"} ở Hacom thế nào?
+
+  - intent: dv.thanh_toan
+    examples: |
+      - anh muốn [chuyển khoản]{"entity" : "dv.thanhtoan"} trước thì sẽ chuyển như nào
+      - em cho anh thông tin tài khoản [thanh toán]{"entity" : "dv.thanhtoan"} nhé
+
+  - intent: kd.san_pham_ps5
+    examples: |
+      - Tôi muốn tham khảo các dòng máy chơi game [PS5]{"entity": "kd.sanphamps5"}.
+      - [PS5]{"entity": "kd.sanphamps5"} là dòng máy chơi game nào?
+      - Máy chơi game [PS5]{"entity": "kd.sanphamps5"} có những phiên bản nào?
+      - Tôi cần tìm hiểu về các dòng máy chơi game [PS5]{"entity": "kd.sanphamps5"}.
+      - Thông tin về máy chơi game [PS5]{"entity": "kd.sanphamps5"}.
+      - [PS5]{"entity": "kd.sanphamps5"} có gì đặc biệt?
+      - Dòng máy chơi game [PS5]{"entity": "kd.sanphamps5"} có những tính năng gì?
+      - Cho tôi biết về [PS5]{"entity": "kd.sanphamps5"}.
+      - Các phiên bản máy chơi game [PS5]{"entity": "kd.sanphamps5"} hiện có.
+      - Máy chơi game [Sony PS5]{"entity": "kd.sanphamps5"} có gì đặc biệt?
+
+  - intent: kd.san_pham_server
+    examples: |
+      - Tôi muốn tham khảo các dòng [máy chủ server]{"entity": "kd.sanphamserver"}.
+      - Các [máy chủ server]{"entity": "kd.sanphamserver"} hiện có nào?
+      - Tôi cần thông tin về các dòng [máy chủ server]{"entity": "kd.sanphamserver"}.
+      - Cho tôi biết về các [máy chủ server]{"entity": "kd.sanphamserver"}.
+      - [Máy chủ server]{"entity": "kd.sanphamserver"} có những loại nào?
+      - Tìm hiểu về [máy chủ server]{"entity": "kd.sanphamserver"}.
+      - Dòng máy chủ [server]{"entity": "kd.sanphamserver"} có những tính năng gì?
+      - Các phiên bản máy chủ [server]{"entity": "kd.sanphamserver"} hiện có.
+      - Máy chủ [server]{"entity": "kd.sanphamserver"} có gì đặc biệt?
+      - Tôi muốn xem thông tin về máy chủ [server]{"entity": "kd.sanphamserver"}.
+
+  - intent: kd.san_pham_may_in
+    examples: |
+      - Anh cần [máy in]{"entity" : "kd.sanphammayin"} đa năng
+      - Anh cần mua [máy in]{"entity" : "kd.sanphammayin"} A4
+
+  - intent: kd.san_phan_ban_phim
+    examples: |
+      - anh cần mua [bàn phím]{"entity" : "kd.sanphanbanphim"} văn phòng 
+      - anh cần mua [bàn phím]{"entity" : "kd.sanphanbanphim"} chơi game 
+
+  - intent: dv.mua_hang
+    examples: |
+      - [mua hàng]{"entity" : "dv.muahang"}
+      - tôi muốn [mua hàng]{"entity" : "dv.muahang"}
       
-  # - intent: KT_chinh_sach_bh_sp
-  #   examples: |
-  #     - chính sách [bảo hành]{"entity": "KTchinhsachbhsp"} 
-  #     - chính sách [bh]{"entity": "KTchinhsachbhsp"} 
-  #     - chinh sach [bao hanh]{"entity": "KTchinhsachbhsp"} 
-  #     - cơ sở [bảo hành]{"entity": "KTchinhsachbhsp"} 
-
-  - intent: KT_do_muc_may_in
+  - intent: dv.mua_hang_ol
     examples: |
-      - [do muc]{"entity": "KTdomucmayin"} may in
-      - dịch vụ [đổ mực]{"entity": "KTdomucmayin"} may in
-      - may in [het muc]{"entity": "KTdomucmayin"}
-      - dich vu [do muc]{"entity": "KTdomucmayin"} may in
+      - mình ở xa thì mua hàng như nào vậy ạ
+      - chỗ mình không có chi nhánh HACOM thì mua hàng như nào ạ
+      - Mua hàng [online]{"entity" : "dv.muahangol"} như nào vậy shop
+      - Mua hàng [online]{"entity" : "dv.muahangol"} như nào vậy shop
 
-  # - intent: KT_dv_sua_chua_laptop_mayin
-  #   examples: |
-  #     - [sửa chữa]{"entity": "KTdvsuachualaptopmayin"} máy in
-  #     - dịch vụ [sữa chữa]{"entity": "KTdvsuachualaptopmayin"} laptop
-  #     - [sua chua]{"entity": "KTdvsuachualaptopmayin"} laptop
-  #     - dich vu [sua chua]{"entity": "KTdvsuachualaptopmayin"} may in
-
-  - intent: KT_dv_sua_macbook_macmini
+  - intent: kt.nang_cap
     examples: |
-      - [imac]{"entity": "KTdvsuamacbookmacmini"} bị lỗi
-      - sửa [macbook]{"entity": "KTdvsuamacbookmacmini"} may i
-      - [mac mini]{"entity": "KTdvsuamacbookmacmini"} bị lỗi
-
-  # - intent: KT_hoi_camera
-  #   examples: |
-  #     - [camera]{"entity": "KThoicamera"} bị lỗi
-  #     - cài đặt [camera]{"entity": "KThoicamera"}
-  #     - [camera]{"entity": "KThoicamera"} bị lỗi
-  #     - [camera]{"entity": "KThoicamera"} gặp vấn đề
-  #     - hỗ trợ [cam]{"entity": "KThoicamera"}
-
-  - intent: KT_huong_dan_su_dung_SP
-    examples: |
-      - hướng dẫn [sử dụng]{"entity": "KThuongdansudungSP"}
-      - cách [sd]{"entity": "KThuongdansudungSP"}
-      - huong dan [sd]{"entity": "KThuongdansudungSP"}
-      - [sử dụng]{"entity": "KThuongdansudungSP"} thế nào
-      - cách [sd]{"entity": "KThuongdansudungSP"} 
-
-  # - intent: KT_kiem_tra
-  #   examples: |
-  #     - Laptop của tôi báo lỗi rồi tắt màn hình nhưng quạt vẫn chạy
-  #     - Cho mình hỏi tầm 10tr thì cấu hình có CPU, main, ram, nguồn, vỏ case thì nên lấy những
-  #     - Tư vấn lắp thêm ram
-  #     - Hacom sẽ thu lại ssd của tôi và lắp một chiếc ssd khác tốt hơn phải không
-  #     - Máy tính tôi bị lỗi
-  #     - Thay tấm nền mất bao lâu và chi phí như thế nào
-  #     - Hỗ trợ Kỹ thuật
-  #     - Tôi đang dùng thì nó báo lỗi rồi nó tắt màn hình
-  #     - Cài đặt lại cổng kết nối
-  #     - Ấn nút nguồn mãi máy mới lên
-  #     - Vừa sạc vừa dùng máy tính
-  #     - Bên mình có sửa bàn phím cơ không
-  #     - Bị hỏng tấm nền
-  #     - Thay tản nhiệt khi thành tản nhiệt nước được không
-  #     - Dịch vụ nâng cấp ssd
-      
-  # - intent: KT_ve_sinh_pc_laptop
-  #   examples: |
-  #     - [vệ sinh]{"entity": "KTvesinhpclaptop"} pc
-  #     - [ve sinh]{"entity": "KTvesinhpclaptop"} laptop
-  #     - [bao duong]{"entity": "KTvesinhpclaptop"} laptop
-  #     - [vs]{"entity": "KTvesinhpclaptop"} thế nào
-  #     - [ve sinh]{"entity": "KTvesinhpclaptop"} máy
-  #     - tra keo tan nhiet
-
-  # - intent: KT_wifi_mat_ket_noi
-  #   examples: |
-  #     - [wifi]{"entity": "KTwifimatketnoi"} không vào được
-  #     - không dùng được [wifi]{"entity": "KTwifimatketnoi"}
-  #     - cần cài lại [wifi]{"entity": "KTwifimatketnoi"} laptop
-  #     - mất kết nối [wifi]{"entity": "KTwifimatketnoi"} thế nào
-  #     - [wifi]{"entity": "KTwifimatketnoi"} khong vao duoc
-    
-  # - intent: KT_win
-  #   examples: |
-  #     - cai lai [win]{"entity": "KTwin"}
-  #     - cài [windows]{"entity": "KTwin"} bản quyền
-  #     - cai [win]{"entity": "KTwin"}
-  #     - chạy lại [win]{"entity": "KTwin"}
-  #     - lỗi [win]{"entity": "KTwin"} máy
-
-  # - intent: KT_ve_sinh_pc_laptop
-  #   examples: |
-  #     - [vệ sinh]{"entity": "KTvesinhpclaptop"} pc
-  #     - [ve sinh]{"entity": "KTvesinhpclaptop"} laptop
-  #     - [bao duong]{"entity": "KTvesinhpclaptop"} laptop
-  #     - [vs]{"entity": "KTvesinhpclaptop"} thế nào
-  #     - [ve sinh]{"entity": "KTvesinhpclaptop"} máy
-  #     - tra keo tan nhiet
-
-  # - intent: toi_can_tu_van_kdol_0945
-  #   examples: |
-  #     - [tư vấn]{"entity": "toicantuvankdol0945"} cho anh con i3 tầm 10-12tr 
-  #     - [tư vấn]{"entity": "toicantuvankdol0945"} cho anh con i7
-    
-  # - intent: tu_van_ngoai_gio_phuc_vu_CSKH
-  #   examples: |
-  #     - [vệ sinh]{"entity": "tuvanngoaigiophucvuCSKH"} pc
-  #     - [ve sinh]{"entity": "tuvanngoaigiophucvuCSKH"} laptop
-  #     - [bao duong]{"entity": "tuvanngoaigiophucvuCSKH"} laptop
-  #     - [vs]{"entity": "tuvanngoaigiophucvuCSKH"} thế nào
-  #     - [ve sinh]{"entity": "tuvanngoaigiophucvuCSKH"} máy
-    
-  - intent: Tu_van_thoi_gian_hoat_dong
-    examples: |
-      - [mấy giờ]{"entity": "Tuvanthoigianhoatdong"} đóng cửa
-      - [cuối tuần]{"entity": "Tuvanthoigianhoatdong"} có mở cửa không
-      - [thời gian mở cửa]{"entity": "Tuvanthoigianhoatdong"}
-      - thời gian [mở cửa]{"entity": "Tuvanthoigianhoatdong"} thế nào
-      - Hacom có mở cửa [dịp Tết]{"entity": "Tuvanthoigianhoatdong"}
-
-  # - intent: KDOL_bao_hanh
-  #   examples: |
-  #     - CHính sách [bảo hành]{"entity" : "KDOLbaohanh"} bên mình ntn ạ
-  #     - Sp này [bảo hành]{"entity" : "KDOLbaohanh"} bao lâu ạ
-      
-  # - intent: KDOL_bao_hanh_may_in
-  #   examples: |
-  #     - Khách hỏi bảo hành [máy in]{"entity" : "KDOLbaohanhmayin"} 
-
-  - intent: KDOL_bao_hanh_san_pham_tru may in
-    examples: |
-      - Khách hỏi [sản phẩm mới bảo hành]{"entity" : "KDOLbaohanhsanphamtrumayin"} thì như nào
-      - [sản phẩm mới bảo hành]{"entity" : "KDOLbaohanhsanphamtrumayin"}
-      - [sản phẩm bảo hành]{"entity" : "KDOLbaohanhsanphamtrumayin"}
-      - [sp bảo hành]{"entity" : "KDOLbaohanhsanphamtrumayin"}
-
-  - intent: KDOL_bo_phan_ky_thuat_tam_nghi
-    examples: |
-      - Khách yêu cầu [hỗ trợ kỹ thuật ngoài giờ làm]{"entity" : "KDOLbophankythuattamnghi"}
-      - [hỗ trợ kỹ thuật ngoài giờ làm]{"entity" : "KDOLbophankythuattamnghi"}
-      - [HTKT ngoài giờ làm]{"entity" : "KDOLbophankythuattamnghi"}
-
-  - intent: KDOL_can_may_cham_cong
-    examples: |
-      - Cần mua máy [chấm công]{"entity": "KDOLcanmaychamcong"}
-      - Mua máy [chấm công]{"entity": "KDOLcanmaychamcong"}
-      - Đặt hàng [máy chấm công]{"entity": "KDOLcanmaychamcong"} giùm tôi
-      - Tôi cần tìm [máy chấm công]{"entity": "KDOLcanmaychamcong"}
-      - Cho tôi xin thông tin về [máy chấm công]{"entity": "KDOLcanmaychamcong"}
-      - Máy [chấm công]{"entity": "KDOLcanmaychamcong"} có sẵn không?
-      - Cần tìm [thiết bị chấm công]{"entity": "KDOLcanmaychamcong"}
-
-
-  # - intent: KDOL_can_mua_laptop
-  #   examples: |
-  #     - Mức kinh phí anh định đầu tư khoảng bao nhiêu ạ 
-  #     - Anh [cần mua laptop]{"entity" : "KDOLcanmualaptop"} nhu cầu sử dụng là gì ạ 
-
-  - intent: KDOL_code
-    examples: |
-      - XIN [CODE]{"entity": "KDOLcode"} GAME
-      - Cho tôi [mã code]{"entity": "KDOLcode"} để chơi game
-      - Có thể gửi cho tôi [mã kích hoạt]{"entity": "KDOLcode"} của game được không?
-      - Tôi cần [mã game]{"entity": "KDOLcode"} để bắt đầu chơi
-      - Xin vui lòng cung cấp [mã ghi]{"entity": "KDOLcode"} game
-
-  - intent: KDOL_chuong_trinh_khuyen_mai
-    examples: |
-      - giờ mua PC có [km]{"entity" : "KDOLchuongtrinhkhuyenmai"} gì ko shop
-      - shop có [khuyến mại]{"entity" : "KDOLchuongtrinhkhuyenmai"} gì không
-      - mình mua sản phẩm này có [KM]{"entity" : "KDOLchuongtrinhkhuyenmai"} gì ko ạ 
-      - mua sản phẩm này có [KM]{"entity" : "KDOLchuongtrinhkhuyenmai"} gì ko
-      - bên shop đang có chương trình [KM]{"entity" : "KDOLchuongtrinhkhuyenmai"} gì ạ
-  
-  - intent: KDOL_chuong_trinh_ve_sinh_may
-    examples: |
-      - bên mình có [vệ sinh máy]{"entity" : "KDOLchuongtrinhvesinhmay"}  không ạ
-      - em có thể mang qua cơ sở nào để [vệ sinh máy]{"entity" : "KDOLchuongtrinhvesinhmay"} 
-      - mình qua [vệ sinh máy]{"entity" : "KDOLchuongtrinhvesinhmay"} có lâu không
-      - bên mình cơ sở có [vệ sinh máy]{"entity" : "KDOLchuongtrinhvesinhmay"} không và hết bao nhiêu
-
-  - intent: KDOL_doi_moi_san_pham
-    examples: |
-      - sản phẩm lỗi thì được [đổi mới]{"entity" : "KDOLdoimoisanpham"} hay chỉ bảo hành
-      - Bên shop [đổi mới]{"entity" : "KDOLdoimoisanpham"} sản phẩm trong bao lâu
-      - chính sách bảo hành [đổi mới]{"entity" : "KDOLdoimoisanpham"} như nào nhỉ
-      - lưu ý gì khi [đổi mới]{"entity" : "KDOLdoimoisanpham"} sản phẩm ạ
-
-  - intent: KDOL_Gui_hang_xe_khach
-    examples: |
-      - Cần [gửi hàng xe khách]{"entity": "KDOLGuihangxekhach"} đi tỉnh
-      - Gửi [đơn hàng xe khách]{"entity": "KDOLGuihangxekhach"} đến tỉnh
-      - Tôi muốn [vận chuyển hàng xe khách]{"entity": "KDOLGuihangxekhach"} đến tỉnh
-      - Đặt dịch vụ [giao nhận xe khách]{"entity": "KDOLGuihangxekhach"} đi tỉnh
-      - Có dịch vụ [vận tải xe khách]{"entity": "KDOLGuihangxekhach"} không?
-      - Xin thông tin về việc [gửi xe khách]{"entity": "KDOLGuihangxekhach"} đến tỉnh
-      - Tôi cần [vận chuyển xe khách]{"entity": "KDOLGuihangxekhach"} đến tỉnh
-
-  # - intent: KDOL_GIAO_HANG_TRONG_BAO_LAU
-  #   examples: |
-  #     - [Giao hàng trong bao nhiêu thời gian]{"entity": "KDOLGIAOHANGTRONGBAOLAU"}?
-  #     - [Thời gian giao hàng]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} bao lâu?
-  #     - Có thể biết [bao nhiêu ngày]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} để giao hàng?
-  #     - [Giao hàng]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} mất bao nhiêu thời gian?
-  #     - Xin thông tin về [thời gian giao hàng]{"entity": "KDOLGIAOHANGTRONGBAOLAU"}.
-  #     - Tôi muốn biết [bao nhiêu ngày]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} để nhận hàng.
-  #     - [Giao hàng]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} mất bao lâu?
-  #     - [Thời gian]{"entity": "KDOLGIAOHANGTRONGBAOLAU"} giao hàng là bao lâu?
-
-  - intent: KDOL_Hang_gui_tinh
-    examples: |
-      - Cần [gửi hàng đi tỉnh]{"entity": "KDOLHangguitinh"}.
-      - [Chuyển phát hàng]{"entity": "KDOLHangguitinh"} đến tỉnh.
-      - Tôi muốn [gửi hàng tới tỉnh]{"entity": "KDOLHangguitinh"}.
-      - Có dịch vụ [gửi hàng tỉnh]{"entity": "KDOLHangguitinh"} không?
-      - [Gửi hàng đi]{"entity": "KDOLHangguitinh"} đến các tỉnh.
-      - Thông tin về dịch vụ [gửi hàng tới tỉnh]{"entity": "KDOLHangguitinh"}.
-      - Làm thế nào để [chuyển hàng đi tỉnh]{"entity": "KDOLHangguitinh"}?
-      - [Dịch vụ]{"entity": "KDOLHangguitinh"} gửi hàng đến tỉnh.
-      - Gửi hàng qua dịch vụ [gửi hàng tới tỉnh]{"entity": "KDOLHangguitinh"}.
-
-  - intent: KDOL_ho_tro_ky_thuat
-    examples: |
-      - [hỗ trợ]{"entity" : "KDOLhotrokythuat"} bảo hành
-      - [sản phẩm này dùng như nào hả shop]{"entity" : "KDOLhotrokythuat"}
-      - [sản phẩm này mình cần hướng dẫn sử dụng]{"entity" : "KDOLhotrokythuat"}
-      - [sp có dễ dùng không ạ]{"entity" : "KDOLhotrokythuat"} 
-      - cho mình gặp [bộ phận kỹ thuật]{"entity" : "KDOLhotrokythuat"}
-      - [hỗ trợ kỹ thuật]{"entity" : "KDOLhotrokythuat"}
-
-  - intent: KDOL_khach_build_pc
-    examples: |
-      - anh muốn [build bộ pc]{"entity" : "KDOLkhachbuildpc"} gaming
-      - anh muốn [build bộ pc]{"entity" : "KDOLkhachbuildpc"} văn phòng
-      - anh muốn [build bộ pc]{"entity" : "KDOLkhachbuildpc"} đồ họa
-
-  - intent: KDOL_khach_cho_lau_khong_thay_phan_hoi
-    examples: |
-      - [có ai không]{"entity" : "KDOLkhachcholaukhongthayphanhoi"}
-      - [có kết quả chưa bạn]{"entity" : "KDOLkhachcholaukhongthayphanhoi"}
-      - [bạn check giúp mình chưa]{"entity" : "KDOLkhachcholaukhongthayphanhoi"}
-      - [sao lâu thế]{"entity" : "KDOLkhachcholaukhongthayphanhoi"}
-      - [không tư vấn tiếp hả shop]{"entity" : "KDOLkhachcholaukhongthayphanhoi"}
-
-  - intent: KDOL_Khach_gui_COD
-    examples: |
-      - Có [dịch vụ gửi COD]{"entity": "KDOLKhachguiCOD"} không?
-      - [COD]{"entity": "KDOLKhachguiCOD"} là gì?
-      - Tôi muốn biết về [gửi COD]{"entity": "KDOLKhachguiCOD"}.
-      - Hacom có [dịch vụ thu hộ COD]{"entity": "KDOLKhachguiCOD"} không?
-      - [COD]{"entity": "KDOLKhachguiCOD"} có sẵn tại Hacom không?
-      - Làm thế nào để [gửi hàng thu hộ COD]{"entity": "KDOLKhachguiCOD"} tại Hacom?
-      - Có [hỗ trợ gửi COD]{"entity": "KDOLKhachguiCOD"} cho khách hàng không?
-      - Thông tin về dịch vụ [gửi COD]{"entity": "KDOLKhachguiCOD"} tại Hacom.
-      - Gửi hàng với [dịch vụ COD]{"entity": "KDOLKhachguiCOD"} tại Hacom.
-      - [Gửi hàng thu hộ COD]{"entity": "KDOLKhachguiCOD"} ở Hacom thế nào?
-
-  - intent: KDOL_Khach_hang_hoi_thanh_toan
-    examples: |
-      - anh muốn [chuyển khoản trước]{"entity" : "KDOLkhachhanghoithanhtoan"} thì sẽ chuyển như nào
-      - em cho anh [thông tin tài khoản]{"entity" : "KDOLkhachhanghoithanhtoan"} thanh toán nhé
-
-  # - intent: KDOL_khach_hang_mua_man_hinh
-  #   examples: |
-  #     - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} gaming
-  #     - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} đồ họa
-  #     - [màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} bên em có hàng không
-  #     - anh [muốn tham khảo màn hình]{"entity" : "KDOLkhachhangmuamanhinh"} văn phòng
-
-  - intent: KDOL_may_choi_game_ps5
-    examples: |
-      - Tôi muốn tham khảo các dòng máy chơi game [PS5]{"entity": "KDOLmaychoigameps5"}.
-      - [PS5]{"entity": "KDOLmaychoigameps5"} là dòng máy chơi game nào?
-      - [Máy chơi game PS5]{"entity": "KDOLmaychoigameps5"} có những phiên bản nào?
-      - Tôi cần tìm hiểu về các [dòng máy chơi game PS5]{"entity": "KDOLmaychoigameps5"}.
-      - Thông tin về [máy chơi game PS5]{"entity": "KDOLmaychoigameps5"}.
-      - [PS5]{"entity": "KDOLmaychoigameps5"} có gì đặc biệt?
-      - [Dòng máy chơi game PS5]{"entity": "KDOLmaychoigameps5"} có những tính năng gì?
-      - Cho tôi biết về [PS5]{"entity": "KDOLmaychoigameps5"}.
-      - Các phiên bản [máy chơi game PS5]{"entity": "KDOLmaychoigameps5"} hiện có.
-      - [Máy chơi game Sony PS5]{"entity": "KDOLmaychoigameps5"} có gì đặc biệt?
-
-  - intent: KDOL_may_chu_server
-    examples: |
-      - Tôi muốn tham khảo các dòng [máy chủ server]{"entity": "KDOLmaychuserver"}.
-      - Các [máy chủ server]{"entity": "KDOLmaychuserver"} hiện có nào?
-      - Tôi cần thông tin về các [dòng máy chủ server]{"entity": "KDOLmaychuserver"}.
-      - Cho tôi biết về các [máy chủ server]{"entity": "KDOLmaychuserver"}.
-      - [Máy chủ server]{"entity": "KDOLmaychuserver"} có những loại nào?
-      - Tìm hiểu về [máy chủ server]{"entity": "KDOLmaychuserver"}.
-      - [Dòng máy chủ server]{"entity": "KDOLmaychuserver"} có những tính năng gì?
-      - Các phiên bản [máy chủ server]{"entity": "KDOLmaychuserver"} hiện có.
-      - [Máy chủ server]{"entity": "KDOLmaychuserver"} có gì đặc biệt?
-      - Tôi muốn xem thông tin về [máy chủ server]{"entity": "KDOLmaychuserver"}.
-
-  - intent: KDOL_may_in
-    examples: |
-      - Anh cần [máy in]{"entity" : "KDOLmayin"}  đa năng
-      - Anh cần mua [máy in]{"entity" : "KDOLmayin"} A4
-
-  - intent: KDOL_mua_ban_phim
-    examples: |
-      - anh cần [mua bàn phím]{"entity" : "KDOLmuabanphim"} văn phòng 
-      - anh cần [mua bàn phím]{"entity" : "KDOLmuabanphim"} chơi game 
-
-  - intent: KDOL_mua_hang
-    examples: |
-      - [Sản phẩm này shop còn hàng ko ạ]{"entity" : "KDOLmuahang"}
-      - [Laptop này con hàng ở cơ sở nào]{"entity" : "KDOLmuahang"}
-
-  - intent: KDOL_mua_hang_online
-    examples: |
-      - [ở xa]{"entity" : "KDOLmuahanhonline"} có giao hàng thu tiền được ko shop
-      - mình [ở xa]{"entity" : "KDOLmuahanhonline"} thì mua hàng như nào vậy ạ
-      - [chỗ mình không có chi nhánh HACOM thì mua hàng như nào ạ]{"entity" : "KDOLmuahanhonline"}
-      - [Mua hàng online]{"entity" : "KDOLmuahanhonline"} như nào vậy shop
-
-  - intent: KDOL_nang_cap_may_tinh
-    examples: |
-      - Tôi muốn [nâng cấp]{"entity": "KDOLnangcapmaytinh"} ram của máy tính.
-      - Làm thế nào để [nâng cấp]{"entity": "KDOLnangcapmaytinh"} ổ cứng laptop?
-      - [Nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính thế nào?
-      - [Nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính,ram và ổ cứng.
-      - Tôi cần [nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính của mình.
-      - Hướng dẫn [nâng cấp]{"entity": "KDOLnangcapmaytinh"} ram và ổ cứng laptop.
-      - Làm thế nào để [nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính để bàn?
-      - [Nâng cấp]{"entity": "KDOLnangcapmaytinh"} máy tính xách tay thế nào?
-      - Tôi muốn biết cách [nâng cấp]{"entity": "KDOLnangcapmaytinh"} ổ cứng laptop.
+      - Tôi muốn nâng cấp ram của máy tính.
+      - Làm thế nào để nâng cấp ổ cứng laptop?
+      - Nâng cấp máy tính thế nào?
+      - Nâng cấp máy tính,ram và ổ cứng.
+      - Tôi cần nâng cấp máy tính của mình.
+      - Hướng dẫn nâng cấp ram và ổ cứng laptop.
+      - Làm thế nào để nâng cấp máy tính để bàn?
+      - Nâng cấp máy tính xách tay thế nào?
+      - Tôi muốn biết cách nâng cấp ổ cứng laptop.
 
   
-  - intent: KDOL_san_pham_box_o_cung
+  - intent: kd.san_pham_box_o_cung
     examples: |
-      - Tôi muốn mua [box đựng ổ cứng]{"entity": "KDOLsanphamboxocung"} để lưu trữ dữ liệu.
-      - Mua [box đựng ổ cứng]{"entity": "KDOLsanphamboxocung"} giá rẻ.
-      - Mua [ổ cứng gắn ngoài]{"entity": "KDOLsanphamboxocung"}.
-      - Tìm [box lưu trữ]{"entity": "KDOLsanphamboxocung"}.
-      - Cần [box HDD]{"entity": "KDOLsanphamboxocung"} cho máy tính.
-      - Tôi muốn mua [box ngoại vi HDD]{"entity": "KDOLsanphamboxocung"}.
-      - Mua [box lưu trữ ổ cứng]{"entity": "KDOLsanphamboxocung"} cho máy tính.
-      - Có đề xuất nào cho [box đựng ổ cứng]{"entity": "KDOLsanphamboxocung"} không?
-      - Tìm [box lưu trữ ổ cứng di động]{"entity": "KDOLsanphamboxocung"}.
+      - Tôi muốn mua [box ổ cứng]{"entity": "kd.sanphamboxocung"} để lưu trữ dữ liệu.
+      - Mua [box]{"entity": "kd.sanphamboxocung"} đựng ổ cứng giá rẻ.
+      - Mua ổ cứng gắn ngoài.
+      - Tìm [box lưu trữ]{"entity": "kd.sanphamboxocung"}.
+      - Cần [box HDD]{"entity": "kd.sanphamboxocung"} cho máy tính.
+      - Tôi muốn mua [box]{"entity": "kd.sanphamboxocung"} ngoại vi HDD.
+      - Mua [box]{"entity": "kd.sanphamboxocung"} lưu trữ ổ cứng cho máy tính.
+      - Có đề xuất nào cho [box]{"entity": "kd.sanphamboxocung"} đựng ổ cứng không?
+      - Tìm box lưu trữ ổ cứng di động.
 
-  - intent: KDOL_san_pham_con_hang
+  - intent: kd.san_pham_con_hang
     examples: |
-      - Khách hàng [gửi link sản phẩm]{"entity": "KDOLsanphamconhang"} để kiểm tra tình trạng còn hàng.
-      - [Tôi muốn xem]{"entity": "KDOLsanphamconhang"} sản phẩm còn hàng không.
-      - [Kiểm tra]{"entity": "KDOLsanphamconhang"} sản phẩm có còn sẵn không.
-      - [Đang tham khảo]{"entity": "KDOLsanphamconhang"} sản phẩm, vui lòng xác nhận tình trạng hàng.
-      - [Tôi cần biết]{"entity": "KDOLsanphamconhang"} sản phẩm đã được bán nhiều chưa.
-      - [Tình trạng hàng]{"entity": "KDOLsanphamconhang"} của sản phẩm này thế nào?
+      - Tôi muốn xem sản phẩm còn hàng không.
+      - Kiểm tra sản phẩm có còn sẵn không.
+      - Đang tham khảo sản phẩm, vui lòng xác nhận tình trạng hàng.
+      - Tôi cần biết sản phẩm đã được bán nhiều chưa.
+      - Tình trạng hàng của sản phẩm này thế nào?
 
-  # - intent: KDOL_san_pham_may_cham_cong
-  #   examples: |
-  #     - danh sách [sản phẩm máy chấm công]{"entity" : "KDOLsanphammaychamcong"}
-
-  - intent: KDOL_san_pham_ve_sinh
+  - intent: kd.san_pham_ve_sinh
     examples: |
-      - Danh sách các [sản phẩm vệ sinh]{"entity": "KDOLsanphamvesinh"} hiện có.
-      - [Sản phẩm thiết bị vệ sinh]{"entity": "KDOLsanphamvesinh"} nào đang bán.
-      - [Các sản phẩm]{"entity": "KDOLsanphamvesinh"} vệ sinh đang có sẵn.
-      - [Các mặt hàng]{"entity": "KDOLsanphamvesinh"} thiết bị vệ sinh có sẵn.
-      - Tôi cần biết về [sản phẩm vệ sinh]{"entity": "KDOLsanphamvesinh"}.
+      - Danh sách các sản phẩm vệ sinh hiện có.
+      - Sản phẩm thiết bị vệ sinh nào đang bán.
+      - Các sản phẩm vệ sinh đang có sẵn.
+      - Các mặt hàng thiết bị vệ sinh có sẵn.
+      - Tôi cần biết về sản phẩm vệ sinh.
       - Các sản phẩm dành cho vệ sinh đang được bán.
 
-  # - intent: KDOL_tu_van_tra_gop
-  #   examples: |
-  #     - [Tư vấn trả góp]{"entity" : "KDOLtuvantragop"} 
-
-  # - intent: KDOL_thay_vo_case
-  #   examples: |
-  #     - ANh mua [vỏ case]{"entity" : "KDOLthayvocase"} có được chuyển linh kiện từ vỏ cũ không
-
-  - intent: KDOL_thoi_gian_lam_viec
+  - intent: kn.giao_hang
     examples: |
-      - [cho mình hỏi giờ đóng cửa của shop ạ]{"entity" : "KDOLthoigianlamviec"}
-      - [thời gian làm việc]{"entity" : "KDOLthoigianlamviec"} của shop là như nào ạ
-      - bên shop [làm đến mấy giờ]{"entity" : "KDOLthoigianlamviec"}
+      - kiểm tra đơn hàng
+      - sai hẹn giao hàng nhiều lần
+      - giao hàng muộn
+      - sai hẹn giao hàng
+      - giao hàng chậm
+      - giao hàng gấp
 
-  # - intent: KDOL_thu_cu_doi_moi
-  #   examples: |
-  #     - shop có [mua lại]{"entity" : "KDOLthucudoimoi"} sp không
-  #     - Bên mình có [thu mua đồ cũ]{"entity" : "KDOLthucudoimoi"} không
-  #     - mình có [sản phẩm cũ]{"entity" : "KDOLthucudoimoi"} muốn bán, shop [thu lại]{"entity" : "KDOLthucudoimoi"} không
-  #     - mình có [laptop cũ]{"entity" : "KDOLthucudoimoi"} muốn bán lại 
-
-  # - intent: KDOL_tra_cuu_bao_hanh
-  #   examples: |
-  #     - cho hỏi sản phẩm của mình [bảo hành]{"entity" : "KDOLtracuubaohanh"} xong chưa
-  #     - kiểm tra [bảo hành]{"entity" : "KDOLtracuubaohanh"} sản phẩm như thế nào shop 
-  #     - kiểm tra giúp mình thông tin gửi [bảo hành]{"entity" : "KDOLtracuubaohanh"}
-  #     - [tra cứu bảo hành]{"entity" : "KDOLtracuubaohanh"} online như nào ạ
-
-  # - intent: KDOL_tra_gop
-  #   examples: |
-  #     - có [trả góp]{"entity" : "KDOLtragop"} 0% không shop
-  #     - thủ tục [trả góp]{"entity" : "KDOLtragop"} như nào ạ
-  #     - thời gian [trả góp]{"entity" : "KDOLtragop"} như nào ạ 
-  #     - shop có những [hình thức trả góp]{"entity" : "KDOLtragop"} nào
-  #     - sp nào thì [trả góp]{"entity" : "KDOLtragop"} được hả shop
-  #     - bên mình có [trả góp]{"entity" : "KDOLtragop"} không
-  #     - shop có [hỗ trợ trả góp]{"entity" : "KDOLtragop"} không
-
-  # - intent: KDOL_ve_sinh_laptop_pc
-  #   examples: |
-  #     - shop có [vệ sinh laptop]{"entity" : "KDOLvesinhlaptop"} không
-  #     - shop có [vệ sinh tại nhà]{"entity" : "KDOLvesinhlaptop"} không
-  #     - shop có  [vệ sinh]{"entity" : "KDOLvesinhlaptop"} pc không
-  #     - bên bạn có [vệ sinh laptop]{"entity" : "KDOLvesinhlaptop"} không
-  #     - [vệ sinh laptop pc]{"entity" : "KDOLvesinhlaptop"}
-
-  - intent: khieu_nai_doi_tra_san_pham
+  - intent: kn.don_hang
     examples: |
-      - [hàng lỗi trả lại]{"entity" : "khieunaidoitrasanpham"}
-      - [trả lại hàng đã mua]{"entity" : "khieunaidoitrasanpham"}
-      - [trả sản phẩm]{"entity" : "khieunaidoitrasanpham"}
-      - [muốn trả hàng]{"entity" : "khieunaidoitrasanpham"}
-      - [muốn đổi hàng]{"entity" : "khieunaidoitrasanpham"}
-      - [trả sp hoàn tiền]{"entity" : "khieunaidoitrasanpham"}
-      - [hoàn hàng]{"entity" : "khieunaidoitrasanpham"}
-      - [hoàn trả hàng]{"entity" : "khieunaidoitrasanpham"}
-      - [đổi sp khác]{"entity" : "khieunaidoitrasanpham"}
-      - [đổi mới sp]{"entity" : "khieunaidoitrasanpham"}
-      - [đổi sản phẩm khác]{"entity" : "khieunaidoitrasanpham"}
-      - [trả hàng trả tiền]{"entity" : "khieunaidoitrasanpham"}
-      - [trả sp]{"entity" : "khieunaidoitrasanpham"}
+      - hủy đơn hàng qua nhà xe
+      - trả hàng cho shipper
+      - hoàn đơn đã ship
+      - thủ tục trả hàng}
+      - trả hàng bên vận chuyển
+      - muốn hoàn đơn
+      - trả hàng cho bên chuyển phát
+      - trả hàng cho bưu điện
 
-  - intent: khieu_nai_giao_hang_cham
+  - intent: kn.hoan_tien
     examples: |
-      - [kiểm tra đơn hàng]{"entity" : "khieunaigiaohangcham"}
-      - [sai hẹn giao hàng] {"entity" : "khieunaigiaohangcham"} nhiều lần
-      - [giao hàng muộn]{"entity" : "khieunaigiaohangcham"}
-      - [sai hẹn giao hàng]{"entity" : "khieunaigiaohangcham"}
-      - [giao hàng chậm]{"entity" : "khieunaigiaohangcham"}
-      - [giao hàng gấp]{"entity" : "khieunaigiaohangcham"}
+      - trả lại tiền ck thừa
+      - sai hẹn trả tiền
+      - khi nào chuyển khoản trả lại tiền
+      - quá hạn hoàn tiền
+      - khi nào chuyển khoản trả lại tiền
+      - thủ tục hoàn tiền
+      - trả lại tiền ck dư
+      - bao giờ hoàn tiền
+      - khi nào trả tiền
+      - chưa nhận được tiền
+      - trả tiền mua hàng
 
-  - intent: khieu_nai_hoan_don_hang 
+  - intent: kn.nhan_vien
     examples: |
-      - [hủy đơn hàng]{"entity" : "khieunaihoandonhang"} qua nhà xe
-      - [trả hàng]{"entity" : "khieunaihoandonhang"} cho shipper
-      - [hoàn đơn]{"entity" : "khieunaihoandonhang"} đã ship
-      - [thủ tục trả hàng]{"entity" : "khieunaihoandonhang"}
-      - [trả hàng]{"entity" : "khieunaihoandonhang"} bên vận chuyển
-      - muốn [hoàn đơn]{"entity" : "khieunaihoandonhang"}
-      - [trả hàng]{"entity" : "khieunaihoandonhang"} cho bên chuyển phát
-      - [trả hàng]{"entity" : "khieunaihoandonhang"} cho bưu điện
+      - làm khó khách
+      - không cài Win
+      - không chào hỏi
+      - làm mất thời gian của khách
+      - không được tư vấn
+      - để khách đi lại nhiều lần
+      - khiếu nại NV
+      - từ chối khách
+      - làm hỏng máy khách
+      - thái độ phục vụ kém
+      - cài đặt sai cách
+      - không trả lời chat
+      - bắt ép khách
+      - nói dối khách
+      - NV không lịch sự
+      - Nói to tiếng với khách
+      - phản ánh NV kỹ thuật
+      - không chủ động gọi điện cho khách
+      - hẹn xong không thấy gọi lại
+      - nói trống không
+      - cài đặt ổ làm mất dữ liệu
+      - làm phiền khách
+      - không cài office
+      - làm hỏng đồ của khách
+      - không tiếp đón khách
+      - NV không trả lời khách
+      - làm mất dữ liệu trong ổ cứng
+      - không được hướng dẫn
+      - phải chờ đợi quá lâu
+      - khiếu nại cần liên hệ ntn
+      - tôi muốn khiếu nại
 
-  - intent: khieu_nai_hoan_tien
+  - intent: kn.nhan_vien_ban_hang
     examples: |
-      - [trả lại tiền]{"entity" : "khieunaihoantien"} ck thừa
-      - sai hẹn [trả tiền]{"entity" : "khieunaihoantien"}
-      - khi nào [chuyển khoản trả lại tiền]{"entity" : "khieunaihoantien"}
-      - quá hạn [hoàn tiền]{"entity" : "khieunaihoantien"}
-      - khi nào [chuyển khoản trả lại tiền]{"entity" : "khieunaihoantien"}
-      - thủ tục [hoàn tiền]{"entity" : "khieunaihoantien"}
-      - [trả lại tiền]{"entity" : "khieunaihoantien"} ck dư
-      - bao giờ [hoàn tiền]{"entity" : "khieunaihoantien"}
-      - khi nào [trả tiền]{"entity" : "khieunaihoantien"}
-      - [chưa nhận được tiền]{"entity" : "khieunaihoantien"} 
-      - [trả tiền mua hàng]{"entity" : "khieunaihoantien"}
+      - tư vấn sp sai
+      - kinh doanh không gọi lại
+      - nv bán hàng
+      - không muốn bán hàng
+      - nv kinh doanh không trả lời khách
+      - tư vấn không đúng nhu cầu
+      - không hỗ trợ khách
+      - né tránh khách
+      - hứa hẹn nhưng không làm
+      - phản ánh kinh doanh
+      - nv kinh doanh sai hẹn
+      - không gửi báo giá
+      - khiếu nại bán hàng
+      - bán hàng không có trách nhiệm với khách
+      - tư vấn sai sản phẩm
+      - hỏi mãi mới trả lời
+      - bán hàng sai giá
+      - nv bán hàng bỏ mặc kh
+      - nv bán hàng bỏ rơi khách
+      - trả lời chậm trễ
+      - không cần khách hàng
+      - làm ngơ khách
 
-  - intent: khieu_nai_nhan_vien
+  - intent: kn.hoa_don
     examples: |
-      - [làm khó khách]{"entity" : "khieunainhanvien"}
-      - [không cài Win]{"entity" : "khieunainhanvien"}
-      - [không chào hỏi]{"entity" : "khieunainhanvien"} 
-      - [làm mất thời gian của khách]{"entity" : "khieunainhanvien"}
-      - [không được tư vấn]{"entity" : "khieunainhanvien"}
-      - [để khách đi lại nhiều lần]{"entity" : "khieunainhanvien"} 
-      - [khiếu nại NV]{"entity" : "khieunainhanvien"}
-      - [từ chối khách]{"entity" : "khieunainhanvien"}
-      - [làm hỏng máy khách]{"entity" : "khieunainhanvien"}
-      - [thái độ phục vụ kém]{"entity" : "khieunainhanvien"}
-      - [cài đặt sai cách]{"entity" : "khieunainhanvien"}
-      - [không trả lời chat]{"entity" : "khieunainhanvien"}
-      - [bắt ép khách]{"entity" : "khieunainhanvien"}
-      - [nói dối khách]{"entity" : "khieunainhanvien"}
-      - [NV không lịch sự]{"entity" : "khieunainhanvien"}
-      - [nói to tiếng với khách]{"entity" : "khieunainhanvien"}
-      - [phản ánh NV kỹ thuật]{"entity" : "khieunainhanvien"}
-      - [không chủ động gọi điện cho khách]{"entity" : "khieunainhanvien"}
-      - [hẹn xong không thấy gọi lại]{"entity" : "khieunainhanvien"}
-      - [nói trống không]{"entity" : "khieunainhanvien"}
-      - [cài đặt ổ làm mất dữ liệu]{"entity" : "khieunainhanvien"}
-      - [làm phiền khách]{"entity" : "khieunainhanvien"}
-      - [không cài office]{"entity" : "khieunainhanvien"}
-      - [làm hỏng đồ của khách]{"entity" : "khieunainhanvien"}
-      - [không tiếp đón khách]{"entity" : "khieunainhanvien"}
-      - [NV không trả lời khách]{"entity" : "khieunainhanvien"}
-      - [làm mất dữ liệu trong ổ cứng]{"entity" : "khieunainhanvien"}
-      - [không được hướng dẫn]{"entity" : "khieunainhanvien"}
-      - [phải chờ đợi quá lâu]{"entity" : "khieunainhanvien"}
-      - [khiếu nại cần liên hệ ntn]{"entity" : "khieunainhanvien"}
-      - [tôi muốn khiếu nại]{"entity" : "khieunainhanvien"}
+      - sai VAT
+      - viết sai mã số thuế
+      - sai tên công ty 
+      - ghi lại VAT
+      - kiểm tra lại hóa đơn
+      - MST không đúng
+      - viết lại VAT bị sai
+      - viết lại hóa đơn
+      - thông tin hđ bị sai
+      - tên công ty không đúng
+      - sai tên cty
+      - mã số thuế không đúng
+      - viết sai địa chỉ hđ
+      - hóa đơn thiếu thông tin
+      - xuất lại VAT
+      - sai hóa đơn
 
-  - intent: khieu_nai_nhan_vien_ban_hang
+  - intent: kn.san_pham
     examples: |
-      - [tư vấn sp sai]{"entity" : "khieunainhanvienbanhang"} nhu cầu
-      - [kinh doanh không gọi lại]{"entity" : "khieunainhanvienbanhang"}
-      - [nv bán hàng]{"entity" : "khieunainhanvienbanhang"} không tư vấn đầy đủ
-      - [không muốn bán hàng]{"entity" : "khieunainhanvienbanhang"}
-      - [nv kinh doanh]{"entity" : "khieunainhanvienbanhang"} không trả lời khách
-      - [tư vấn không đúng]{"entity" : "khieunainhanvienbanhang"} nhu cầu
-      - [không hỗ trợ khách]{"entity" : "khieunainhanvienbanhang"}
-      - [né tránh khách]{"entity" : "khieunainhanvienbanhang"}
-      - [hứa hẹn nhưng không làm]{"entity" : "khieunainhanvienbanhang"}
-      - [phản ánh kinh doanh]{"entity" : "khieunainhanvienbanhang"}
-      - [nv kinh doanh]{"entity" : "khieunainhanvienbanhang"} sai hẹn
-      - [không gửi báo giá]{"entity" : "khieunainhanvienbanhang"}
-      - [khiếu nại bán hàng]{"entity" : "khieunainhanvienbanhang"}
-      - [bán hàng không có trách nhiệm]{"entity" : "khieunainhanvienbanhang"} với khách
-      - [tư vấn sai]{"entity" : "khieunainhanvienbanhang"} sản phẩm
-      - [hỏi mãi mới trả lời]{"entity" : "khieunainhanvienbanhang"}
-      - [bán hàng sai]{"entity" : "khieunainhanvienbanhang"} giá
-      - [nv bán hàng]{"entity" : "khieunainhanvienbanhang"} bỏ mặc kh
-      - [nv bán hàng]{"entity" : "khieunainhanvienbanhang"} bỏ rơi khách
-      - [trả lời chậm trễ]{"entity" : "khieunainhanvienbanhang"}
-      - [không cần khách hàng]{"entity" : "khieunainhanvienbanhang"}
-      - [làm ngơ khách]{"entity" : "khieunainhanvienbanhang"}
+      - sửa rồi vẫn lỗi
+      - hỏng hóc liên tục không dùng được
+      - muốn kiểm tra khắc phục triệt để
+      - xử lý triệt để
+      - mang đến bảo hành rồi nhưng mang về dùng vẫn bị lỗi như cũ
+      - hỏng lên hỏng xuống nhiều lần
+      - gửi bh rồi vẫn lỗi
+      - máy lỗi suốt, không dùng được
 
-  - intent: khieu_nai_sai_thong_tin_xuat_hoa_don
+  - intent: dv.dat_hang
     examples: |
-      - [sai VAT]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [viết sai mã số thuế]{"entity" : "khieunaisaithongtinxuathoadon"} 
-      - [sai tên công ty]{"entity" : "khieunaisaithongtinxuathoadon"} 
-      - [ghi lại VAT]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [kiểm tra lại hóa đơn]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [MST không đúng]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [viết lại VAT bị sai]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [viết lại hóa đơn]{"entity" : "khieunaisaithongtinxuathoadon"} 
-      - [thông tin hđ bị sai]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [tên công ty không đúng]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [sai tên cty]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [mã số thuế không đúng]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [viết sai địa chỉ hđ]{"entity" : "khieunaisaithongtinxuathoadon"} 
-      - [hóa đơn thiếu thông tin]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [xuất lại VAT]{"entity" : "khieunaisaithongtinxuathoadon"}
-      - [sai hóa đơn]{"entity" : "khieunaisaithongtinxuathoadon"}
-
-  - intent: khieu_nai_san_pham
-    examples: |
-      - [sửa rồi vẫn lỗi]{"entity" : "khieunaisanpham"}
-      - [hỏng hóc liên tục không dùng được]{"entity" : "khieunaisanpham"}
-      - [muốn kiểm tra khắc phục triệt để]{"entity" : "khieunaisanpham"}
-      - [xử lý triệt để]{"entity" : "khieunaisanpham"}
-      - [mang đến bảo hành rồi nhưng mang về dùng vẫn bị lỗi]{"entity" : "khieunaisanpham"} như cũ
-      - [hỏng lên hỏng xuống nhiều lần]{"entity" : "khieunaisanpham"}
-      - [gửi bh rồi vẫn lỗi]{"entity" : "khieunaisanpham"}
-      - [máy lỗi suốt, không dùng được]{"entity" : "khieunaisanpham"}
-
-  - intent: dat_hang
-    examples: |
-      - Tôi muốn đặt hàng.
+      - Tôi muốn [đặt hàng]{"entity":"dv.dathang"}.
       - Làm ơn gửi đơn hàng cho tôi.
       - Tôi cần mua sản phẩm.
       - Tôi muốn mua sản phẩm từ bạn.
