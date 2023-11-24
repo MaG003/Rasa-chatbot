@@ -3,108 +3,108 @@ version: "3.1"
 intents:  
   - product_info
   - product_not_found
-  - product_code
+  - product_code 
 
-  - dv.huy_don
-  - dv.giao_hang_phi
-  - dv.giao_hang_xe_khach
-  - dv.giao_hang_thoi_gian
-  - dv.giao_hang_tinh
-  - dv.giao_hang_cod
-  - dv.phan_hoi
-  - dv.thanh_toan
-  - dv.mua_hang
-  - dv.mua_hang_ol
-  - dv.lap_dat
-  - dv.giao_hang_dia_chi
-  - dv.doi_tra
-  - dv.bao_hanh
-  - dv.tra_gop
-  - dv.thoi_gian_lam_viec
-  - dv.dat_lai_mat_khau
-  - dv.theo_doi_don
-  - dv.bao_hanh_tai_nha
-  - dv.doi_moi
-  - dv.dat_hang
-  - dv.mua_lai_ssd_cu
-  - dv.lay_hoa_don
-  - dv.tam_nghi
-  - kn.giao_hang
-  - kn.don_hang
-  - kn.hoan_tien
-  - kn.nhan_vien
-  - kn.nhan_vien_ban_hang
-  - kn.hoa_don
-  - kn.san_pham
-  - kd.san_pham_chuot
-  - kd.san_pham_laptop
-  - kd.san_pham_ram
-  - kd.san_pham_o_cung
-  - kd.san_pham_man_hinh
-  - kd.san_pham_camera
-  - kd.san_pham_card
-  - kd.san_pham_PC
-  - kd.san_pham_game
-  - kd.san_pham_tai_nghe
-  - kd.san_pham_case
-  - kd.san_pham_webcam
-  - kd.san_pham_wifi
-  - kd.san_pham_linh_kien
-  - kd.san_pham_ghe
-  - kd.san_pham_con_hang
-  - kd.san_pham_may_cham_cong
-  - kd.code
-  - kd.khuyen_mai
-  - kd.san_pham_build
-  - kd.san_pham_ps5
-  - kd.san_pham_server
-  - kd.san_pham_may_in
-  - kd.san_phan_ban_phim
-  - kd.san_pham_box_o_cung
-  - kd.san_pham_ve_sinh
-  - kd.phan_mem_windows
-  - kd.phan_mem_windows_gia
-  - kd.phan_mem
-  - kd.san_pham
-  - kt.ve_sinh
-  - kt.ho_tro
-  - kt.nang_cap
+  - dv.huy_don 
+  - dv.giao_hang_phi 
+  - dv.giao_hang_xe_khach 
+  - dv.giao_hang_thoi_gian 
+  - dv.giao_hang_tinh 
+  - dv.giao_hang_cod 
+  - dv.phan_hoi 
+  - dv.thanh_toan 
+  - dv.mua_hang 
+  - dv.mua_hang_ol 
+  - dv.lap_dat 
+  - dv.giao_hang_dia_chi 
+  - dv.doi_tra 
+  - dv.bao_hanh 
+  - dv.tra_gop 
+  - dv.thoi_gian_lam_viec 
+  - dv.dat_lai_mat_khau 
+  - dv.theo_doi_don 
+  - dv.bao_hanh_tai_nha 
+  - dv.doi_moi 
+  - dv.dat_hang 
+  - dv.mua_lai_ssd_cu 
+  - dv.lay_hoa_don 
+  - dv.tam_nghi 
+  - kn.giao_hang 
+  - kn.don_hang 
+  - kn.hoan_tien 
+  - kn.nhan_vien 
+  - kn.nhan_vien_ban_hang 
+  - kn.hoa_don 
+  - kn.san_pham 
+  - kd.san_pham_chuot 
+  - kd.san_pham_laptop 
+  - kd.san_pham_ram 
+  - kd.san_pham_o_cung 
+  - kd.san_pham_man_hinh 
+  - kd.san_pham_camera 
+  - kd.san_pham_card 
+  - kd.san_pham_PC 
+  - kd.san_pham_game 
+  - kd.san_pham_tai_nghe 
+  - kd.san_pham_case 
+  - kd.san_pham_webcam 
+  - kd.san_pham_wifi 
+  - kd.san_pham_linh_kien 
+  - kd.san_pham_ghe 
+  - kd.san_pham_con_hang 
+  - kd.san_pham_may_cham_cong 
+  - kd.code 
+  - kd.khuyen_mai 
+  - kd.san_pham_build 
+  - kd.san_pham_ps5 
+  - kd.san_pham_server 
+  - kd.san_pham_may_in 
+  - kd.san_pham_ban_phim 
+  - kd.san_pham_box_o_cung 
+  - kd.san_pham_ve_sinh 
+  - kd.phan_mem_windows 
+  - kd.phan_mem_windows_gia 
+  - kd.phan_mem 
+  - kd.san_pham 
+  - kt.ve_sinh 
+  - kt.ho_tro 
+  - kt.nang_cap 
   - kt.kiem_tra
-  - kt.ve_sinh_server
-  - kt.ve_sinh_mtvp
-  - kt.bao_loi
-  - kt.cai_dat_may_in
-  - kt.do_muc
-  - kt.macbook
-  - kt.huong_dan_su_dung
-  - vt.dia_chi
-  - vt.bac_giang
-  - vt.cau_giay
-  - vt.dong_anh
-  - vt.dia_chi_gan_nhat
-  - vt.ha_dong_1
-  - vt.ha_dong_2
-  - vt.ha_nam
-  - vt.dong_da
-  - vt.hai_ba_trung
-  - vt.hai_phong
-  - vt.linh_dam
-  - vt.long_bien
-  - vt.quan_3
-  - vt.quan_7
-  - vt.tu_son
-  - vt.thai_nguyen
-  - vt.thanh_hoa
-  - vt.vinh
-  - grt.contact_cskh
-  - grt.goodbye
-  - grt.ho_tro_khac
-  - grt.happy
-  - grt.iamabot
-  - grt.contact_nvkd
-  - grt.gioi_thieu
-  - grt.tong_dai
-  - grt.greet
+  - kt.ve_sinh_server 
+  - kt.ve_sinh_mtvp 
+  - kt.bao_loi 
+  - kt.cai_dat_may_in 
+  - kt.do_muc 
+  - kt.macbook 
+  - kt.huong_dan_su_dung 
+  - vt.dia_chi 
+  - vt.bac_giang 
+  - vt.cau_giay 
+  - vt.dong_anh 
+  - vt.dia_chi_gan_nhat 
+  - vt.ha_dong_1 
+  - vt.ha_dong_2 
+  - vt.ha_nam 
+  - vt.dong_da 
+  - vt.hai_ba_trung 
+  - vt.hai_phong 
+  - vt.linh_dam 
+  - vt.long_bien 
+  - vt.quan_3 
+  - vt.quan_7 
+  - vt.tu_son 
+  - vt.thai_nguyen 
+  - vt.thanh_hoa 
+  - vt.vinh 
+  - grt.contact_cskh 
+  - grt.goodbye 
+  - grt.ho_tro_khac 
+  - grt.happy 
+  - grt.iamabot 
+  - grt.contact_nvkd 
+  - grt.gioi_thieu 
+  - grt.tong_dai 
+  - grt.greet 
 
 
 entities: 
@@ -149,7 +149,7 @@ entities:
   - kd.sanphamps5
   - kd.sanphamserver
   - kd.sanphammayin
-  - kd.sanphanbanphim
+  - kd.sanphambanphim
   - kd.sanphamboxocung
   - kd.phanmemwindows
   - vt.bacgiang
@@ -289,13 +289,13 @@ slots:
     type: text
     mappings:
       - type: from_entity
-        entity: doitra
+        entity: dv.doitra
 
   dv.baohanh:
     type: text
     mappings:
       - type: from_entity
-        entity: baohanh
+        entity: dv.baohanh
 
   dv.tragop:
     type: text
@@ -557,11 +557,11 @@ slots:
       - type: from_entity
         entity: kd.sanphammayin
 
-  kd.sanphanbanphim:
+  kd.sanphambanphim:
     type: text
     mappings:
       - type: from_entity
-        entity: kd.sanphanbanphim
+        entity: kd.sanphambanphim
 
   dv.muahangol:
     type: text
@@ -620,7 +620,7 @@ responses:
     - text: 'Bạn cung cấp thông tin đơn đã tạo để Hacom hướng dẫn chi tiết bạn nhé !'
     - text: 'Mình sẽ kết nối tời BP Bán hàng để tư vấn {dv.huydon} cho bạn nhé !'
   
-  utter_dv.kiem_tra:
+  utter_kt.kiem_tra:
     - text: 'Bạn vui lòng liên hệ bên kỹ thuật hoặc đến cửa hàng HACOM gần nhất để được hỗ trợ kịp thời!'
     - text: 'Bạn vui lòng mang máy qua để bên mình kiểm tra nhé!'
   
@@ -707,10 +707,12 @@ responses:
   utter_dv.theo_doi_don:
     - text: 'Quý khách vui lòng truy cập vào website sau và nhập thông tin cá nhân để theo dõi đơn hàng: https://hacom.vn/tra-don-hang'
   
-  utter_dv.giaohangthoigian:
+  utter_dv.giao_hang_thoi_gian:
     - text: Bên mình giao hàng miễn phí trong ngày phạm vi nội thành Hà Nội, TP.HCM
     - text: Bên mình hỗ trợ giao hàng toàn quốc, thời gian từ 1 -3 ngày tùy địa điểm, vui lòng để lại địa chỉ để mình đưa ra thông tin chính xác hơn
-  
+    - text: "Bên mình giao trong vòng 2-4 tiếng nội thành"
+    - text: "Nếu bạn ở tỉnh sẽ mất 3-5 ngày có hàng"
+    
   utter_kd.san_pham:
     - text: "Bạn có thể cung cấp cho mình mã sản phầm bạn quan tâm không !"
     - text: "Mình sẽ gửi cho bạn thông tin mô tả chi tiết sản phẩm, giá và các chương trình chiết khấu nhé!"
@@ -790,7 +792,7 @@ responses:
   utter_vt.dong_anh:
     - text: "Đây là địa chỉ chi nhánh HACOM - {vt.donganh}: Số 77 Cao Lỗ - Đông Anh - Hà Nội"
   
-  utter_vt.gan_nhat:
+  utter_vt.dia_chi_gan_nhat:
     - text: "Bạn có thể vui lòng truy cập tới đường dẫn https://hacom.vn/showroom để biết rõ địa chỉ cửa hàng HACOM trên toàn quốc cũng như thời gian đóng/mở cửa nhé."
     - text: "Cảm ơn bạn đã liên hệ HACOM. Bạn có thể cho mình biết bạn đang ở khu vực (đường/phố, quận, tỉnh/thành phố) nào không"
     - text: "Bạn có cần nhân viên HACOM tư vấn thêm thông tin không. Nếu cần, xin hãy để lại họ tên & số điện thoại liên hệ; Sẽ có nhân viên liên hệ sớm nhất. Hoặc vui lòng gọi tới số hỗ trợ 19001903 để được trợ giúp nhé. HACOM cảm ơn."
@@ -887,10 +889,6 @@ responses:
 
   utter_dv.giao_hang_xe_khach:
     - text: "Hacom có nhận hàng gửi {dv.giaohangxekhach}. Bạn chuyển khoản trước tiền hàng bên mình nhận được tiền sẽ gửi hàng theo xe khách về cho bạn"
-    
-  utter_dv.giao_hang_thoi_gian:
-    - text: "Bên mình giao trong vòng 2-4 tiếng nội thành"
-    - text: "Nếu bạn ở tỉnh sẽ mất 3-5 ngày có hàng"
 
   utter_dv.giao_hang_tinh:
     - text: "Bên mình có gửi {dv.giaohangtinh} ạ, bạn chuyển khoản trước sẽ được miễn phí cước gửi. Nếu bạn nhận hàng mới thanh toán sẽ phát sinh thêm phí gửi."
@@ -921,8 +919,8 @@ responses:
     - text: "Bạn cần {kd.sanphammayin} đơn năng hay đa năng, máy in màu hay đen trắng ?"
     - text: "Các sản phẩm {kd.sanphammayin} đa năng:  https://hacom.vn/may-in?chuc-nang-may-in=da-chuc-nang&other_filter=in-stock&sort=price-asc."
 
-  utter_kd.san_phan_ban_phim:
-    - text: "Bạn tham khảo sản phẩm {kd.sanphanbanphim}: https://hacom.vn/ban-phim-may-tinh?sort=price-asc&other_filter=in-stock."
+  utter_kd.san_pham_ban_phim:
+    - text: "Bạn tham khảo sản phẩm {kd.sanphambanphim}: https://hacom.vn/ban-phim-may-tinh?sort=price-asc&other_filter=in-stock."
 
   utter_dv.mua_hang:
     - text: "Sản phẩm này bên mình còn hàng."

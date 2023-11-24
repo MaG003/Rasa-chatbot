@@ -8,9 +8,1150 @@ stories:
   - action: utter_grt.greet
   - intent: dv.huy_don
   - action: utter_dv.huy_don
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi giao hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi sản phẩm
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham
+  - action: utter_kd.san_pham
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm chuột
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_chuot
+  - action: utter_kd.san_pham_chuot
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm laptop
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_laptop
+  - action: utter_kd.san_pham_laptop
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm ram
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_ram
+  - action: utter_kd.san_pham_ram
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm ổ cứng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_o_cung
+  - action: utter_kd.san_pham_o_cung
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm màn hình
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_man_hinh
+  - action: utter_kd.san_pham_man_hinh
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm camera
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_camera
+  - action: utter_kd.san_pham_camera
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm card
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_card
+  - action: utter_kd.san_pham_card
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm PC
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_PC
+  - action: utter_kd.san_pham_PC
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm game
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_game
+  - action: utter_kd.san_pham_game
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm tai nghe
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_tai_nghe
+  - action: utter_kd.san_pham_tai_nghe
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm case
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_case
+  - action: utter_kd.san_pham_case
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm webcam
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_webcam
+  - action: utter_kd.san_pham_webcam
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm wifi
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_wifi
+  - action: utter_kd.san_pham_wifi
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm linh kiện
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_linh_kien
+  - action: utter_kd.san_pham_linh_kien
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm ghế
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_ghe
+  - action: utter_kd.san_pham_ghe
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi lắp đặt 
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.lap_dat
+  - action: utter_dv.lap_dat
+  - intent: grt.contact_cskh
+  - action: utter_grt.contact_cskh
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+
+- story: Hỏi thời gian giao hàng 
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: grt.contact_cskh
+  - action: utter_grt.contact_cskh
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi địa chỉ giao hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_phi
+  - action: utter_dv.giao_hang_cod
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi đổi trả 
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.doi_tra
+  - action: utter_dv.doi_tra
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi bảo hành
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.bao_hanh 
+  - action: utter_dv.bao_hanh
+  - action: utter_grt.tong_dai
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua phần mềm windows
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.phan_mem
+  - action: utter_kd.phan_mem
+  - intent: kd.phan_mem_windows
+  - action: utter_kd.phan_mem_windows
+  - intent: kd.phan_mem_windows_gia
+  - action: utter_kd.phan_mem_windows_gia
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi giá phần mềm windows
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.phan_mem
+  - action: utter_kd.phan_mem
+  - intent: kd.phan_mem_windows
+  - action: utter_kd.phan_mem_windows
+  - intent: kd.phan_mem_windows_gia
+  - action: utter_kd.phan_mem_windows_gia
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua phần mềm
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.phan_mem
+  - action: utter_kd.phan_mem
+  - intent: kd.phan_mem_windows
+  - action: utter_kd.phan_mem_windows
+  - intent: kd.phan_mem_windows_gia
+  - action: utter_kd.phan_mem_windows_gia
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi trả góp
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.tra_gop
+  - action: utter_dv.tra_gop
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi chương trình khuyến mại
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.khuyen_mai
+  - action: utter_kd.khuyen_mai
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi sản phẩm
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham
+  - action: utter_kd.san_pham
+  - action: utter_kd.san_pham_con_hang
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua lại ssd cũ
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.mua_lai_ssd_cu 
+  - action: utter_dv.mua_lai_ssd_cu 
+  - action: utter_vt.dia_chi_gan_nhat
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi lấy hóa đơn
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.lay_hoa_don 
   - action: utter_dv.lay_hoa_don
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
 
-#update
+- story: Hỏi cài đặt lại mật khẩu
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.dat_lai_mat_khau 
+  - action: utter_dv.dat_lai_mat_khau
+  - action: utter_grt.tong_dai
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi theo dõi đơn hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.theo_doi_don
+  - action: utter_dv.theo_doi_don
+  - action: utter_dv.giao_hang_thoi_gian
+  - action: utter_kn.giao_hang
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi bảo hành tại nhà
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.bao_hanh_tai_nha
+  - action: utter_dv.bao_hanh_tai_nha
+  - action: utter_grt.tong_dai
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi thời gian lằm việc
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.thoi_gian_lam_viec
+  - action: utter_dv.thoi_gian_lam_viec
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Bộ phận kỹ thuật tạm nghỉ
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.tam_nghi
+  - action: utter_dv.tam_nghi
+  - action: utter_dv.thoi_gian_lam_viec
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm máy chấm công
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_may_cham_cong
+  - action: utter_kd.san_pham_may_cham_cong
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi code
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.code
+  - action: utter_kd.code
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi đổi mới sản phẩm
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kn.san_pham
+  - action: utter_kn.san_pham
+  - intent: dv.doi_moi
+  - action: utter_dv.doi_moi
+  - action: utter_dv.lay_hoa_don
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi giao hàng qua xe khách
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.giao_hang_xe_khach
+  - action: utter_dv.giao_hang_xe_khach
+  - intent: dv.giao_hang_tinh
+  - action: utter_dv.giao_hang_tinh
+  - intent: dv.giao_hang_cod
+  - action: utter_dv.giao_hang_cod
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: dv.giao_hang_phi
+  - action: utter_dv.giao_hang_phi
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi giao hàng tới các tỉnh
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.giao_hang_xe_khach
+  - action: utter_dv.giao_hang_xe_khach
+  - intent: dv.giao_hang_tinh
+  - action: utter_dv.giao_hang_tinh
+  - intent: dv.giao_hang_cod
+  - action: utter_dv.giao_hang_cod
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: dv.giao_hang_phi
+  - action: utter_dv.giao_hang_phi
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm build
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_build
+  - action: utter_kd.san_pham_build
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi phản hồi khách hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.phan_hoi
+  - action: utter_dv.phan_hoi
+  - action: utter_dv.tam_nghi
+  - action: utter_dv.thoi_gian_lam_viec
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
 
 
+- story: Hỏi giao hàng cod
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.giao_hang_xe_khach
+  - action: utter_dv.giao_hang_xe_khach
+  - intent: dv.giao_hang_tinh
+  - action: utter_dv.giao_hang_tinh
+  - intent: dv.giao_hang_cod
+  - action: utter_dv.giao_hang_cod
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: dv.giao_hang_phi
+  - action: utter_dv.giao_hang_phi
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
 
+- story: Hỏi thanh toán
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.thanh_toan
+  - action: utter_dv.thanh_toan
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm ps5
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_ps5
+  - action: utter_kd.san_pham_ps5
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm server
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_server
+  - action: utter_kd.san_pham_server
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm máy in
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_may_in
+  - action: utter_kd.san_pham_may_in
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm bàn phím
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_ban_phim
+  - action: utter_kd.san_pham_ban_phim
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.mua_hang
+  - action: utter_dv.mua_hang
+  - intent: kd.san_pham_con_hang
+  - action: utter_kd.san_pham_con_hang
+  - action: utter_vt.dia_chi_gan_nhat
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua hàng online
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.mua_hang_ol
+  - action: utter_dv.mua_hang_ol
+  - action: utter_dv.dat_hang
+  - action: utter_vt.dia_chi_gan_nhat
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi mua sản phẩm ổ cứng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_o_cung
+  - action: utter_kd.san_pham_o_cung
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi sản phẩm còn hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_con_hang
+  - action: utter_kd.san_pham_con_hang
+  - action: utter_vt.dia_chi_gan_nhat
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+
+- story: Hỏi mua sản phẩm vệ sinh
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kd.san_pham_ve_sinh
+  - action: utter_kd.san_pham_ve_sinh
+  - intent: product_code
+  - action: action_extract_product_code
+  - action: action_get_product_info
+  - action: utter_dv.dat_hang
+  - action: utter_dv.giao_hang_phi
+  - intent: dv.giao_hang_dia_chi
+  - action: utter_dv.giao_hang_dia_chi
+  - intent: dv.giao_hang_thoi_gian
+  - action: utter_dv.giao_hang_thoi_gian
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi đặt hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: dv.dat_hang
+  - action: utter_dv.dat_hang
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+# next update
+
+- story: Hỏi vệ sinh 
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.ve_sinh
+  - action: utter_kt.ve_sinh
+  - intent: vt.dia_chi_gan_nhat
+  - action: utter_vt.dia_chi_gan_nhat
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng 
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.dia_chi
+  - action: utter_vt.dia_chi
+  - intent: vt.dia_chi_gan_nhat
+  - action: utter_vt.dia_chi_gan_nhat
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+  # Update 5/11/2023
+
+- story: Hỏi vị trí cửa hàng ở Bắc Giang
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.bac_giang
+  - action: utter_vt.bac_giang
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Cầu Giấy
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.cau_giay
+  - action: utter_vt.cau_giay
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Đông Anh
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.dong_anh
+  - action: utter_vt.dong_anh
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Hà Đông 1
+  steps:
+
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.ha_dong_1
+  - action: utter_vt.ha_dong_1
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Hà Đông 2
+  steps:
+
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.ha_dong_2
+  - action: utter_vt.ha_dong_2
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Hà Nam
+  steps:
+
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.ha_nam
+  - action: utter_vt.ha_nam
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Hai Bà Trưng
+  steps:
+
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.hai_ba_trung
+  - action: utter_vt.hai_ba_trung
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Hải Phòng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.hai_phong
+  - action: utter_vt.hai_phong
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Linh Đàm
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.linh_dam
+  - action: utter_vt.linh_dam
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Long Biên
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.long_bien
+  - action: utter_vt.long_bien
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở quận 3
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.quan_3
+  - action: utter_vt.quan_3
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở quận 7
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.quan_7
+  - action: utter_vt.quan_7
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Từ Sơn
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.tu_son
+  - action: utter_vt.tu_son
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Thái Nguyên
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.thai_nguyen
+  - action: utter_vt.thai_nguyen
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng ở Thanh Hóa
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.thanh_hoa
+  - action: utter_vt.thanh_hoa
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+    
+- story: Hỏi vị trí cửa hàng ở vinh
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.vinh
+  - action: utter_vt.vinh
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng gần nhất
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.dia_chi_gan_nhat
+  - action: utter_vt.dia_chi_gan_nhat
+  - intent: grt.contact_cskh
+  - action: utter_grt.contact_cskh
+  - intent: grt.tong_dai
+  - action: utter_grt.tong_dai
+  - intent: grt.ho_tro_khac
+  - action: utter_grt.ho_tro_khac
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story: Hỏi vị trí cửa hàng chung chung
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: vt.dia_chi
+  - action: utter_vt.dia_chi
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : Khiếu nại giao hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kn.giao_hang
+  - action: utter_kn.giao_hang
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : Khiếu nại đơn hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kn.don_hang
+  - action: utter_kn.don_hang
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+  
+- story : Khiếu nại hoàn tiền 
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kn.hoan_tien
+  - action: utter_kn.hoan_tien
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : Khiếu nại nhân viên
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kn.nhan_vien
+  - action: utter_kn.nhan_vien
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : Khiếu nại nhân viên bán hàng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kn.nhan_vien_ban_hang
+  - action: utter_kn.nhan_vien_ban_hang
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : Khiếu nại hóa đơn
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kn.hoa_don
+  - action: utter_kn.hoa_don
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : hỗ trợ
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.ho_tro
+  - action: utter_kt.ho_tro
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : nâng cấp
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.nang_cap
+  - action: utter_kt.nang_cap
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : kiểm tra
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.kiem_tra
+  - action: utter_kt.kiem_tra
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : vệ sinh server
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.ve_sinh_server
+  - action: utter_kt.ve_sinh_server
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : vệ sinh máy tính văn phòng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.ve_sinh_mtvp
+  - action: utter_kt.ve_sinh_mtvp
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : báo lỗi
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.bao_loi
+  - action: utter_kt.bao_loi
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : cài đặt máy in
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.cai_dat_may_in
+  - action: utter_kt.cai_dat_may_in
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : đổ mực
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.do_muc
+  - action: utter_kt.do_muc
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : macbook
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.macbook
+  - action: utter_kt.macbook
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : Hướng dẫn sử dụng
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: kt.huong_dan_su_dung
+  - action: utter_kt.huong_dan_su_dung
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : happy
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: grt.happy
+  - action: utter_grt.happy
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : iamabot
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: grt.iamabot
+  - action: utter_grt.iamabot
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : contact_nvkd
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: grt.contact_nvkd
+  - action: utter_grt.contact_nvkd
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : Giới thiệu 
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: grt.gioi_thieu
+  - action: utter_grt.gioi_thieu
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
+
+- story : Tổng đài
+  steps:
+  - intent: grt.greet
+  - action: utter_grt.greet
+  - intent: grt.tong_dai
+  - action: utter_grt.tong_dai
+  - intent: grt.goodbye
+  - action: utter_grt.goodbye
