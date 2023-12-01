@@ -1,0 +1,17 @@
+webchatbot:
+-actions: -actions.py: Tạo hành động đọc mã sản phẩm theo API sau đó trả về thông tin chi tiết sản phẩm cho người dùng
+-data: 	-nlu.yml : Xử lý câu hỏi
+	-rules.yml : Luật giao tiếp
+	-stories.yml : Kịch bản hội thoại giữa người dùng và chatbot
+-config.yml: Cấu hình epochs, max_history
+-domain.yml: Xử lý câu trả lời
+-index.html: Giao diện web
+
+Lệnh chạy chương trình: 
+(Chú ý: Chạy môi trường Anaconda trước)
+1. rasa train
+(Train model)
+2. rasa run -m models --enable-api --cors "*" 
+(Chạy models rasa)
+3. rasa action run
+(Chạy file actions.py)
