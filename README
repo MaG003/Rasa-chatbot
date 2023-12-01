@@ -1,4 +1,4 @@
-webchatbot:
+Chatbot:
 -actions: -actions.py: Tạo hành động đọc mã sản phẩm theo API sau đó trả về thông tin chi tiết sản phẩm cho người dùng
 -data: 	-nlu.yml : Xử lý câu hỏi
 	-rules.yml : Luật giao tiếp
